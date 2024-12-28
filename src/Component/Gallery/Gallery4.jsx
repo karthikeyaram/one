@@ -37,6 +37,14 @@ const Gallery4 = () => {
   const { language } = useSelector((state) => state.language);
   const galleryd = jsondata[language]?.blog4 || [];
 
+  const translations = {
+    'DeivigaArulalarkal': 'தெய்வீக அருளாளர்கள்', 
+    'IsaiArulalarkal': 'இசை அருளாளர்கள்',
+    'IsaiKalaivanarkal': 'இசை கலைவாணர்கள்',
+    'IsaiPerairignarkal': 'முஇசைப் பேரறிஞர்கள்',
+    'PannIsaiPerarignarkal': 'பண் இசைப் பேரறிஞர்கள்',
+  };
+
   const headerStyle = {
     display: 'flex',
     justifyContent: 'center',
@@ -50,7 +58,7 @@ const Gallery4 = () => {
   };
 
   const headerItemStyle = (name) => ({
-    fontSize: '18px',
+    fontSize: '12px',
     fontWeight: '600',
     color: activeHeader === name ? '#F39C12' : '#333333',
     textTransform: 'capitalize',
@@ -105,12 +113,8 @@ const Gallery4 = () => {
     textAlign: 'center',
     opacity: isVisible ? 1 : 0,
     transform: isVisible
-      ? index % 2 === 0
-        ? 'translateX(0)'
-        : 'translateX(0)'
-      : index % 2 === 0
-      ? 'translateX(-100px)'
-      : 'translateX(100px)',
+      ? 'translateX(0)'  // remove random transform effects for static view
+      : 'translateX(0)',
     transition: `opacity 1s ease, transform 1s ease, transition-delay ${index * 0.3}s`,
   });
 
@@ -123,7 +127,7 @@ const Gallery4 = () => {
 
   const imageNameStyle = {
     marginTop: '10px',
-    fontSize: '16px',
+    fontSize: '14px',
     fontWeight: '600',
     color: '#FFF',
     textShadow: '0px 1px 1px ',
@@ -134,9 +138,10 @@ const Gallery4 = () => {
     textAlign: 'center',
     transition: 'background 0.3s ease, transform 0.3s ease',
   };
+
   return (
     <div>
-      <div style={headerStyle}>
+      <div className="header-container" style={headerStyle}>
         {headerNames.map(({ name, path }) => (
           <Link
             key={name}
@@ -144,14 +149,14 @@ const Gallery4 = () => {
             style={headerItemStyle(name)}
             onClick={() => setActiveHeader(name)}
           >
-            {name}
+            {language === 'tamil' && translations[name] ? translations[name] : name}
           </Link>
         ))}
       </div>
 
       <div style={{ textAlign: 'center' }}>
         <h6 style={{ fontSize: '26px', fontWeight: '500', color: '#F39C12', marginBottom: '40px' }}>
-          {activeHeader}
+        {language === 'tamil' && translations[activeHeader] ? translations[activeHeader] : activeHeader}
         </h6>
       </div>
 
@@ -183,25 +188,20 @@ const Gallery4 = () => {
             }
           }
 
-          @keyframes slideInFromLeft {
-            0% {
-              opacity: 0;
-              transform: translateX(-100px);
+          /* Ensure static layout for small screens */
+          @media (max-width: 768px) {
+            .header-container {
+              flex-direction: column;
             }
-            100% {
-              opacity: 1;
-              transform: translateX(0);
-            }
-          }
 
-          @keyframes slideInFromRight {
-            0% {
-              opacity: 0;
-              transform: translateX(100px);
+            .header-container a {
+              margin-bottom: 10px;
             }
-            100% {
-              opacity: 1;
-              transform: translateX(0);
+
+            .gallery-item {
+              transform: none !important;  /* Disable shake on small screens */
+              opacity: 1 !important;        /* Ensure image is visible */
+              transition: none !important;  /* Disable transition effects */
             }
           }
         `}

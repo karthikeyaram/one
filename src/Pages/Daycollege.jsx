@@ -68,7 +68,7 @@ const Daycollege = () => {
                             margin: "0 auto",
                             display: "block",
                             color: "white",
-                            fontSize: "30px",
+                            fontSize: "20px",
                             transition: "transform 0.3s ease-in-out",
                           }}
                         />

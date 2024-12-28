@@ -26,7 +26,6 @@
       },
       {
         "navtitle": "இசை விழா",
-        "path": "/isai-vizha",
         "icon": "",
         "details": [
           {
@@ -69,24 +68,30 @@
             "path": "/TISGEC-course"
           },
           {
-            "subtitle": "E-Quiz Registration",
+            "subtitle": "E-Quiz பதிவு",
             "path": "/equiez-register-form"
           },
+
+           
           {
-            "subtitle": "Undergraduate course",
+            "subtitle": "இளநிலை பாடநெறி",
             "path": "/undergraduate"
           },
           {
             "subtitle": "Diploma course",
-            "path": "/awards"
+            "path": "/diploma-course"
           },
           {
-            "subtitle": "Special course",
-            "path": "/awards"
+            "subtitle": "Certificate course",
+            "path": "/cetificate-course"
+          },
+          {
+            "subtitle": "சிறப்பு பாடநெறி",
+            "path": "/special-course"
           },
           {
             "subtitle": "நிகழ்நிலை (Online) வகுப்புகள்",
-            "path": "/online-class"
+            "path": "/skype-class"
           },
           {
             "subtitle": "தொலைநிலைக்கல்வி",
@@ -116,7 +121,7 @@
       },
       {
         "navtitle": "புகைப்படங்கள்",
-        "path": "/",
+        "path": "/DeivigaArulalarkal",
         "details": [
           {
             "subtitle": "இசைவிழா",
@@ -186,33 +191,43 @@
             ]
           },
           {
-            "title": "மார்கழி சிறப்பு போட்டி",
-            "subtitle": "வகைகள்",
+            "title": "மார்கழி சிறப்பு போட்டிகள்",
+           
             "card": [
               {
                 "id": 1,
                 "cardtitle": "சிறிய சிறுவர்",
+                "image": "/assets/image/junior.png",
                 "cardcontent": "ஏழு முதல் பத்தாம் ஆண்டு வயது."
               },
               {
                 "id": 2,
                 "cardtitle": "கீழ் நிலை",
+                "image": "/assets/image/Subjunior.png",
                 "cardcontent": "பதினொன்று முதல் பதினைந்து ஆண்டு வயது பதிவு கட்டணம் ரூ.150."
               },
               {
                 "id": 3,
                 "cardtitle": "உயர்ந்த நிலை",
+                "image": "/assets/image/Senior.png",
                 "cardcontent": "பதினாறு முதல் இருபத்தி ஒன்று ஆண்டு வயது."
               },
               {
                 "id": 4,
                 "cardtitle": "உயர்ந்த மூத்த நிலை",
+                "image": "/assets/image/Subsenior.png",
                 "cardcontent": "இருபத்தி ஒன்று ஆண்டு வயது மற்றும் அதற்கு மேல் பதிவு கட்டணம் ரூ.250."
               }
             ]
           }
         ]
       }
+    ],
+    "cardtitle":[
+      {"title1":"பதிவு செய்யவும்",
+        "title2":"பதிவுகள் பதிவிறக்கம் செய்யவும்",
+        "title3":"சான்றிதழ்"
+    }
     ],
     "head" : [
       {
@@ -311,15 +326,16 @@
         ] 
     }
     ],
+    
     "presidents":[      
       {"title":"தலைவர்கள்",
         "images":[
-          {"id":1,"img":"/assets/head img/acmuthiah.jpg","title":"பேராசிரியர் இ.சுந்தரமூர்த்தி","subtitle":"தலைவர்"},{"id":2,"img":"/assets/head img/plakshmanan.jpg","title":"மாண்புமிகு நீதிபதி பு.ரா. கோகுலகிருஷ்ணன்","subtitle":"தலைவர் (1992-2019)"},
-          {"id":3,"img":"/assets/head img/devaki_muthiah.jpg","title":"திரு. எஸ். ஸ்ரீராம்","subtitle":" உதவிச் செயலர்(1947 - 1992)"},{"id":4,"img":"/assets/head img/al_vadivelu.jpg","title":"டாக்டர்.எம். ஏ. சிதம்பரம் செட்டியார்","subtitle":"மதிப்பியல் செயலர்(1943 - 1995)"},
-          {"id":5,"img":"/assets/head img/ashwin_muthiah.jpg","title":"நீதிபதி. டாக்டர். எஸ். மகராஜன்","subtitle":"தலைவர் (1978 - 1982)"},{"id":6,"img":"/assets/head img/sakthi_thirunakarasu.jpg","title":"திவான் பகதூர் தி.மு. நாராயண சாமிப் பிள்ளை","subtitle":"தலைவர் (1956 - 1978)"},
-          {"id":7,"img":"/assets/head img/vali_arun.jpg","title":"திவான் பகதூர் தி.மு. நாராயண சாமிப் பிள்ளை","subtitle":"தலைவர் (1956 - 1978)"},{"id":8,"img":"/assets/head img/rm_somasundram.jpg","title":"திவான் பகதூர் சி.எஸ். இரத்தின சபாபதி முதலியார்","subtitle":"தலைவர் (1953 - 1956)"},
-          {"id":9,"img":"/assets/head img/ar_meiyappan.jpg","title":"டாக்டர்.ரா.க. சண்முகம் செட்டியார்","subtitle":"தலைவர் (1948 - 1953)"},{"id":10,"img":"/assets/head img/ar_nachiyappan.jpg","title":"டாக்டர். ராஜாசர்.முத்தையா செட்டியார்","subtitle":"துணைத் தலைவர் (1943 - 1982)"}
-          ,{"id":9,"img":"/assets/head img/ar_meiyappan.jpg","title":"டாக்டர். ராஜாசர்.மு. அண்ணாமலை செட்டியார்","subtitle":"தலைவர் (1943 - 1948)"}
+          {"id":1,"img":"/assets/head img/sundaramoorthi_bg.jpg","title":"பேராசிரியர் இ.சுந்தரமூர்த்தி","subtitle":"தலைவர்"},{"id":2,"img":"/assets/head img/gokulakrishnan.jpg","title":"மாண்புமிகு நீதிபதி பு.ரா. கோகுலகிருஷ்ணன்","subtitle":"தலைவர் (1992-2019)"},
+          {"id":3,"img":"/assets/head img/sriram.jpg","title":"திரு. எஸ். ஸ்ரீராம்","subtitle":" உதவிச் செயலர்(1947 - 1992)"},{"id":4,"img":"/assets/head img/chidambaram_chettiar.jpg","title":"டாக்டர்.எம். ஏ. சிதம்பரம் செட்டியார்","subtitle":"மதிப்பியல் செயலர்(1943 - 1995)"},
+          {"id":5,"img":"/assets/head img/magarajan.jpg","title":"நீதிபதி. டாக்டர். எஸ். மகராஜன்","subtitle":"தலைவர் (1978 - 1982)"},{"id":6,"img":"/assets/head img/sakthi_thirunakarasu.jpg","title":"திவான் பகதூர் தி.மு. நாராயண சாமிப் பிள்ளை","subtitle":"தலைவர் (1956 - 1978)"},
+          {"id":7,"img":"/assets/head img/narayana_swamy_pillai.jpg","title":"திவான் பகதூர் தி.மு. நாராயண சாமிப் பிள்ளை","subtitle":"தலைவர் (1956 - 1978)"},{"id":8,"img":"/assets/head img/rathinasabapathy_mudaliar.jpg","title":"திவான் பகதூர் சி.எஸ். இரத்தின சபாபதி முதலியார்","subtitle":"தலைவர் (1953 - 1956)"},
+          {"id":9,"img":"/assets/head img/shanmugam_chettiar.jpg","title":"டாக்டர்.ரா.க. சண்முகம் செட்டியார்","subtitle":"தலைவர் (1948 - 1953)"},{"id":10,"img":"/assets/head img/muthiah_chettiar.jpg","title":"டாக்டர். ராஜாசர்.முத்தையா செட்டியார்","subtitle":"துணைத் தலைவர் (1943 - 1982)"}
+          ,{"id":9,"img":"/assets/head img/rajasir_annamalai.jpg","title":"டாக்டர். ராஜாசர்.மு. அண்ணாமலை செட்டியார்","subtitle":"தலைவர் (1943 - 1948)"}
         ] 
     }
     ],
@@ -599,61 +615,61 @@
             "title2":"பயிற்றுவிக்கப்பெறும் வகுப்புகள்",
             "courses":[
               {
-                "title3":"“இசை முதுநிலை” (எம்.ஏ.மியூசிக்) குரலிசை பட்டப்படிப்பு",
+                "title3":"“இசை முதுநிலை” (எம்.ஏ.மியூசிக்) குரலிசை பட்டப்படிப்பு“ ",
                 "image":"/assets/image/course-img1.jpg",
                 "duration":"2 Year",
                 "description":["கல்வித் தகுதி மேல்நிலை வகுப்பில் (+2) தேர்ச்சி,இசை இளையர் (பி.மியூசிக் ) (அ) ஏதேனும் ஒரு பட்டப்படிப்பு மற்றும் இசையில் சான்றிதழ் (அ) பட்டயப்படிப்பு"],
                 "course":"Courses"
               },{
-                "title3":"““இசை இளையர்” (பி.ஏ.மியூசிக்) குரலிசை பட்டப்படிப்பு",
+                "title3":"“இசை இளையர்” (பி.ஏ.மியூசிக்) குரலிசை பட்டப்படிப்பு“ ",
                 "image":"/assets/image/course-img1.jpg",
                 "duration":"3 Year",
                 "description":["கல்வித் தகுதி : மேல்நிலை வகுப்பில் (+2) தேர்ச்சி"],
                 "course":"Courses"
               },{
-                "title3":"““(குரலிசை, வீணை, வயலின், புல்லாங்குழல்) பட்டயப்படிப்பு",
+                "title3":"“(குரலிசை, வீணை, வயலின், புல்லாங்குழல்) பட்டயப்படிப்பு“ ",
                 "image":"/assets/image/course-img1.jpg",
                 "duration":"3 Year",
                 "description":["கல்வித் தகுதி : 10ஆம் வகுப்பு தேர்ச்சி"],
                 "course":"Courses"
               }
               ,{
-                "title3":"““ (நாகசுரம், தவில்) பட்டயப்படிப்பு",
+                "title3":"“ (நாகசுரம், தவில்) பட்டயப்படிப்பு“ ",
                 "image":"/assets/image/course-img1.jpg",
                 "duration":"3 Year",
                 "description":["கல்வித் தகுதி : 5ஆம் வகுப்பு தேர்ச்சி"],
                 "course":"Courses"
               }
               ,{
-                "title3":"““ (மிருதங்கம்) பட்டயப்படிப்பு",
+                "title3":"“(மிருதங்கம்) பட்டயப்படிப்பு“ ",
                 "image":"/assets/image/course-img1.jpg",
                 "duration":"3 Year",
                 "description":["கல்வித் தகுதி : 10ஆம் வகுப்பு தேர்ச்சி"],
                 "course":"Courses"
               }
               ,{
-                "title3":"““(கிராமியக்கலை ) பட்டயப்படிப்பு",
+                "title3":"“(கிராமியக்கலை ) பட்டயப்படிப்பு“",
                 "image":"/assets/image/course-img1.jpg",
                 "duration":"3 Year",
                 "description":["கல்வித் தகுதி : 10ஆம் வகுப்பு தேர்ச்சி"],
                 "course":"Courses"
               }
               ,{
-                "title3":"““ (பரதநாட்டியம்) பட்டயப்படிப்பு (பெண்களுக்கு மட்டும்)",
+                "title3":"“ (பரதநாட்டியம்) பட்டயப்படிப்பு“ (பெண்களுக்கு மட்டும்)",
                 "image":"/assets/image/course-img1.jpg",
                 "duration":"3 Year",
                 "description":["கல்வித் தகுதி : 10ஆம் வகுப்பு தேர்ச்சி"],
                 "course":"Courses"
               }
               ,{
-                "title3":"““(நட்டுவாங்கம்) பட்டயப்படிப்பு (பெண்களுக்கு மட்டும்)",
+                "title3":"“(நட்டுவாங்கம்) பட்டயப்படிப்பு (பெண்களுக்கு மட்டும்)",
                 "image":"/assets/image/course-img1.jpg",
                 "duration":"2 Year",
                 "description":["கல்வித் தகுதி : 10ஆம் வகுப்பு தேர்ச்சி"],
                 "course":"Courses"
               }
               ,{
-                "title3":"“““இசை ஆசிரியர் பயிற்சி” பட்டயப்படிப்பு",
+                "title3":"“இசை ஆசிரியர் பயிற்சி” பட்டயப்படிப்பு",
                 "image":"/assets/image/course-img1.jpg",
                 "duration":"1 Year",
                 "course":"Courses",
@@ -663,6 +679,26 @@
             ]
         }
       ],
+      "skypeclass":[
+        {
+          "title":"Online Classes",
+          "title1":"Classes that will be conducted",
+          "img":"/assets/image/annamalai_chettiya2.jpg",
+          "head1":{
+          "thumbnail": "/assets/image/tamilisaisangam1.jpg"
+          },
+          "card":[
+            {"title":"'Certificate in Music Arts (Vocal Music, Veena, Violin)",
+            "para":["1.Classes will be conducted for one week (40 classes).","2.People from India and abroad can join these classes.","3.The duration of the classes is one hour.",
+          "4.For foreign students, classes will be held once a week. Students can increase the number of classes."] }
+          ],
+          "card2":""
+        }
+    ],
+    "skype2":["5.Foreign students must pay a fee of 250 rupees for 10 classes. Payment for the 10 classes must be made in advance.",
+          "6.Indian students must pay a fee of 5000 rupees for 10 classes. Payment for the 10 classes must be made in advance. Students can take 2 or 3 classes in a year.","7.After completing the music course, a certificate will be provided by the Tamil Isai Sangam."
+        ,"Eligibility: Must have an interest in learning music.","Desirable: Should have knowledge of basic music lessons."
+         ], 
       "notes":[
         {
           "title":"குறிப்புகள்",
@@ -679,7 +715,7 @@
             "title2":"பயிற்றுவிக்கப்பெறும் வகுப்புகள்",
             "courses":[
               {
-                "title3":"“கர்நாடக இசைக்கலைச் சான்றிதழ் (குரலிசை, வயலின், பரதநாட்டியம்)",
+                "title3":"“கர்நாடக இசைக்கலைச் சான்றிதழ்“ (குரலிசை, வயலின், பரதநாட்டியம்)",
                 "image":"/assets/image/course-img1.jpg",
                 "duration":"2 Year",
                 "description":["கல்வித் தகுதி : 8-ஆம் வகுப்புத் தேர்ச்சி"],
@@ -705,14 +741,17 @@
             ]
         }
       ],
+      "distance":[ { "head1":{"thumbnail":"/Assets/head img/distance.jpeg"},
+      "title":"தொலைநிலைக்கல்வி",
+      "para":["தமிழின் தொன்மை, பண்பாடு, கலை, அறிவியல், சமூகம், சமயம், தத்துவம் ஆகியவற்றின் கடந்த கால வரலாற்றை முழுமையான ஆய்வுகளின் மூலம் அறிந்து நிகழ்கால வளர்ச்சிக்கு ஏற்ப தமிழ் மக்கள் ஏற்றம் பெறுவதற்கும் நமது தாய்மொழி வளம் உலக மக்களைச் சென்றடைய வேண்டும் என்ற உயரிய நோக்கத்துடனும் தொடங்கப்பட்ட தமிழ்ப் பல்கலைக்கழகத்தின் மற்றொரு அங்கமாகத் தொலைநிலைக்கல்வி இய்க்ககம் கடந்த பல ஆண்டுகளுக்கு முன்பாகத் தொடங்கப்பெறறது. உலக மக்கள் தாய்மொழியில் அனைத்துப் பாடங்களையும் கற்று தங்களின் அறிவைப் பெருக்கி வாழ்வில் அனைத்து வளங்களும் பெறுதல் வேண்டும் என்ற வகையில் தாய்மொழியில் அனைவரும் கல்வியைப் பெறுதல் வேண்டும் என்ற உயரிய நோக்கில் தொலைநிலைக் கல்வித் திட்டம் அழைக்கப்பட்டது.","அத்தகைய சீரிய கல்விப் பணியைத் தமிழ்ப் பல்கலைக்கழகம் தொடர்ந்து செய்து வருகின்றது. தமிழ்ப் பல்கலைக்கழகத்தில் நடத்தப்பெறும் தொலைநிலைக் கல்வித் திட்டங்ளுக்குப் ப்ல்கலைக்கழக நல்கைக் குழு மற்றும் புதுதில்லி தொலைநிலைக்கல்வி முதன்மை இயக்கத்தின் அங்கீகாரத்தை முழுமையாகப் பெற்ற பல்கலைக்கழகங்களில் முதன்மையான பல்கலைக்கழகமாக தமிழ்ப் பாடங்கள், தக்க அறிஞர்களின் வழிகாட்டலில் அமைக்கப்பட்ட கல்வி திட்டங்கள். மூலமாக மேற்கூறிய சீரிய நோக்கத்தில் தமிழ் இசைச்சங்கம், தமிழ் இசைக்கல்லூரி தமிழ் பல்கலைக்கழக தொலைநிலைக் கல்வி இயக்ககத்தின் கற்றல் உதவி மையமாக செயல்படுகிறது",
+      "அனைத்துப்பாட வகுப்புகளும் தமிழிலேயே நடத்தப்படும் கல்லூரி, பல்கலைக்கழகங்களில் பயிலும் மாணவர்கள் தொலைநிலைக் கல்வி இயக்ககம் மூலம் ஒரே நேரத்தில் பட்டயம் (Diploma) அல்லது சான்றிதழ் (Certificate) வகுப்புகளில் படிக்கும் வாய்ப்பு கிடைக்கிறது"
+    ] }
+  ],
       "notes2":[
         {
           "title":"குறிப்புகள்",
           "point":"ஆண்டுதோறும் சூன் திங்கள் கல்லூரி தொடங்கும்."
         }
-      ],
-      "coursereg":[
-
       ],
       "terms":[
         {
@@ -745,7 +784,7 @@
       }
       ],
       "tablecontent":[{
-          "title":"கூட்டுத்தொகை அமைப்பு",
+          "title":"FEES STRUCTURE",
             "title1":"VOCAL / VEENA / VIOLIN / FLUTE / MIRDANGAM / TAVIL / /NAGASWARAM / BHARATHANATYAM / FOLK",
             "thead":"1. REGISTRATION FEES: (For Institution and/or Teachers-including Application Fees)",
               "thead1":{"name":"Grade","name1":"For Indian","name2":"For Foreigners"},
@@ -876,12 +915,49 @@
       
       }
     ],
-
-
-
-    
+   "museums": [
+           {
+             "membership_details": {
+               "location": {
+                 "label": "இடம்",
+                 "value": "தமிழ் இசைக்கலை அகாடமி, ராஜா அண்ணாமலை மண்டபம், சென்னை - 600 108."
+               },
+               "visiting_hours": {
+                 "label": "பார்வை நேரங்கள்",
+                 "value": "செவ்வாய் முதல் சனிக்கிழமை வரை, காலை 10:00 முதல் மாலை 5:00 வரை"
+               },
+               "membership_fee": {
+                 "label": "சேர்க்கை கட்டணம்",
+                 "value": "ஒரு நபருக்கு ₹20"
+               },
+               "free_entry": {
+                 "label": "முறையற்ற நுழைவு",
+                 "value": "21 வயதிற்கு கீழுள்ள மாணவர்களுக்கு மற்றும் முதியவர்களுக்கு (வயது சான்று அவசியம்)"
+               },
+               "foreign_nationals": {
+                 "label": "பார்வத நாட்டவர்",
+                 "value": "₹200"
+               },
+               "educational_institutions": {
+                 "label": "கல்வி நிறுவனங்கள்",
+                 "value": "₹300 (நிறுவனங்களுக்கு சிறப்பு கட்டணம்)"
+               },
+               "contact": {
+                 "label": "தொடர்பு",
+                 "value": "+91 44 2534 1425 / 2533 0350"
+               },
+               "supervisor": {
+                 "label": "மேலாண்மை",
+                 "value": "டாக்டர் லலிதா ஜவஹர்"
+               },
+               "phone_supervisor": {
+                 "label": "தொலைபேசி (மேலாண்மை)",
+                 "value": "+91 96001 29724"
+               }
+             }
+           }
+         ],
     "blog2": [
-
       { "gallery2":
    
       [
@@ -902,9 +978,7 @@
         }
       ]
     
-   }
-   
-       ],
+   }   ],
    
     "blog4": [
      {
@@ -1678,49 +1752,94 @@
        }
    
        ],
-         "museums": [
-           {
-             "membership_details": {
-               "location": {
-                 "label": "இடம்",
-                 "value": "தமிழ் இசைக்கலை அகாடமி, ராஜா அண்ணாமலை மண்டபம், சென்னை - 600 108."
-               },
-               "visiting_hours": {
-                 "label": "பார்வை நேரங்கள்",
-                 "value": "செவ்வாய் முதல் சனிக்கிழமை வரை, காலை 10:00 முதல் மாலை 5:00 வரை"
-               },
-               "membership_fee": {
-                 "label": "சேர்க்கை கட்டணம்",
-                 "value": "ஒரு நபருக்கு ₹20"
-               },
-               "free_entry": {
-                 "label": "முறையற்ற நுழைவு",
-                 "value": "21 வயதிற்கு கீழுள்ள மாணவர்களுக்கு மற்றும் முதியவர்களுக்கு (வயது சான்று அவசியம்)"
-               },
-               "foreign_nationals": {
-                 "label": "பார்வத நாட்டவர்",
-                 "value": "₹200"
-               },
-               "educational_institutions": {
-                 "label": "கல்வி நிறுவனங்கள்",
-                 "value": "₹300 (நிறுவனங்களுக்கு சிறப்பு கட்டணம்)"
-               },
-               "contact": {
-                 "label": "தொடர்பு",
-                 "value": "+91 44 2534 1425 / 2533 0350"
-               },
-               "supervisor": {
-                 "label": "மேலாண்மை",
-                 "value": "டாக்டர் லலிதா ஜவஹர்"
-               },
-               "phone_supervisor": {
-                 "label": "தொலைபேசி (மேலாண்மை)",
-                 "value": "+91 96001 29724"
-               }
-             }
-           }
-         ],
-   
+       "openuniv":[
+        {
+          "title":"திறந்த நிலை கல்வி",
+          "head1":{"thumbnail":"/Assets/head img/distance.jpeg"},
+       "para":["யார் வேண்டுமென்னாலும், எந்த இடத்திலிருந்தும் எந்த நேரத்திலும் கல்வி கற்கும் வாய்ப்பை ஏற்படுத்திக் கொடுக்க வேண்டும் என்ற நோக்கத்தோடும், கல்வியின் தரத்தை உயர்த்த வேண்டும் என்ற நோக்கத்தோடும், தமிழ்நாடு திறந்தவெளிப் பல்கலைக்கழகம் 2002ஆம் ஆண்டு தமிழக அரசால் நிறுவப்பட்டது. அதனுடைய தோற்ற காலத்திலிருந்து சமுதாயத்தில் பின் தங்கிய நிலையில் உள்ளவர்களுக்கும் வாய்ப்புகள் கிடைக்காத நிலையில் உள்ளவர்களுக்கும், கல்வி கற்பதற்கான தேவைகளைப் பூர்த்தி செய்து வந்து கொண்டிருக்கிறது. கடந்த 14 ஆண்டுகளாக இந்தப் பல்கலைக்க கழகத்தினுடைய வளர்ச்சி பாராட்டும் வண்ணமாக இருக்கிறது","கடந்த 14 ஆண்டுகளாக இந்தப் பல்கலைக்கழகத்தினுடைய வளர்ச்சி மிகவும் பாராட்டும் வண்ணமாக அமைந்துள்ளது. மாநிலம் முழுவதுமாக பல்வேறு பாடங்களில் 113 பாடத்திட்டங்கள் மூலமாகவும், 13 கல்வி சிறுவனங்களின் வழியாகவும், 5 துணை நிறுவனங்களின் வழியாகவும், ஒரு ஊடக மையம் வழியாகவும், 607 கற்பவர்கள் சேவை மையம் மூலமாகவும் 5,29,263 மாணவர்கள் பயன்பெறும் வண்ணமாகக் கல்வி திட்டங்கள் செயல்படுத்தப்பட்டு வருகிறது. 2003ஆம் ஆண்டிலிருந்ததே. முதன் முதலாக மதிப்பீடு முறையில் பாடக்குறிப்புகள் தயார்செய்து அறிமுகம்படுத்திய பெருமை தமிழ்நாடு திறந்தவெளிப் பல்கலைக்கழகத்தையே சாரும்.",
+          "வருடம் முழுவதும் அனுமதி அளிக்கும் முறை மற்றும் மாணவர்கள் வசதியைக் கருத்தில் கொண்டு வார இறுதி நட்களில் தேர்வு நடத்தும் முறை, தொடர்ச்சியாக மாணவர்களுடைய திறனை மதிப்பீடு செய்யும் முறை, ஆகியவற்றின் மூலமாகத்தரம் வாய்ந்த கல்வியை மாணவர்கள் பெற்றுக் கொள்ளும் விதமாக வழிவகை செய்யப்படுகிறது. இவ்விதமாகக் கல்வியின் தரத்தை மேம்படுத்துவதற்காக இப்பல்கலைக்கழகம் தொடர்ந்து செயல்பட்டு வருகிறது. மாணவர்களுடைய அனுமதி, மற்றும் தேர்வு பற்றிய விவரங்கள், பாடக்குறிப்பேடுகள் அளிக்கும் முறை, கல்வி ஆலோசனை ஆகியவையெல்லாம் கணனி மயமாக்கப் பட்டுள்ளன. இதுவரை 1,71,430 மாணவர்கள் இப்பல்கலைக்கழகத்தில் பயின்று தேர்ச்சி பெற்றுள்ளனர்.","2015-2016 கல்வியாண்டின் புள்ளிவிவரம்படி 29351 மாணவர்கள் அனுமதிக்கப்பட்டும் மற்றும் 65 பேராசிரியர்களும் 77 மற்ற பணியாளர்களும் இப்பல்கலைக்கழகத்தில் பணியாற்றி மாணவர்களுடைய தேவைகளைப் பூர்த்தி செய்கின்றனர். நாடு முழுவதிலுமுள்ள 15 திறந்தவெளிப் பல்கலைக்கழங்களில் தமிழ்நாடு திறந்தவெளிப் பல்கலைக்கழகம் தன்னிகரற்ற பல்கலைக் கழகமாகத் திகழ்கிறது. பல்கலைக்கழக விதி 12இன்படி இப்பல்கலைக்கழகத்திற்கு அங்கீகாரம் வழங்கப்பட்டுள்ளது.",
+          "தொலைத்தூரக் கல்வித் திட்டத்தைச் செயல்படுத்தும் படியாக, அனுமதி வழங்கப்பட்ட நாட்டிலுள்ள ஒருசில பல்கலைக்கழகங்களில் தமிழ்நாடு திறந்தவெளிப்பல்கலைக்கழகமும் ஒன்று என்ற பெருமை படைத்ததாகும்"
+        ],
+          "data":[ {"no": 1, "name": "B.A. Tamil"}, {"no": 2, "name": "B.A. Functional Tamil"},{"no": 3, "name": "B.Lit."},
+          {"no": 4, "name": "B.A. History"}, {"no": 5, "name": "B.A. English"}, {"no": 6, "name": "B.A. English and Communication"},
+          {"no": 7, "name": "B.A. Political Science"}, {"no": 8, "name": "B.A. Economics"}, {"no": 9, "name": "B.A. Public Administration"},
+          {"no": 10, "name": "B.A. History and Heritage Management"}, {"no": 11, "name": "B.A. Tourism and Travel Studies"},
+          {"no": 12, "name": "B.A. Business Economics"}, {"no": 13, "name": "B.A. Sociology"},{"no": 14, "name": "B.A. Social Work"},
+          {"no": 15, "name": "B.A. Urdu"}, {"no": 16, "name": "B.A. Criminology and Criminal Justice Administration"},
+          {"no": 17, "name": "B.A. Human Rights"},{"no": 18, "name": "B.Sc. Mathematics"},{"no": 19, "name": "B.Sc. Maths with Computer Application"},
+          {"no": 20, "name": "B.Sc. Psychology"},{"no": 21, "name": "B.Sc. Geography"}, {"no": 22, "name": "B.Sc. Computer Science"},
+          {"no": 23, "name": "B.C.A."},{"no": 24, "name": "B.Sc. Apparel and Fashion Design"}, {"no": 25, "name": "B.Com."},
+          {"no": 26, "name": "B.Com. Bank Management"},{"no": 27, "name": "B.Com. Corporate Secretaryship"}, {"no": 28, "name": "B.Com. Accounting and Finance"},
+          {"no": 29, "name": "B.Com. Computer Application"},{"no": 30, "name": "B.B.A."},{"no": 31, "name": "B.B.A. Computer Applications"},
+          {"no": 32, "name": "B.B.A. Marketing Management"},{"no": 33, "name": "B.B.A. Retail Management"},{"no": 34, "name": "M.C.A."},
+          {"no": 35, "name": "M.B.A."},{"no": 36, "name": "M.A. History"},{"no": 37, "name": "M.A. English"},{"no": 38, "name": "M.A. Political Science"},
+          {"no": 39, "name": "M.A. Economics"},{"no": 40, "name": "M.A. Public Administration"}]
+        }
+      ],
+      "openuniv2":[{
+        "title":"திறந்த நிலை கல்வி",
+        "data":[{"no": 41, "name": "M.A. Tamil"},  {"no": 42, "name": "M.A. Tourism and Travel Studies"},
+        {"no": 43, "name": "M.A. Sociology"}, {"no": 44, "name": "M.A. Social Work"}, {"no": 45, "name": "M.A. Criminology and Criminal Justice Administration"},   {"no": 46, "name": "M.A. Women Studies"},
+        {"no": 47, "name": "M.Sc. Mathematics"},  {"no": 48, "name": "M.Sc. Psychology"}, {"no": 49, "name": "M.Sc. Computer Science"},
+        {"no": 50, "name": "M.Com."},   {"no": 51, "name": "M.A. Police Administration"},  {"no": 52, "name": "M.A. International Relations"},
+        {"no": 53, "name": "M.A. Anthropology"},{"no": 54, "name": "M.A. Gender Studies"}, {"no": 55, "name": "M.A. Linguistics"},
+        {"no": 56, "name": "M.A. Translation Studies"}, {"no": 57, "name": "M.A. Human Rights"}, {"no": 58, "name": "M.A. Development Administration"},
+        {"no": 59, "name": "M.Sc. Geography"},{"no": 60, "name": "M.Sc., Apparel and Fashion Design"},{"no": 61, "name": "Diploma in Media Art"},
+        {"no": 62, "name": "Diploma in Management"}, {"no": 63, "name": "Diploma in Databases"}, {"no": 64, "name": "Diploma in Retail Management"},
+        {"no": 65, "name": "Diploma in Archaeology and Epigraphy"}, {"no": 66, "name": "Diploma in Museology and Conservation"},
+        {"no": 67, "name": "Diploma in Data Sciences and Big Data Analysis"}, {"no": 68, "name": "Diploma in Cloud Computing"},
+        {"no": 69, "name": "Post Graduate Diploma in Applied Mathematics"}, {"no": 70, "name": "Post Graduate in Diploma in Computer Applications"},
+        {"no": 71, "name": "Post Graduate in Diploma in Gerontology"}, {"no": 72, "name": "Post Graduate in Diploma in Guidance and Counselling"},
+        {"no": 73, "name": "Post Graduate in Diploma in Information Tech. Management"}, {"no": 74, "name": "Post Graduate in Diploma in Social Welfare Administration"},
+        {"no": 75, "name": "Post Graduate in Diploma in Spoken English"}, {"no": 76, "name": "Post Graduate in Diploma in Tamil Research Methodology"},
+        {"no": 77, "name": "Certificate in NGO Management"},{"no": 78, "name": "Bachelor Preparatory Programme"}
+      ]
+      }
+    ] , 
+    "etable1":[
+      {"title":"முதுநிலை(PG)"
+    ,"data":[{"id":1,"name":"தமிழ்"},{"id":2,"name":"தமிழிசை *"},{"id":1,"name":"பரதநாட்டியம் *"}]
+      }
+    ],
+    "etable2":[
+      {"title":"சான்றிதழ் (Certificate)(6 மாதங்கள்)"
+    ,"data":[{"id":1,"name":"நூலகம் மற்றும் தகவலறிவியல் (C.L.I.Sc.)"},{"id":2,"name":"தமிழ்ப் புலவர் பயிற்சி (T.P.T.)"},
+    {"id":3,"name":"கருவி இசை (மிருதங்கம், தவில்) *"}]
+    }
+    ],
+    "etable3":[
+      {"title":"பட்டயம் (Diploma)(ஓராண்டு) மற்றும் சான்றிதழ்(Certificate)(6 மாதங்கள்)",
+      "data":[{"id":1,"name":"இசை *"},{"id":2,"name":"பரதநாட்டியம் *"},{"id":3,"name":"தொடு சிகிச்சை அறிவியல் * (Accupuncture Science)"},
+      {"id":4,"name":"வள்ளலார் சிந்தனைகள்"},{"id":5,"name":"தமிழ்மொழி"},{"id":6,"name":"சுவடியியல்"},
+      {"id":7,"name":"கோயிற்கட்டடக்கலை "},{"id":8,"name":"வரைகலை மற்றும் வண்ணக்கலை (Drawing and Painting) "},{"id":9,"name":"சுய உதவிக்குழு மேலாண்மை"}
+      ,{"id":10,"name":"அக்குபஞ்சர் என்ற மருந்தில்லா மருத்துவம் (பட்டயம் மற்றும் சான்றிதழ்) "},{"id":11,"name":"கணிதவியலில் மனக்கணக்கும் கற்றலில் மூளை ஒருங்கிணைப்பும் (பட்டயம் மற்றும் சான்றிதழ்) "}
+    
+    ]
+    }
+    ],
+    "etable4":[
+      {"title":"பட்டயம் (Diploma)(ஓராண்டு)",
+      "data":[{"id":1,"name":"இசை ஆசிரியப் பயிற்சி *"},{"id":2,"name":"யோகா ஆசிரியப் பயிற்சி *"},{"id":3,"name":"பரதநாட்டிய ஆசிரியப் பயிற்சி *"},
+      {"id":4,"name":"நட்டுவாங்கம் (பட்டயம்) *"},{"id":5,"name":"மூலிகை அறிவியல்"},{"id":6,"name":"மூலிகை அழகுக்கலை"},
+      {"id":7,"name":"கோயில் அர்ச்சகர்ப் பயிற்சி "},{"id":8,"name":"பேச்சுக்கலை"},{"id":9,"name":"இதழியல் மற்றும் தொலைக்காட்சி நிகழ்ச்சித் தயாரிப்பு*"}
+      ,{"id":10,"name":"கருவியிசை (வீணை, வயலின், புல்லாங்குழல், நாகசுவரம்)*"},{"id":11,"name":"கருவியிசை (மிருதங்கம், தவில்) *"},{"id":12,"name":"மலையாளம்*"}
+      ,{"id":13,"name":"தெலுங்கு"},{"id":14,"name":"கன்னடம்"},{"id":15,"name":"மரபுவழித் தமிழ் மருத்துவம்"},{"id":16,"name":"சோதிடவியல்"}
+      ,{"id":17,"name":"மேடை நிகழ்ச்சித் தொகுப்பு (பட்டயம்)"}
+    
+    ]
+    }
+    ],
+    "etitle":[
+      {
+        "title":"* இணைந்த கல்வித் திட்டங்களின் வழி நடத்தப்படும்",
+        "para":"விண்ணப்பத்தை அஞ்சல்வழி பெற விரும்புவோர் Co-ordinator, Tamil Isai Sangam, Chennai – 600 108 என்னும் பெயரில் ரூ.200/=க்குச் சென்னையில் மாற்றத்தக்க வகையில் வரைவோலை எடுத்து அனுப்பிப் பெற்றுக்கொள்ளலாம். விண்ணப்பங்களைக் கல்லூரி இணையதளத்திலிருந்தும் பதிவிறக்கம் செய்து உரிய விண்ணப்பக் கட்டணத்துடன் நேரடிச் சேர்க்கை பெறலாம்.",
+         "add":[{"title":"தொடர்புக்கு:",
+                  "title1":"மைய ஒருங்கிணைப்பாளர் தமிழ் இசைச்சங்கம், தமிழ் இசைக்கல்லூரி",
+                  "email":"இணைய முகவரி:  tamilisaisangam.in  tamilisaisangam@yahoo.in",
+                  "phone":"தொலைபேசி:  044-2533 0350, 044-2534 1425"
+         }]
+      }
+    ],   
     "footers": [
       {
         "titles": [
@@ -1758,7 +1877,6 @@
       },
       {
         "navtitle": "Isai Vizha",
-        "path": "/isai-vizha",
         "details": [
           {
             "subtitle": "Tamil Pann Research",
@@ -1801,7 +1919,7 @@
           },
           {
             "subtitle": "E-Quiz Registration",
-            "path": "/day-college"
+            "path": "/equiez-register-form"
           },
           {
             "subtitle": "Undergraduate course",
@@ -1809,23 +1927,28 @@
           },
           {
             "subtitle": "Diploma course",
-            "path": "/day-college"
+            "path": "/diploma-course"
           },
           {
             "subtitle": "Certificate course",
-            "path": "/day-college"
+            "path": "/cetificate-course"
           },
           {
             "subtitle": "Special course",
-            "path": "/day-college"
+            "path": "/special-course"
+          }
+          ,
+          {
+            "subtitle": "Skype classes",
+            "path": "/skype-class"
           },
           {
             "subtitle": "Distance Education",
-            "path": "/day-college"
+            "path": "/distance-education"
           },
           {
-            "subtitle": "Open University",
-            "path": "/day-college"
+            "subtitle": "Open Education",
+            "path": "/open-education"
           },
           {
             "subtitle": "Staffs",
@@ -1847,6 +1970,7 @@
       },
       {
         "navtitle": "Gallery",
+        "path":"/DeivigaArulalarkal",
         "details": [
           {
             "subtitle": "Isai Vizha",
@@ -1880,6 +2004,7 @@
         "navtitle": "Contact Us",
         "path": "/contact"
       },
+    
       {
         "navtitle": "Audio",
         "path": "/audio"
@@ -1922,22 +2047,26 @@
             "card": [
               {
                 "id": 1,
-                "cardtitle": "Sub Junior",
+                "cardtitle": "Junior",
+                "image": "/assets/image/junior.png",
                 "cardcontent": "Age 7 to 10 years."
               },
               {
                 "id": 2,
-                "cardtitle": "Junior",
+                "cardtitle": "Sub Junior",
+                "image": "/assets/image/Subjunior.png",
                 "cardcontent": "Age 11 to 15 years Registration Fee Rs.150."
               },
               {
                 "id": 3,
                 "cardtitle": "Senior",
+                "image": "/assets/image/Senior.png",
                 "cardcontent": "Age 16 to 21 years."
               },
               {
                 "id": 4,
                 "cardtitle": "Super Senior",
+                "image": "/assets/image/Subsenior.png",
                 "cardcontent": "Age 21 years and Above Registration Fee Rs.250."
               }
             ]
@@ -1945,6 +2074,13 @@
         ]
       }
     ],
+    "cardtitle":[
+      {"title1":"Competition Apply Online",
+        "title2":"Download Prospects",
+        "title3":"Certification"
+    }
+    ], 
+    
     "head" : [
       {
         "head1": {
@@ -1961,6 +2097,7 @@
         }
       }
     ],
+    
     "heads" : [
       {
         "head2": {
@@ -2391,6 +2528,26 @@
             ]
         }
       ],
+      "skypeclass":[
+          {
+            "title":"Online Classes",
+            "title1":"Classes that will be conducted",
+            "img":"/assets/image/annamalai_chettiya2.jpg",
+            "head1":{
+            "thumbnail": "/assets/image/tamilisaisangam1.jpg"
+            },
+            "card":[
+              {"title":"'Certificate in Music Arts (Vocal Music, Veena, Violin)",
+              "para":["1.Classes will be conducted for one week (40 classes).","2.People from India and abroad can join these classes.","3.The duration of the classes is one hour.",
+            "4.For foreign students, classes will be held once a week. Students can increase the number of classes."] }
+            ],
+            "card2":""
+          }
+      ],
+      "skype2":["5.Foreign students must pay a fee of 250 rupees for 10 classes. Payment for the 10 classes must be made in advance.",
+            "6.Indian students must pay a fee of 5000 rupees for 10 classes. Payment for the 10 classes must be made in advance. Students can take 2 or 3 classes in a year.","7.After completing the music course, a certificate will be provided by the Tamil Isai Sangam."
+          ,"Eligibility: Must have an interest in learning music.","Desirable: Should have knowledge of basic music lessons."
+           ], 
       "notes":[
         {
           "title":"Note",
@@ -2400,6 +2557,90 @@
           "point3":"Every year the College reopens in the month of June or The Academic year starts during the month of June."
         }
       ],
+      "evecollege":[
+      {
+        "title":"Evening College",
+        "title1":"Evening Tamil Music College classes will begin at 5:00 PM and continue until 7:15 PM. Academic year (2019 - 2020).",
+          "title2":"Classes offered for training",
+          "courses":[
+            {
+              "title3":"“Certificate in Carnatic Music Arts (Vocal, Violin, Bharatanatyam)",
+              "image":"/assets/image/course-img1.jpg",
+              "duration":"2 Year",
+              "description":["Educational Qualification: 8th Grade Pass"],
+              "course":"Courses"
+            },{
+              "title3":"“Music Wealth Certificate Course (Vocal Music, Bharatanatyam)",
+              "image":"/assets/image/course-img1.jpg",
+              "duration":"1 Year",
+              "description":[
+                "Educational Qualification: 10th Grade Graduation", "Music Qualification : Karnataka Music Art Certificate Qualification."
+              ],
+              "course":"Courses"
+            },{
+              "title3":"“Isai Mani Certificate Course (Vocal Music, Bharatanatyam).",
+              "image":"/assets/image/course-img1.jpg",
+              "duration":"3 Year",
+              "description":[
+                "Educational Qualification: 10th Grade Pass.", "Music Qualification: Carnatic Music Certificate, Isai Selvam Certification."
+              ],
+              "course":"Courses"
+            }              
+
+          ]
+      }
+    ],
+    "distance":[
+  { "head1":{"thumbnail":"/Assets/head img/distance.jpeg"},
+    "title":"Distance Education",
+    "para":["The Department of Distance Education of the Tamil University was started with the aim to facilitate the Tamil people living in different parts of the world to learn all the subjects in Tamil Language to enrich their knowledge. The courses offered through the mode of Distance Education by the Tamil University are approved by the Principal Institute of Distant Education, New Delhi and also by University Grants Commission.",
+    "Tamil Isai Kalloori run by Tamil Isai Sangam has been effectively functioning as a study Centre of Distance Education of Tamil University from the year 2016 onwards. Hence, those who would like to continue their education in Tamil Language, Music, Dance and in Arts and Science thorough the mode of Distance Education can approach the office at Tamil Isai Kalloori and avail the opportunities to attain knowledge and earn the degrees and diplomas in the respective disciplines."
+  ] }
+],
+    "notes2":[
+      {
+        "title":"Notes",
+        "point":"Every year, the college starts in the month of June."
+      }
+    ], 
+    "terms":[
+        {
+          "content": [
+              {
+                  "column": [
+                      [
+                          {
+                              "title": "This course is called as TISGEC – Tamil Isai Sangam Grade Exam Course"
+                          },
+                          {
+                              "title": "This course is Beneficial to all school going children." },
+                          {  "title": "The Grade exams will be divided into 8 level." }, {  "title": "These 8 Grades will be of 6 months duration each.." },{  "title": "Exam will be conducted once in 6 months." },{  "title": "Syllabus will be issued by Tamil Isai Sangam." },
+                          {  "title": "Exams will be conducted and after successful completion of each Grade Certificate will be issued by Tamil Isai Sangam, Raja Annamalai Mandram, Chennai – 600 108." },{  "title": "All Private Music and Dance Teachers and Music Institution can register their names and get Registration number for each Grade every six months after paying the prescribed Application and Registration Fees every six months for each Grade (Annexure 1)" }
+                          ,{"title": "After Registration, the Teachers/Institution can register their students appearing for Grade Exam by paying the prescribed fees (Annexure 2)" },
+                          {"title": "The students can take up only one Grade at a time." }
+                        ],
+                      [
+                          {"title": "The age limit for a student to take up the exam will be 7 years completion for Music and 8 years completion for Natyam on the date of application." },{"title": "The student will be eligible to take up exams only if he/she has passed the previous level." },{"title": "The first three levels will have only practical exams." }
+                            ,{"title": "The syllabus for each Grade will be given by Tamil Isai Sangam." },{"title": "The training for the exams shall be given by the teacher only." },{"title": "Tamil Isai Sangam will not conduct classes to train the students." },{"title": "The examinations will be conducted and Certificates after each level will be issued by Tamil Isai Sangam." },  
+                            {"title": "The Teacher / Faculty should accompany the students for the exam to do Nattuvangam for Natya Students." },{"title": "Only Tamil Compositions should be performed." }
+                          ]
+                  ]
+              }
+          ]
+      }
+      ],
+      "tablecontent":[{
+        "title":"FEES STRUCTURE",
+          "title1":"VOCAL / VEENA / VIOLIN / FLUTE / MIRDANGAM / TAVIL / /NAGASWARAM / BHARATHANATYAM / FOLK",
+          "thead":"1. REGISTRATION FEES: (For Institution and/or Teachers-including Application Fees)",
+            "thead1":{"name":"Grade","name1":"For Indian","name2":"For Foreigners"},
+          "table":[{"grade":"Grade","amount":"Rs.1,250/-","amount2":"Rs.3,000/-"}]
+    }],
+    "tablecontent2":[{
+       "thead":"2. Students Registration fees: (For each student)",
+          "thead1":{"title":"Registration Fees (including Application, Exam and Certificate)","name":"Grade","name1":"For Indian students","name2":"For foreigners students"},
+        "table":[{"grade":"Grade 1","amount":"Rs.500/-","amount2":"Rs.5,500/-"},{"grade":"Grade 2","amount":"Rs.750/-","amount2":"Rs.6,000/-"},{"grade":"Grade 3","amount":"Rs.1,000/-","amount2":"Rs.7,000/-"},{"grade":"Grade 4","amount":"Rs.1,800/-","amount2":"Rs.8,000/-"},{"grade":"Grade 5","amount":"Rs.2,000/-","amount2":"Rs.9,000/-"},{"grade":"Grade 6","amount":"Rs.2,200/-","amount2":"Rs.10,000/-"},{"grade":"Grade 7","amount":"Rs.2,500/-","amount2":"Rs.12,000/-"}
+    ]}],
       "stepses":[
       
       {
@@ -2433,8 +2674,8 @@
         "img":"/assets/image/annamalai_chettiya2.jpg",
         "img2":"/assets/image/nataraj.jpg"
       }    
-    ], 
-    "form":[
+    ],
+ "form":[
       {
         "title": "APPLICATION FORM FOR REGISTRATION",
         "description": "To be filled by Teacher/ Institutions",
@@ -2517,12 +2758,7 @@
       
       }
     ],
-
-
-
-
-
-    "museums":[
+ "museums":[
       {
         "membership_details": {
           "location": {
@@ -2565,7 +2801,7 @@
       }
       
     ],
-    "blog4": [
+"blog4": [
 
      
       {
@@ -2820,9 +3056,7 @@
       }
    
        ],
-
-
-    "blog3": [
+"blog3": [
 
       {
         "gallery3":[
@@ -3073,7 +3307,7 @@
       }
    
        ],
-    "blog2": [
+"blog2": [
   { "gallery2": [
     {
       "id": 18,
@@ -3102,7 +3336,7 @@
       },
       {
         "id": 119,
-        "title": "Dharmapuram Thiru. S. Gnanaprakasa Desikar",
+        "title": " Dharmapuram Thiru.S.Gnanaprakasa Desikar ",
         "image": "img17.jpg"
       },
       {
@@ -3147,9 +3381,7 @@
       }
     ]
   }
-]
-,
-
+],
 "library":[
 {
   "categories": [
@@ -3676,11 +3908,91 @@
 
 
 ],
-
-   
-
-
-    "footers": [
+"openuniv":[
+    {
+      "title":"Open Education",
+      "head1":{"thumbnail":"/Assets/head img/distance.jpeg"},
+      "para":["Whoever would like to pursue their education irrespective of their academic background at any point of time could avail the opportunities provided by the Tamilnadu Open University which was established in the year 2002 by the Government of Tamilnadu. The fact remains intact that it facilitates those who are infused with the desire of learning to fulfill their academic dreams. The fact cannot be disputed that the Tamilnadu Open University has witnessed the unprecedented growth during the past fourteen years.","The unique feature is that one could seek admission at any point of time during the year and the examinations are conducted during the week-ends keeping in view the convenience of the students. Moreover the performance of the students has been periodically assessed in order to enhance their academic standard. About 1,71,430 students have benefitted academically from Tamil Nadu Open University. It is a pride to state that the Tamilnadu Open University stands unique among other similar Open Universities in India and Tamil Isai Kalloori run by the Tamil Isai Sangam has continued to be the study center of Tamilnadu Open University from the year 2016 onwards."],
+      "data":[ {"no": 1, "name": "B.A. Tamil"}, {"no": 2, "name": "B.A. Functional Tamil"},{"no": 3, "name": "B.Lit."},
+      {"no": 4, "name": "B.A. History"}, {"no": 5, "name": "B.A. English"}, {"no": 6, "name": "B.A. English and Communication"},
+      {"no": 7, "name": "B.A. Political Science"}, {"no": 8, "name": "B.A. Economics"}, {"no": 9, "name": "B.A. Public Administration"},
+      {"no": 10, "name": "B.A. History and Heritage Management"}, {"no": 11, "name": "B.A. Tourism and Travel Studies"},
+      {"no": 12, "name": "B.A. Business Economics"}, {"no": 13, "name": "B.A. Sociology"},{"no": 14, "name": "B.A. Social Work"},
+      {"no": 15, "name": "B.A. Urdu"}, {"no": 16, "name": "B.A. Criminology and Criminal Justice Administration"},
+      {"no": 17, "name": "B.A. Human Rights"},{"no": 18, "name": "B.Sc. Mathematics"},{"no": 19, "name": "B.Sc. Maths with Computer Application"},
+      {"no": 20, "name": "B.Sc. Psychology"},{"no": 21, "name": "B.Sc. Geography"}, {"no": 22, "name": "B.Sc. Computer Science"},
+      {"no": 23, "name": "B.C.A."},{"no": 24, "name": "B.Sc. Apparel and Fashion Design"}, {"no": 25, "name": "B.Com."},
+      {"no": 26, "name": "B.Com. Bank Management"},{"no": 27, "name": "B.Com. Corporate Secretaryship"}, {"no": 28, "name": "B.Com. Accounting and Finance"},
+      {"no": 29, "name": "B.Com. Computer Application"},{"no": 30, "name": "B.B.A."},{"no": 31, "name": "B.B.A. Computer Applications"},
+      {"no": 32, "name": "B.B.A. Marketing Management"},{"no": 33, "name": "B.B.A. Retail Management"},{"no": 34, "name": "M.C.A."},
+      {"no": 35, "name": "M.B.A."},{"no": 36, "name": "M.A. History"},{"no": 37, "name": "M.A. English"},{"no": 38, "name": "M.A. Political Science"},
+      {"no": 39, "name": "M.A. Economics"},{"no": 40, "name": "M.A. Public Administration"}]
+    }
+  ],
+  "openuniv2":[{
+    "title":"Open Education",
+    "data":[{"no": 41, "name": "M.A. Tamil"},  {"no": 42, "name": "M.A. Tourism and Travel Studies"},
+    {"no": 43, "name": "M.A. Sociology"}, {"no": 44, "name": "M.A. Social Work"}, {"no": 45, "name": "M.A. Criminology and Criminal Justice Administration"},   {"no": 46, "name": "M.A. Women Studies"},
+    {"no": 47, "name": "M.Sc. Mathematics"},  {"no": 48, "name": "M.Sc. Psychology"}, {"no": 49, "name": "M.Sc. Computer Science"},
+    {"no": 50, "name": "M.Com."},   {"no": 51, "name": "M.A. Police Administration"},  {"no": 52, "name": "M.A. International Relations"},
+    {"no": 53, "name": "M.A. Anthropology"},{"no": 54, "name": "M.A. Gender Studies"}, {"no": 55, "name": "M.A. Linguistics"},
+    {"no": 56, "name": "M.A. Translation Studies"}, {"no": 57, "name": "M.A. Human Rights"}, {"no": 58, "name": "M.A. Development Administration"},
+    {"no": 59, "name": "M.Sc. Geography"},{"no": 60, "name": "M.Sc., Apparel and Fashion Design"},{"no": 61, "name": "Diploma in Media Art"},
+    {"no": 62, "name": "Diploma in Management"}, {"no": 63, "name": "Diploma in Databases"}, {"no": 64, "name": "Diploma in Retail Management"},
+    {"no": 65, "name": "Diploma in Archaeology and Epigraphy"}, {"no": 66, "name": "Diploma in Museology and Conservation"},
+    {"no": 67, "name": "Diploma in Data Sciences and Big Data Analysis"}, {"no": 68, "name": "Diploma in Cloud Computing"},
+    {"no": 69, "name": "Post Graduate Diploma in Applied Mathematics"}, {"no": 70, "name": "Post Graduate in Diploma in Computer Applications"},
+    {"no": 71, "name": "Post Graduate in Diploma in Gerontology"}, {"no": 72, "name": "Post Graduate in Diploma in Guidance and Counselling"},
+    {"no": 73, "name": "Post Graduate in Diploma in Information Tech. Management"}, {"no": 74, "name": "Post Graduate in Diploma in Social Welfare Administration"},
+    {"no": 75, "name": "Post Graduate in Diploma in Spoken English"}, {"no": 76, "name": "Post Graduate in Diploma in Tamil Research Methodology"},
+    {"no": 77, "name": "Certificate in NGO Management"},{"no": 78, "name": "Bachelor Preparatory Programme"}
+  ]
+  }],
+  "etable1":[
+    {"title":"PG Courses:"
+  ,"data":[{"id":1,"name":"Tamil"},{"id":2,"name":"Tamil Isai *"},{"id":1,"name":"Bharatnatyam *"}]
+    }
+  ],
+  "etable2":[
+    {"title":"Six month certificate courses:"
+  ,"data":[{"id":1,"name":"Library and Information Technology (C.L.I.Sc)"},{"id":2,"name":"T.P.T. (Tamil Pulavar Payirchi)"},
+  {"id":3,"name":"Instrumental music (Mridangam, Tavil)*"}]
+  }
+  ],
+  "etable3":[
+    {"title":"Diploma for one year and Certificate for 6 months:",
+    "data":[{"id":1,"name":"Music *"},{"id":2,"name":"Bharatnatyam *"},{"id":3,"name":"Acupuncture"},
+    {"id":4,"name":"Thoughts of Sri Ramalinga Swamigal / Vallalar"},{"id":5,"name":"Tamil Language"},{"id":6,"name":"Suvadi Iyal"},
+    {"id":7,"name":"Temple Architecture "},{"id":8,"name":"Drawing and painting"},{"id":9,"name":"Self Development"}
+    ,{"id":10,"name":"Acupuncture (both Diploma and Certificate) "},{"id":11,"name":"Mathematics, Mentalmaths and the Co-ordination of the Brain in learning the above (both Diploma and Certificate)."}
+  
+  ]
+  }
+  ],
+  "etable4":[
+    {"title":"One year Diploma Courses:",
+    "data":[{"id":1,"name":"Music Teacher’s Training Course*"},{"id":2,"name":"Yoga instructor Training*"},{"id":3,"name":"Bharatnatyam Teacher’s Training *"},
+    {"id":4,"name":"Nattuvangam*"},{"id":5,"name":"Mooligai Ariviyal"},{"id":6,"name":"Herbal beauty course"},
+    {"id":7,"name":"Training as Temple priest"},{"id":8,"name":"Art of speaking"},{"id":9,"name":"Idazhiyal and training for organizing Television shows.*"}
+    ,{"id":10,"name":"Instrumental music (Veena, Violin, Flute and Nadaswaram)*"},{"id":11,"name":"Instrumental music (Mridangam and Tavil) *"},{"id":12,"name":"Malayalam*"}
+    ,{"id":13,"name":"Telugu"},{"id":14,"name":"Kannada"},{"id":15,"name":"Marbuvazhi Tamil Maruthuvam"},{"id":16,"name":"Astrology"}
+    ,{"id":17,"name":"Compering"}
+  
+  ]
+  }
+  ],
+  "etitle":[
+    {
+      "title":"* Conducted through integrated educational programs",
+      "para":"The applications can be downloaded from the College Website and submitted at the office along with fee. Those who wish to get the application by post may send a DD for Rupees 200/- to the Co-ordinator, Tamil Isai Sangam, Chennai – 600 108, payable at Chennai.",
+       "add":[{"title":"Contact Us:",
+                "title1":"The Co-Ordinator Tamil Isai Sangam, Tamil Isai Kalloori - Chennai 108",
+                "email":" eMail ID: tamilisaisangam.in tamilisaisangam@yahoo.in",
+                "phone":"Phone: 044-2533 0350, 044-2534 1425, 94449 25880, 92822 35964"
+       }]
+    }
+  ],
+ "footers": [
       {
         "titles": [
           {

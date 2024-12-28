@@ -16,7 +16,19 @@ const Media = () => {
 
   return (
     <div style={{ padding: '20px', backgroundColor: '#f5f5f5' }}>
-      <h1 style={{ textAlign: 'center', marginBottom: '30px', fontSize: '2rem', fontWeight: '600' }}>
+      <h1
+        style={{
+          textAlign: 'center',
+          marginBottom: '30px',
+          fontSize: '2rem',
+          fontWeight: '600',
+          padding: '15px',
+          color: 'white',
+          borderRadius: '10px',
+          background: "linear-gradient(to right, #3fa3e0,rgb(58, 133, 173),rgb(20, 61, 126))",
+          boxShadow: '0 4px 10px rgba(0, 0, 0, 0.2)', // Optional shadow for added effect
+        }}
+      >
         {headingText} {/* Dynamically rendered heading based on the language */}
       </h1>
       <div

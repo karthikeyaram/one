@@ -19,19 +19,13 @@ const Library = () => {
   const rows = Math.ceil(categories.length / 3);
 
   const headingText =
-    language === 'tamil' ? 'தமிழ் இசை கல்லூரி நூலகம்' : 'Tamil Isai Kalloori Library';
+    language === 'tamil' ? 'தமிழ் இசை நூல் நிலையம்' : 'Tamil Isai Library';
 
   return (
     <div className="library-container">
       <style>
         {`
-          html, body {
-            overflow-x: hidden;
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            padding: 0;
-          }
+          
 
           .library-container {
             width: 100%;
@@ -64,6 +58,7 @@ const Library = () => {
           }
 
           .panel-body {
+               margin-top: 15px;
             padding: 15px;
             font-size: 14px;
             line-height: 1.5;
@@ -104,30 +99,34 @@ const Library = () => {
             margin-left: 0;
           }
 
-          .row {
-            margin-bottom: 20px;
-          }
-
-          .footer {
+            .header-gradient {
             color: white;
             text-align: center;
             padding: 20px;
-            margin-top: auto; /* Ensures the footer stays at the bottom of the page */
-            width: 100%;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        
           }
+
+
+        
         `}
       </style>
 
       <div className="col-sm-12" style={{ backgroundColor: 'white' }}>
-        {/* Header for the Gallery Section */}
+      
         <div
           style={{
             textAlign: 'center',
             padding: '20px',
-            fontSize: '30px',
+            fontSize: '20px',
+            color:"white",
             fontWeight: 'bold',
             borderRadius: '10px',
             marginBottom: '30px',
+            background: "linear-gradient(to right, #3fa3e0,rgb(58, 133, 173),rgb(20, 61, 126))",
           }}
         >
           {headingText}

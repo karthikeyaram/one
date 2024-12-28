@@ -115,6 +115,36 @@ const Awards = () => {
           </div>
         </div>
       </div>
+      <style jsx>{`
+        @media (max-width: 768px) {
+          .col-md-6 {
+            width: 100% !important;  // Stack tables in mobile view
+            padding-left: 0;
+            padding-right: 0;
+          }
+
+          .table-container {
+
+            margin-bottom: 20px; // Space between tables
+          }
+
+          table {
+            width: 100% !important;  // Ensure table uses full width in mobile
+            font-size: 5px; // Adjust font size for mobile view
+          }
+
+          thead th, tbody td {
+           font-size: 8px; 
+            text-align: left; // Align text to the left for readability
+          }
+
+          .table-wrapper {
+            overflow-x: auto;  // Ensure horizontal scrolling
+            -webkit-overflow-scrolling: touch; // Smooth scrolling for iOS
+            margin-bottom: 15px;
+          }
+        }
+      `}</style>
     </>
   );
 };

@@ -135,13 +135,23 @@ table {
 }
 
 .course-title {
-  font-size: 20px;
-  font-weight: 600;
+
+padding-top: 110px;
+padding-left: 20px;
+  font-weight: 800;
+  width: 250px;
+
   margin: 0;
 }
 
 .course-title span {
+  margin-top: "20px";
+  font-size: smaller;
+ 
+
+  font-weight: 800;
   color: #ffffff;
+ 
 }
 
 .course-fee {
@@ -266,6 +276,7 @@ table {
 }
 
 @media (max-width: 480px) {
+
   .course-title {
     font-size: 16px;
   }
@@ -620,4 +631,28 @@ h1 {
     max-width: 60px;
     max-height: 60px;
   }
+}
+
+
+/* ------------ */
+.card-container {
+  padding: 16px; 
+}
+
+
+
+/* ------------ */
+.custom-card {
+  background-color: #c9e6f8; /* Light gray background */
+  box-shadow: 0px 4px 8px rgba(4, 87, 126, 0.1); /* Shadow effect */
+  border: none; /* Remove border */
+  margin-bottom: 20px; /* Space between cards */
+  border-radius: 10px; /* Rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for zoom and shadow */
+  
+}
+
+.custom-card:hover {
+  transform: scale(1.05); /* Zoom in by 5% */
+  box-shadow: 0px 8px 16px rgba(4, 87, 126, 0.3); /* Increase shadow effect on hover */
 }

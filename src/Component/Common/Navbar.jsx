@@ -1,12 +1,12 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { toggleLanguage } from "../../Redux/Slice/LanguageSlice";
 import { useNavigate } from "react-router-dom";
 import menuData from "../../Data/Data.json";
 import "./Navbar.css";
 import "../../Assets/css/Custom.css";
-import { FaAngleDown } from "react-icons/fa";
 import logo from "../../Assets/img/logo_new.jpg";
 import { IoIosPlayCircle } from "react-icons/io";
 import { FaFacebook, FaTwitterSquare } from "react-icons/fa";
@@ -38,62 +38,41 @@ const Navbar = () => {
       <div className="header-top">
         <div className="container clearfix">
           <ul className="follow-us hidden-xs">
+            
             <li>
-              <a href="#">
-                <i className="fa fa-twitter" aria-hidden="true"></i>
-              </a>
+              <Link href="https://www.facebook.com/people/Tamil-Isai-Kalloori-Tamil-Isai-Sangam/100064832676981/"><FaFacebook />
+              </Link>
             </li>
             <li>
-              <a href="#"><FaFacebook />
-              </a>
+              <Link href="https://www.youtube.com/channel/UCc52PkQqepI__b2vjg-dOkQ"><FaYoutube />
+              </Link>
             </li>
             <li>
-              <a href="#"><FaYoutube />
-              </a>
-            </li>
-            <li>
-              <a href="#"><FaSquareInstagram />
-              </a>
-            </li>
-            <li>
-              <a href="#"><FaGooglePlus />
-              </a>
-            </li>
-            <li>
-              <a href="#"><FaTwitterSquare />
-              </a>
+              <Link to="https://www.instagram.com/tamil_isai_kalloori?igshid=rzk92bvhobqq"><FaSquareInstagram />
+              </Link>
             </li>
           </ul>
 
-          {/* Right Block */}
           <div className="right-block clearfix">
-            {/* Top Navigation */}
             <ul className="top-nav hidden-xs">
               <li>
                 <a href="/register">Register</a>
               </li>
               <li>
-                <a href="apply-online.html">Apply Online</a>
+                <a href="#">Apply Online</a>
               </li>
-              <li>
+              {/* <li>
                 <a href="blog.html">Blog</a>
               </li>
               <li>
                 <a href="faq1.html">FAQs</a>
-              </li>
+              </li> */}
             </ul>
             <div className="lang-wrapper">
-              {/* <div className="select-lang">
-                <select id="currency_select" defaultValue="usd">
-                  <option value="usd">USD</option>
-                  <option value="aud">AUD</option>
-                  <option value="gbp">GBP</option>
-                </select>
-              </div> */}
               <div className="select-lang2">
                 <select className="custom_select" defaultValue="en" value={language}
                   onChange={handleLanguageChange}>
-                  <option value="tamil">Tamil</option>
+                  <option value="tamil">தமிழ்</option>
                   <option value="english">English</option>
                 </select>
               </div>
@@ -103,17 +82,12 @@ const Navbar = () => {
       </div>
       <div className="container header-middle">
         <div className="row">
-          {/* Logo Section */}
           <span className="col-xs-6 col-sm-3">
             <a href="/">
               <img src={logo} className="img-responsive" alt="Edumart Logo" />
             </a>
           </span>
-
-          {/* Empty Column */}
           <div className="col-xs-6 col-sm-3"></div>
-
-          {/* Contact Information Section */}
           <div className="col-xs-6 col-sm-9">
             <div className="contact clearfix">
               <ul className="hidden-xs">
@@ -125,12 +99,12 @@ const Navbar = () => {
                   </a>
                   <br />
                   <a href="mailto:info@edumart.org">
-                    {/* tamilisaikalloori@yahoo.in */}
+                    tamilisaikalloori@yahoo.in
                   </a>
                 </li>
                 <li>
                   <span>Toll Free</span>+91 44 2534 1958 / 2955 0107 <br />
-                  {/* +91 94449 25880 / 92822 35964 */}
+                  +91 94449 25880 / 92822 35964
                 </li>
               </ul>
               <a href="/login" className="login">
@@ -150,7 +124,7 @@ const Navbar = () => {
               type="button"
               onClick={toggleMenu}
             >
-              <IoReorderThreeOutline />
+              <IoReorderThreeOutline style={{ width: "35px", height: "35px" }} />
             </button>
           </div>
           <div className={`navbar-collapse ${isMenuOpen ? "show" : "hide"}`}>
@@ -165,14 +139,7 @@ const Navbar = () => {
                   >
                     <a href="#" onClick={() => navigate(item.path)}>
                       {item.navtitle}
-                      <FaAngleDown
-                        aria-hidden="true"
-                        style={{
-                          width: "15px",
-                          height: "15px",
-                          marginBottom: "-6px",
-                        }}
-                      />
+                      
                     </a>
                     {item.details && (
                       <ul className="dropdown-menu">

@@ -16,6 +16,14 @@ const DeivigaArulalarkal = () => {
   const { language } = useSelector((state) => state.language);
   const galleryd = jsondata[language]?.gallery || [];
 
+  const translations = {
+    'DeivigaArulalarkal': 'தெய்வீக அருளாளர்கள்',
+    'IsaiArulalarkal': 'இசை அருளாளர்கள்',
+    'IsaiKalaivanarkal': 'இசை கலைவாணர்கள்',
+    'IsaiPerairignarkal': 'முஇசைப் பேரறிஞர்கள்',
+    'PannIsaiPerarignarkal': 'பண் இசைப் பேரறிஞர்கள்',
+  };
+
   const headerStyle = {
     display: 'flex',
     justifyContent: 'center',
@@ -23,37 +31,37 @@ const DeivigaArulalarkal = () => {
     marginBottom: '40px',
     padding: '15px 30px',
     borderRadius: '10px',
-    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)', 
+    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)',
     position: 'relative',
-    animation: 'fadeIn 1s ease-in-out', 
+    animation: 'fadeIn 1s ease-in-out',
   };
 
   const headerItemStyle = (name) => ({
-    fontSize: '18px',
+    fontSize: '12px',
     fontWeight: '600',
-    color: activeHeader === name ? '#F39C12' : '#333333', 
-    textTransform: 'capitalize', 
+    color: activeHeader === name ? '#F39C12' : '#333333',
+    textTransform: 'capitalize',
     cursor: 'pointer',
     padding: '12px 24px',
     borderRadius: '5px',
     transition: 'color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease',
-    boxShadow: activeHeader === name ? '0 0 10px rgba(243, 156, 18, 0.6)' : 'none', 
+    boxShadow: activeHeader === name ? '0 0 10px rgba(243, 156, 18, 0.6)' : 'none',
     '&:hover': {
-      color: '#F39C12', 
-      transform: 'scale(1.1)', 
-      boxShadow: '0 0 10px rgba(243, 156, 18, 0.4)', 
+      color: '#F39C12',
+      transform: 'scale(1.1)',
+      boxShadow: '0 0 10px rgba(243, 156, 18, 0.4)',
     },
   });
 
   const images = [
     { src: 'img1.jpg' },
     { src: 'img2.jpg' },
-    { src: 'img3.jpg'},
+    { src: 'img3.jpg' },
     { src: 'img4.jpg' },
-    { src: 'img5.jpg'},
-    { src: 'img6.jpg'},
-    { src: 'img7.jpg'},
-    { src: 'img8.jpg'},
+    { src: 'img5.jpg' },
+    { src: 'img6.jpg' },
+    { src: 'img7.jpg' },
+    { src: 'img8.jpg' },
     { src: 'img9.jpg' },
     { src: 'img10.jpg' },
     { src: 'img11.jpg' },
@@ -77,7 +85,7 @@ const DeivigaArulalarkal = () => {
         });
       },
       {
-        threshold: 0.2, 
+        threshold: 0.2,
       }
     );
 
@@ -105,11 +113,11 @@ const DeivigaArulalarkal = () => {
     opacity: isVisible ? 1 : 0,
     transform: isVisible
       ? index % 2 === 0
-        ? 'translateX(0)' 
-        : 'translateX(0)' 
+        ? 'translateX(0)'
+        : 'translateX(0)'
       : index % 2 === 0
       ? 'translateX(-100px)'
-      : 'translateX(100px)', 
+      : 'translateX(100px)',
     transition: `opacity 1s ease, transform 1s ease, transition-delay ${index * 0.3}s`, // Sequential delay for each image
   });
 
@@ -117,7 +125,7 @@ const DeivigaArulalarkal = () => {
     width: '100%',
     height: '200px',
     objectFit: 'contain',
-    transition: 'transform 0.3s ease', 
+    transition: 'transform 0.3s ease',
   };
 
   const imageNameStyle = {
@@ -126,8 +134,7 @@ const DeivigaArulalarkal = () => {
     fontWeight: '600',
     color: '#FFF',
     textShadow: '0px 1px 1px ',
-    color:'rgba(243, 156, 18, 0.6)',
-
+    color: 'rgba(243, 156, 18, 0.6)',
     padding: '8px 12px',
     borderRadius: '5px',
     maxWidth: '100%',
@@ -145,14 +152,14 @@ const DeivigaArulalarkal = () => {
             style={headerItemStyle(name)}
             onClick={() => setActiveHeader(name)}
           >
-            {name}
+            {language === 'tamil' && translations[name] ? translations[name] : name}
           </Link>
         ))}
       </div>
 
       <div style={{ textAlign: 'center' }}>
         <h6 style={{ fontSize: '26px', fontWeight: '500', color: '#F39C12', marginBottom: '40px' }}>
-          {activeHeader}
+          {language === 'tamil' && translations[activeHeader] ? translations[activeHeader] : activeHeader}
         </h6>
       </div>
 
@@ -168,8 +175,6 @@ const DeivigaArulalarkal = () => {
               alt={image.name}
               style={galleryImageStyle}
             />
-
-            {/* Display the first title from galleryd under the image */}
             <div style={imageNameStyle}>
               {galleryd[0]?.gallery1?.[index]?.title || 'No Title Available'}
             </div>
@@ -221,6 +226,13 @@ const DeivigaArulalarkal = () => {
 
             .header-container a {
               margin-bottom: 10px;
+            }
+
+            /* Remove the gallery item animations on mobile */
+            .gallery-item {
+              animation: none;
+              transform: translateX(0) !important; /* Prevents movement */
+              opacity: 1 !important; /* Keep the images visible */
             }
           }
         `}

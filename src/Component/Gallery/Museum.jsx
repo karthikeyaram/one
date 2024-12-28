@@ -51,7 +51,7 @@ const Museum = () => {
       gallery: "காட்சியகம்",
     },
     english: {
-      library: "Tamil Music Library",
+      library: "Ancient Music Museum",
       membership: "Membership Details",
       video: "Introduction Video",
       gallery: "Gallery",
@@ -64,7 +64,7 @@ const Museum = () => {
     <div style={{ backgroundColor: "#f3f4f6", minHeight: "100vh", padding: "2rem" }}>
       <header
         style={{
-          background: "linear-gradient(to right, #1e3a8a, #2563eb, #3b82f6)",
+          background: "linear-gradient(to right, #3fa3e0,rgb(58, 133, 173),rgb(20, 61, 126))",
           color: "#ffffff",
           textAlign: "center",
           padding: "2rem 1rem",

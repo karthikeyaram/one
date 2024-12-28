@@ -4,7 +4,7 @@ import { faPhoneAlt, faFax, faEnvelope } from '@fortawesome/free-solid-svg-icons
 import { useSelector } from "react-redux";
 
 const ContactBody = () => {
-  const { language } = useSelector((state) => state.language); // Redux selector for language
+  const { language } = useSelector((state) => state.language);
 
 
   const translations = {
@@ -35,14 +35,14 @@ const ContactBody = () => {
   return (
     <div style={{ fontFamily: "Arial, sans-serif", backgroundColor: "#f4f6f9", paddingBottom: "40px" }}>
       <div style={{ padding: "40px 20px", textAlign: "center" }}>
-        <h1 style={{ margin: "0 0 10px", fontSize: "32px", color: "#333" }}>{currentLanguage.heading}</h1>
+        <h1 style={{ margin: "0 0 10px", fontSize: "22px", color: "white" , background: "linear-gradient(to right, #3fa3e0,rgb(58, 133, 173),rgb(20, 61, 126))",padding:"10px" }}>{currentLanguage.heading}</h1>
       </div>
 
       {/* Contact Form */}
       <div style={{ padding: "40px", maxWidth: "800px", margin: "10px auto", backgroundColor: "#fff", boxShadow: "0 6px 20px rgba(0, 0, 0, 0.1)", borderRadius: "8px" }}>
         <form style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "20px" }}>
           <div>
-            <label style={{ display: "block", marginBottom: "5px", fontWeight: "bold", color: "#444" }}>{currentLanguage.labels.name}</label>
+            <label style={{ display: "block", marginBottom: "5px", fontWeight: "bold", color: " #3fa3e0" }}>{currentLanguage.labels.name}</label>
             <input
               type="text"
               style={{
@@ -60,7 +60,7 @@ const ContactBody = () => {
           </div>
 
           <div>
-            <label style={{ display: "block", marginBottom: "5px", fontWeight: "bold", color: "#444" }}>{currentLanguage.labels.email}</label>
+            <label style={{ display: "block", marginBottom: "5px", fontWeight: "bold", color: " #3fa3e0" }}>{currentLanguage.labels.email}</label>
             <input
               type="text"
               style={{
@@ -78,7 +78,7 @@ const ContactBody = () => {
           </div>
 
           <div>
-            <label style={{ display: "block", marginBottom: "5px", fontWeight: "bold", color: "#444" }}>{currentLanguage.labels.subject}</label>
+            <label style={{ display: "block", marginBottom: "5px", fontWeight: "bold", color: " #3fa3e0" }}>{currentLanguage.labels.subject}</label>
             <input
               type="text"
               style={{
@@ -96,7 +96,7 @@ const ContactBody = () => {
           </div>
 
           <div style={{ gridColumn: "span 2" }}>
-            <label style={{ display: "block", marginBottom: "5px", fontWeight: "bold", color: "#444" }}>{currentLanguage.labels.comment}</label>
+            <label style={{ display: "block", marginBottom: "5px", fontWeight: "bold", color: " #3fa3e0" }}>{currentLanguage.labels.comment}</label>
             <textarea
               style={{
                 width: "100%",
