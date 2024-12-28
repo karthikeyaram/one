@@ -83,7 +83,7 @@ const Navbar = () => {
       <div className="container header-middle">
         <div className="row">
           <span className="col-xs-6 col-sm-3">
-            <a href="/">
+            <a href="/tamilisaisangam">
               <img src={logo} className="img-responsive" alt="Edumart Logo" />
             </a>
           </span>

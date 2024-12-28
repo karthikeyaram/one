@@ -92,7 +92,6 @@ const Certificatecourse = () => {
               </p>
             </div>
             <div className="stay-connected">
-              <h2>Stay connected, Stay Updated</h2>
               <ul className="follow-us clearfix">
                 <li>
                   <a href="#">

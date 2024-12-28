@@ -3,6 +3,8 @@ import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import headData from "../Data/Data.json";
+import anna from '../Assets/image/tamilisaisangam1.jpg'
+import letter from '../Assets/image/rajasir_letter.jpg'
 
 const Tamilisaisangam = () => {
   const { language } = useSelector((state) => state.language);
@@ -36,7 +38,8 @@ const Tamilisaisangam = () => {
                   <div className="col-md-5">
                     <div className="video-block">
                       <img
-                        src={item.head1.thumbnail}
+                        // src={item.head1.thumbnail}
+                        src={anna}
                         alt="Video Thumbnail"
                         className="img-responsive"
                       />
@@ -71,7 +74,8 @@ const Tamilisaisangam = () => {
                   <div className="col-md-5 about-right">
                     <div className="video-block">
                       <img
-                        src={item.head2.thumbnail}
+                        // src={item.head2.thumbnail}
+                        src={letter}
                         className="img-responsive animate__animated animate__zoomIn"
                         alt="Who we are"
                       />

@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import pandata from "../Data/Data.json";
+import image1 from '../Assets/image/rajasir_annamalai.jpg'
 
 const Pannresearch = () => {
   const { language } = useSelector((state) => state.language);
@@ -18,7 +19,8 @@ const Pannresearch = () => {
                 <div className="col-md-5">
                   <div className="video-block">
                     <img
-                      src={item.head1?.thumbnail}
+                      // src={item.head1?.thumbnail}
+                      src={image1}
                       alt="Video Thumbnail"
                       className="img-responsive"
                     />

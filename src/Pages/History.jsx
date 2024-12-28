@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import histroydata from "../Data/Data.json";
+import images1 from '../Assets/img/course-img1.jpg'
 
 const History = () => {
     const { language } = useSelector((state) => state.language);
@@ -36,7 +37,8 @@ const History = () => {
                     <div className="col-md-5">
                       <div className="video-block">
                         <img
-                          src={item.head1.thumbnail}
+                          // src={item.head1.thumbnail}
+                            src={images1}
                           alt="Video Thumbnail"
                           className="img-responsive"
                         />

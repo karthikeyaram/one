@@ -71,7 +71,7 @@ const MainRoutes = () => {
       {!isAdminPath && <Navbar />}
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/tamilisaisangam" element={<Home />} />
         <Route path="/DeivigaArulalarkal" element={<DeivigaArulalarkal />} />
         <Route path='/IsaiArulalarkal' element={<IsaiArulalarkal />} />
         <Route path='/library' element={<Library />} />
