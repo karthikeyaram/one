@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useSelector } from "react-redux";
 import evedata from '../Data/Data.json'
 import { FaPlayCircle } from "react-icons/fa";
+import course2d from '../Assets/image/course2.jpg'
 
 const Eveningcollege = () => {
     const { language } = useSelector((state) => state.language);
@@ -39,7 +40,7 @@ const Eveningcollege = () => {
                     <li key={idx} className="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                       <div className="course-card">
                         <figure className="course-image">
-                          <img src={item.image} alt={item.title3} />
+                          <img src={course2d} alt={item.title3} />
                           <div className="course-info">
                             <h3 className="course-title">
                               {" "}

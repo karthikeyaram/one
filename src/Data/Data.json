@@ -333,9 +333,9 @@
           {"id":1,"img":"/assets/head img/sundaramoorthi_bg.jpg","title":"பேராசிரியர் இ.சுந்தரமூர்த்தி","subtitle":"தலைவர்"},{"id":2,"img":"/assets/head img/gokulakrishnan.jpg","title":"மாண்புமிகு நீதிபதி பு.ரா. கோகுலகிருஷ்ணன்","subtitle":"தலைவர் (1992-2019)"},
           {"id":3,"img":"/assets/head img/sriram.jpg","title":"திரு. எஸ். ஸ்ரீராம்","subtitle":" உதவிச் செயலர்(1947 - 1992)"},{"id":4,"img":"/assets/head img/chidambaram_chettiar.jpg","title":"டாக்டர்.எம். ஏ. சிதம்பரம் செட்டியார்","subtitle":"மதிப்பியல் செயலர்(1943 - 1995)"},
           {"id":5,"img":"/assets/head img/magarajan.jpg","title":"நீதிபதி. டாக்டர். எஸ். மகராஜன்","subtitle":"தலைவர் (1978 - 1982)"},{"id":6,"img":"/assets/head img/sakthi_thirunakarasu.jpg","title":"திவான் பகதூர் தி.மு. நாராயண சாமிப் பிள்ளை","subtitle":"தலைவர் (1956 - 1978)"},
-          {"id":7,"img":"/assets/head img/narayana_swamy_pillai.jpg","title":"திவான் பகதூர் தி.மு. நாராயண சாமிப் பிள்ளை","subtitle":"தலைவர் (1956 - 1978)"},{"id":8,"img":"/assets/head img/rathinasabapathy_mudaliar.jpg","title":"திவான் பகதூர் சி.எஸ். இரத்தின சபாபதி முதலியார்","subtitle":"தலைவர் (1953 - 1956)"},
-          {"id":9,"img":"/assets/head img/shanmugam_chettiar.jpg","title":"டாக்டர்.ரா.க. சண்முகம் செட்டியார்","subtitle":"தலைவர் (1948 - 1953)"},{"id":10,"img":"/assets/head img/muthiah_chettiar.jpg","title":"டாக்டர். ராஜாசர்.முத்தையா செட்டியார்","subtitle":"துணைத் தலைவர் (1943 - 1982)"}
-          ,{"id":9,"img":"/assets/head img/rajasir_annamalai.jpg","title":"டாக்டர். ராஜாசர்.மு. அண்ணாமலை செட்டியார்","subtitle":"தலைவர் (1943 - 1948)"}
+          {"id":7,"img":"/assets/head img/rathinasabapathy_mudaliar.jpg","title":"திவான் பகதூர் சி.எஸ். இரத்தின சபாபதி முதலியார்","subtitle":"தலைவர் (1953 - 1956)"},
+          {"id":8,"img":"/assets/head img/shanmugam_chettiar.jpg","title":"டாக்டர்.ரா.க. சண்முகம் செட்டியார்","subtitle":"தலைவர் (1948 - 1953)"},{"id":9,"img":"/assets/head img/muthiah_chettiar.jpg","title":"டாக்டர். ராஜாசர்.முத்தையா செட்டியார்","subtitle":"துணைத் தலைவர் (1943 - 1982)"}
+          ,{"id":10,"img":"/assets/head img/rajasir_annamalai.jpg","title":"டாக்டர். ராஜாசர்.மு. அண்ணாமலை செட்டியார்","subtitle":"தலைவர் (1943 - 1948)"}
         ] 
     }
     ],
@@ -611,7 +611,7 @@
       "Daycollege":[
         {
           "title":"பகல் நேரக் கல்லூரி",
-          "title1":"பகல் நேரத் தமிழ் இசைக் கல்லூரி வகுப்புகள், காலை 10:00 மணிக்குத் தொடங்கிப் பிற்பகல் 4:00 மணி வரை நடைபெறும். கல்வியாண்டு (2019 - 2020).",
+          "title1":"பகல் நேரத் தமிழ் இசைக் கல்லூரி வகுப்புகள், காலை 10:00 மணிக்குத் தொடங்கிப் பிற்பகல் 4:00 மணி வரை நடைபெறும். கல்வியாண்டு (2024 - 2025).",
             "title2":"பயிற்றுவிக்கப்பெறும் வகுப்புகள்",
             "courses":[
               {
@@ -696,7 +696,7 @@
         }
     ],
     "skype2":["5.Foreign students must pay a fee of 250 rupees for 10 classes. Payment for the 10 classes must be made in advance.",
-          "6.Indian students must pay a fee of 5000 rupees for 10 classes. Payment for the 10 classes must be made in advance. Students can take 2 or 3 classes in a year.","7.After completing the music course, a certificate will be provided by the Tamil Isai Sangam."
+          "6.Indian students must pay a fee of 5000 rupees for 10 classes. Payment for the 10 classes must be made in advance. Students can take 2 or 3 classes in a week.","7.After completing the music course, a certificate will be provided by the Tamil Isai Sangam."
         ,"Eligibility: Must have an interest in learning music.","Desirable: Should have knowledge of basic music lessons."
          ], 
       "notes":[
@@ -711,7 +711,7 @@
       "evecollege":[
         {
           "title":"மாலை நேரக் கல்லூரி",
-          "title1":"மாலை நேரத் தமிழ் இசைக் கல்லூரி வகுப்புகள் மாலை 5:00 மணிக்குத் தொடங்கி இரவு 7:15 மணி வரை நடைபெறும். கல்வியாண்டு (2019 - 2020).",
+          "title1":"மாலை நேரத் தமிழ் இசைக் கல்லூரி வகுப்புகள் மாலை 5:00 மணிக்குத் தொடங்கி இரவு 7:15 மணி வரை நடைபெறும். கல்வியாண்டு (2024 - 2025).",
             "title2":"பயிற்றுவிக்கப்பெறும் வகுப்புகள்",
             "courses":[
               {
@@ -1844,7 +1844,9 @@
       {
         "titles": [
           {
-            "title": "© 2024 தமிழ் இசைச் சங்கம்"
+            "title": "© 2024 தமிழ் இசைச் சங்கம்",
+            "title1":"வலையக வடிவமைப்பு செர்ரிடெக் இன்டெலிசொல்வ் லிமிடெட்",
+            "title2":"GITS"
           }
         ]
       }
@@ -2181,12 +2183,12 @@
     "presidents":[      
       {"title":"Presidents and Secretaries",
         "images":[
-          {"id":1,"img":"/assets/head img/acmuthiah.jpg","title":"Prof. E. Sundaramoorthy","subtitle":"President"},{"id":2,"img":"/assets/head img/plakshmanan.jpg","title":"Hon’ble Justice Dr. P.R. Gokulakrishnan","subtitle":"President (1992-2019)"},
-          {"id":3,"img":"/assets/head img/devaki_muthiah.jpg","title":"Thiru S. Sriram","subtitle":" Assistant Secretary (1947 - 1992)"},{"id":4,"img":"/assets/head img/al_vadivelu.jpg","title":"Dr. M.A. Chidambaram Chettiyar","subtitle":"Honorary Secretary (1943 - 1995)"},
-          {"id":5,"img":"/assets/head img/ashwin_muthiah.jpg","title":"Justice Dr.S. Maharajan","subtitle":"President (1978 - 1982)"},{"id":6,"img":"/assets/head img/sakthi_thirunakarasu.jpg","title":"Divan Bahadur T.M. Narayanasamy Pillai","subtitle":"President (1956 - 1978)"},
-          {"id":7,"img":"/assets/head img/vali_arun.jpg","title":"Divan Bahadur T.M. Narayanasamy Pillai","subtitle":"President (1956 - 1978)"},{"id":8,"img":"/assets/head img/rm_somasundram.jpg","title":"Divan Bahadur C.S. Rathina Sababathy Mudaliar","subtitle":"President (1953 - 1956)"},
-          {"id":9,"img":"/assets/head img/ar_meiyappan.jpg","title":"Dr. R.K. Shanmugam Chettiyar","subtitle":"President (1948 - 1953)"},{"id":10,"img":"/assets/head img/ar_nachiyappan.jpg","title":"Dr. Raja Sir. Muthiya Chettiyar","subtitle":"Vice President (1943 - 1982)"}
-          ,{"id":9,"img":"/assets/head img/ar_meiyappan.jpg","title":"Dr. Raja Sir. M. Annamalai Chettiyar","subtitle":"President (1943 - 1948)"}
+          {"id":1,"img":"","title":"Prof. E. Sundaramoorthy","subtitle":"President"},{"id":2,"img":"","title":"Hon’ble Justice Dr. P.R. Gokulakrishnan","subtitle":"President (1992-2019)"},
+          {"id":3,"img":"","title":"Thiru S. Sriram","subtitle":" Assistant Secretary (1947 - 1992)"},{"id":4,"img":"","title":"Dr. M.A. Chidambaram Chettiyar","subtitle":"Honorary Secretary (1943 - 1995)"},
+          {"id":5,"img":"","title":"Justice Dr.S. Maharajan","subtitle":"President (1978 - 1982)"},{"id":6,"img":"","title":"Divan Bahadur T.M. Narayanasamy Pillai","subtitle":"President (1956 - 1978)"},
+          {"id":7,"img":"","title":"Divan Bahadur C.S. Rathina Sababathy Mudaliar","subtitle":"President (1953 - 1956)"},
+          {"id":8,"img":"","title":"Dr. R.K. Shanmugam Chettiyar","subtitle":"President (1948 - 1953)"},{"id":9,"img":"","title":"Dr. Raja Sir. Muthiya Chettiyar","subtitle":"Vice President (1943 - 1982)"}
+          ,{"id":10,"img":"","title":"Dr. Raja Sir. M. Annamalai Chettiyar","subtitle":"President (1943 - 1948)"}
         ] 
     }
     ],
@@ -2202,7 +2204,7 @@
             "Tamil language is the oldest of all languages of the world. Similarly Tamil Isai also had its origin more than 2000 years ago. There is a mention about yaazh in the ancient Tamil grammar Tholkappiyam and other Tamil Literature Kurinji, Mullai, Marutham, Neithal and Palai.",
             "It will not be an exaggerated panegyric to state that Silapathigaram is the treasure of Isai and many aspects of Isai and dance are found in it. Adiyarkunallar and Aarumbathanar who interpreted Silapathigaram had contributed a lot to Tamil Isai and Dance."
             ,"The fact remains intact that panns are present in the religious literary works namely Thevaram and Thiruvasagam composed by Thirugnanasambanthar, Thirunavookarasar, Sundarar and Manickavasagar during seventh, eighth and nineth centuries and also by Karaikkal Ammaiyar during the third Century. Pursuant to the research already undertaken in Pann, the recent methods adopted in Pann research are categorically and critically analysed by the well experienced and efficient scholars in music and Oduwars on the dates 22, 23, 24 and 25 in the month of December every year right from the year 1949."
-            ,"There is a mention about 11991 Panns in Silapathigaram and 103 Panns in Thavaram and 23 panns in Divyaprabhandum. The main objective of the conference on Pann research is to compare these Panns with the Panns (ragams) of the modern-day songs."
+            ,"There is a mention about 11991 Panns in Silapathigaram and 103 Panns in Tevaram  and 23 panns in Divyaprabhandum. The main objective of the conference on Pann research is to compare these Panns with the Panns (ragams) of the modern-day songs."
             ,"The proceedings of the research conference would be recorded and a comprehensive report is prepared on the outcome of the conference every year and the same would be circulated among all the participants in the research conference."
             ,"Panns were researched during the conferences conducted so far and subsequently a conclusion was arrived at out of comparison of the Panns with the tunes of the modern ragas as detailed below."
           ]
@@ -2265,7 +2267,7 @@
         { "no": 86, "name": "Periyavaraati", "subname": "Kannada Salavi" },{ "no": 87, "name": "Ariyavelarkolli", "subname": "Chalanavarali" },
         { "no": 88, "name": "Chittiravelarkolli", "subname": "Abhogi" },{ "no": 89, "name": "Naanupanchamam", "subname": "Hamsavinodhini" },
         { "no": 90, "name": "Desakri", "subname": "Ranjani" },{ "no": 91, "name": "Malarvakri", "subname": "Hindolam" },
-        { "no": 92, "name": "Ariyaguchari", "subname": "Amrutavarsini" },{ "no": 93, "name": "Savagakurinji", "subname": "" },
+        { "no": 92, "name": "Ariyaguchari", "subname": "Amrutavarsini" },{ "no": 93, "name": "Savagakurinji", "subname": "Mukthithayini" },
         { "no": 94, "name": "Mudhirnadhakurinji", "subname": "Suddha Dhanyasi" },{ "no": 95, "name": "Payyulkanji", "subname": "Yogini" },
         { "no": 96, "name": "Kondargiri", "subname": "Kannada Gavlai" },{ "no": 97, "name": "Anuthrapanchamam", "subname": "Kamala" },
         { "no": 98, "name": "Andhaalipaadai", "subname": "Bahudhari" }       
@@ -2460,7 +2462,7 @@
       "Daycollege":[
         {
           "title":"Day College",
-          "title1":"The Day College commences at 10:00 AM and continues till 4:00 PM (2019 - 2020).",
+          "title1":"The Day College commences at 10:00 AM and continues till 4:00 PM (2024 - 2025).",
             "title2":"Courses offered (conducted):",
             "courses":[
               {
@@ -2560,7 +2562,7 @@
       "evecollege":[
       {
         "title":"Evening College",
-        "title1":"Evening Tamil Music College classes will begin at 5:00 PM and continue until 7:15 PM. Academic year (2019 - 2020).",
+        "title1":"Evening Tamil Music College classes will begin at 5:00 PM and continue until 7:15 PM. Academic year (2024 - 2025).",
           "title2":"Classes offered for training",
           "courses":[
             {
@@ -3996,7 +3998,9 @@
       {
         "titles": [
           {
-            "title": "© 2024 Tamil Isai Sangam"
+            "title": "© 2024 Tamil Isai Sangam",
+            "title1":"Design & Maintained by Cherrytec Intelisolve Limited",
+            "title2":"GITS"
           }
         ]
       }

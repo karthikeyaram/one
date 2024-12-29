@@ -9,8 +9,13 @@ import "./Navbar.css";
 import "../../Assets/css/Custom.css";
 import logo from "../../Assets/img/logo_new.jpg";
 import { IoIosPlayCircle } from "react-icons/io";
-import { FaFacebook, FaTwitterSquare } from "react-icons/fa";
-import { FaYoutube, FaSquareInstagram, FaGooglePlus } from "react-icons/fa6";
+import {
+  FaFacebook,
+  FaTwitter,
+  FaGooglePlus,
+  FaYoutube,
+  FaInstagram,
+} from "react-icons/fa";
 import { IoReorderThreeOutline } from "react-icons/io5";
 
 const Navbar = () => {
@@ -26,6 +31,13 @@ const Navbar = () => {
       dispatch(toggleLanguage());
     }
   };
+  const navdata={
+   socialLinks: [
+        { icon: <FaFacebook />, link: "https://www.facebook.com/people/Tamil-Isai-Kalloori-Tamil-Isai-Sangam/100064832676981", target: "_blank", rel: "noopener noreferrer" },
+        { icon: <FaYoutube />, link: "https://www.youtube.com/channel/UCc52PkQqepI__b2vjg-dOkQ", target: "_blank", rel: "noopener noreferrer" },
+        { icon: <FaInstagram />, link: "https://www.instagram.com/tamil_isai_kalloori?igshid=rzk92bvhobqq", target: "_blank", rel: "noopener noreferrer" },
+      ]
+    }
 
   const [isMenuOpen, setIsMenuOpen] = useState(true);
 
@@ -38,25 +50,18 @@ const Navbar = () => {
       <div className="header-top">
         <div className="container clearfix">
           <ul className="follow-us hidden-xs">
-            
-            <li>
-              <Link href="https://www.facebook.com/people/Tamil-Isai-Kalloori-Tamil-Isai-Sangam/100064832676981/"><FaFacebook />
-              </Link>
-            </li>
-            <li>
-              <Link href="https://www.youtube.com/channel/UCc52PkQqepI__b2vjg-dOkQ"><FaYoutube />
-              </Link>
-            </li>
-            <li>
-              <Link to="https://www.instagram.com/tamil_isai_kalloori?igshid=rzk92bvhobqq"><FaSquareInstagram />
-              </Link>
-            </li>
+          {navdata.socialLinks.map((social, idx) => (
+                    <li key={idx}>
+                      <a href={social.link} target={social.target}
+                        rel={social.rel}>{social.icon}</a>
+                    </li>
+                  ))}
           </ul>
 
           <div className="right-block clearfix">
             <ul className="top-nav hidden-xs">
               <li>
-                <a href="/register">Register</a>
+                <a href="/tamilisasangam/register">Register</a>
               </li>
               <li>
                 <a href="#">Apply Online</a>
@@ -103,11 +108,11 @@ const Navbar = () => {
                   </a>
                 </li>
                 <li>
-                  <span>Toll Free</span>+91 44 2534 1958 / 2955 0107 <br />
+                  <span>Call</span>+91 44 2534 1958 / 2955 0107 <br />
                   +91 94449 25880 / 92822 35964
                 </li>
               </ul>
-              <a href="/login" className="login">
+              <a href="/tamilisaisangam/login" className="login">
                 Student Login<span className="icon-more-icon"> <IoIosPlayCircle /></span>
               </a>
             </div>

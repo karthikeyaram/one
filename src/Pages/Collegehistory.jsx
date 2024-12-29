@@ -1,6 +1,7 @@
 import React from 'react'
 import { useSelector } from "react-redux";
 import clghistory from '../Data/Data.json'
+import img1 from '../Assets/head/rajasir_annamalai.jpg'
 
 const Collegehistory = () => {
     const { language } = useSelector((state) => state.language);
@@ -17,7 +18,7 @@ const Collegehistory = () => {
                   <div className="col-md-5">
                     <div className="video-block">
                       <img
-                        src={item.head.thumbnail}
+                        src={img1}
                         alt="Video Thumbnail"
                         className="img-responsive"
                       />

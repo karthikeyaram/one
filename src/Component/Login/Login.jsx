@@ -43,7 +43,7 @@ const Login = () => {
 
   const closeForm = () => {
     setIsVisible(false); 
-    navigate("/");
+    navigate("/tamilisaisangam");
   };
 
   const socialLinks = [
@@ -78,7 +78,7 @@ const Login = () => {
           >
             <div className="login">
               <div className="login-logo">
-                <a href="/">
+                <a href="/tamilisaisangam">
                   <img src={logo} className="img-responsive" alt="Logo" />
                 </a>
               </div>
@@ -133,7 +133,7 @@ const Login = () => {
                         <button
                           className="btn register"
                           type="button"
-                          onClick={() => navigate("/register")}
+                          onClick={() => navigate("/tamilisasangam/register")}
                         >
                           {item.subtitle}
                           <span className="icon-more-icon"></span>

@@ -3,16 +3,16 @@ import { useSelector } from "react-redux";
 import jsondata from "../Data/Data.json";
 import { useState } from "react";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
+import anna from '../Assets/head/annamalai_chettiar.jpg'
+import natraj  from '../Assets/head/nataraj.jpg'
+import reg from '../Assets/icon/get-start-ico.png' 
+import doc from '../Assets/icon/doc-ico.png'
+import star from '../Assets/icon/get-start-ico.png'
 
 const TISGECcourse = () => {
-  const tabss = [
-    {
-      id: "semester",
-      label: "SEMESTER",
-      subLabel: "I TO IV",
-      iconClass: "icon-semester-icon",
-    },
-  ];
+  const stepicon =[
+    {number:1,icon:reg},{number:2,icon:doc},{number:2,icon:star}
+  ]
 
   const { language } = useSelector((state) => state.language);
   const tabs = jsondata[language]?.terms || [];
@@ -45,13 +45,13 @@ const TISGECcourse = () => {
                     >
                       <div
                         style={{
-                          flex: 1,
+                          flex: .5,
                           display: "flex",
                           justifyContent: "flex-start",
                         }}
                       >
                         <img
-                          src={item.img2}
+                          src={anna}
                           alt=""
                           style={{
                             maxWidth: "100px",
@@ -73,13 +73,13 @@ const TISGECcourse = () => {
 
                       <div
                         style={{
-                          flex: 1,
+                          flex: .5,
                           display: "flex",
                           justifyContent: "flex-end",
                         }}
                       >
                         <img
-                          src={item.img2}
+                          src={natraj}
                           alt=""
                           style={{
                             maxWidth: "100px",
@@ -209,7 +209,8 @@ const TISGECcourse = () => {
                 >
                   <div className="icon-block">
                     <span className="num">{step.number}</span>
-                    <img src={step.icon} alt={step.title} />
+
+                    <img src={stepicon[index]?.icon} alt={step.title} />
                   </div>
                   <h3>{step.title}</h3>
                   <p>{step.description}</p>

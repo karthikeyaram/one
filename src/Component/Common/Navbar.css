@@ -941,6 +941,7 @@ textarea:focus::placeholder{
 	width: 85%;
 	padding-top: 80px;
 	margin-top: 20px;
+	border-radius: 10px;
 }
 /* Image zoom effect with shadow */
 .video-block img {
@@ -1123,8 +1124,9 @@ textarea:focus::placeholder{
 	color: #081d2d;
 }
 .our-cources h2 span {
-	font-size: 15px;
+	font-size: 13px;
 	margin-left: "10px";
+
 }
 .our-cources {
 	display: block;
@@ -2044,9 +2046,9 @@ ul.our-strength li .title {
 }
 .footer .subscribe {
 	display: block;
-	padding: 14px 58px 18px 0;
-	width: 95%;
-	border-right: 1px #537d9e solid;
+    padding: 72px 69px 18px 0;
+    width: 95%;
+    border-right: 1px #537d9e solid;
 }
 .footer .subscribe #mc_embed_signup{
 	background:#fff;

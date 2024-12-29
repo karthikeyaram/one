@@ -73,9 +73,9 @@ const MainRoutes = () => {
         <Route path='/IsaiArulalarkal' element={<IsaiArulalarkal />} />
         <Route path='/library' element={<Library />} />
         <Route path="/tamil-isai-sangam" element={<Tamilisaisangam />} />
-        <Route path="/register" element={<Register />} />
+        <Route path="/tamilisasangam/register" element={<Register />} />
         <Route path='/contact' element={<Contact />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/tamilisaisangam/login" element={<Login />} />
         <Route path="/tamil-isai-history" element={<History />} />
         <Route path='/media' element={<Media />} />
         <Route path='/museum' element={<Museum />} />
