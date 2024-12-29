@@ -2,6 +2,23 @@ import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import jsondata from '../../Data/Data.json';
+import image21 from '../../Assets/gallery/img32.jpg'
+import image22 from '../../Assets/gallery/img27 (1).jpg'
+import image23 from '../../Assets/gallery/img27 (2).jpg'
+import image24 from '../../Assets/gallery/img27 (3).jpg'
+import image25 from '../../Assets/gallery/img27 (4).jpg'
+import image26 from '../../Assets/gallery/img27 (5).jpg'
+import image27 from '../../Assets/gallery/img27 (6).jpg'
+import image28 from '../../Assets/gallery/img27 (7).jpg'
+import image29 from '../../Assets/gallery/img27 (8).jpg'
+import image30 from '../../Assets/gallery/img27 (9).jpg'
+import image31 from '../../Assets/gallery/img27 (10).jpg'
+import image32 from '../../Assets/gallery/img27 (11).jpg'
+import image33 from '../../Assets/gallery/img27 (12).jpg'
+import image34 from '../../Assets/gallery/img27 (13).jpg'
+import image35 from '../../Assets/gallery/img27 (14).jpg'
+import image36 from '../../Assets/gallery/img27 (15).jpg'
+import image37 from '../../Assets/gallery/img27 (17).jpg'
 
 const IsaiKalaivanarkal = () => {
   const [activeHeader, setActiveHeader] = useState('IsaiKalaivanarkal');
@@ -23,23 +40,24 @@ const IsaiKalaivanarkal = () => {
   };
 
   const images = [
-    { src: 'img32.jpg', name: 'Image 1' },
-    { src: 'img27 (1).jpg', name: 'Image 2' },
-    { src: 'img27 (2).jpg', name: 'Image 3' },
-    { src: 'img27 (3).jpg', name: 'Image 4' },
-    { src: 'img27 (4).jpg', name: 'Image 5' },
-    { src: 'img27 (5).jpg', name: 'Image 6' },
-    { src: 'img27 (6).jpg', name: 'Image 7' },
-    { src: 'img27 (7).jpg', name: 'Image 8' },
-    { src: 'img27 (8).jpg', name: 'Image 9' },
-    { src: 'img27 (9).jpg', name: 'Image 10' },
-    { src: 'img27 (10).jpg', name: 'Image 11' },
-    { src: 'img27 (11).jpg', name: 'Image 12' },
-    { src: 'img27 (12).jpg', name: 'Image 13' },
-    { src: 'img27 (13).jpg', name: 'Image 14' },
-    { src: 'img27 (14).jpg', name: 'Image 15' },
-    { src: 'img27 (15).jpg', name: 'Image 16' },
-    { src: 'img27 (17).jpg', name: 'Image 17' },
+    { src: image21 },
+    { src: image22 },
+    { src: image23 },
+    { src: image24 },
+    { src: image25 },
+    { src: image26 },
+    { src: image27 },
+    { src: image28 },
+    { src: image29 },
+    { src: image30 },
+    { src: image31 },
+    { src: image32 },
+    { src: image33 },
+    { src: image34 },
+    { src: image35 },
+    { src: image36 },
+    { src: image37 },
+
   ];
 
   const { language } = useSelector((state) => state.language);

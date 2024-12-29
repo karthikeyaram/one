@@ -1,46 +1,86 @@
 import React, { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import jsondata from "../../Data/Data.json";
+import image70 from '../../Assets/gallery/1 (1).jpg'
+import image71 from '../../Assets/gallery/2.jpg'
+import image72 from '../../Assets/gallery/3.jpg'
+import image73 from '../../Assets/gallery/4.jpg'
+import image74 from '../../Assets/gallery/5.jpg'
+import image75 from '../../Assets/gallery/6.jpg'
+import image76 from '../../Assets/gallery/7.jpg'
+import image77 from '../../Assets/gallery/8.jpg'
+import image78 from '../../Assets/gallery/9.jpg'
+import image79 from '../../Assets/gallery/10.jpg'
+import image80 from '../../Assets/gallery/11.jpg'
+import image81 from '../../Assets/gallery/12.jpg'
+import image82 from '../../Assets/gallery/13.jpg'
+import image83 from '../../Assets/gallery/14.jpg'
+import image84 from '../../Assets/gallery/15.jpg'
+import image85 from '../../Assets/gallery/16.jpg'
+import image86 from '../../Assets/gallery/17.jpg'
+import image87 from '../../Assets/gallery/18.jpg'
+import video from '../../Assets/gallery/video.mp4'
 
 const Museum = () => {
+  // const imageSources = [
+  //   {image70},
+  //   {image71},
+  //   {image72},
+  //   "4.jpg",
+  //   "5.jpg",
+  //   "6.jpg",
+  //   "7.jpg",
+  //   "8.jpg",
+  //   "9.jpg",
+  //   "10.jpg",
+  //   "11.jpg",
+  //   "12.jpg",
+  //   "13.jpg",
+  //   "14.jpg",
+  //   "15.jpg",
+  //   "16.jpg",
+  //   "17.jpg",
+  //   "18.jpg",
+  // ];
+
   const imageSources = [
-    "1 (1).jpg",
-    "2.jpg",
-    "3.jpg",
-    "4.jpg",
-    "5.jpg",
-    "6.jpg",
-    "7.jpg",
-    "8.jpg",
-    "9.jpg",
-    "10.jpg",
-    "11.jpg",
-    "12.jpg",
-    "13.jpg",
-    "14.jpg",
-    "15.jpg",
-    "16.jpg",
-    "17.jpg",
-    "18.jpg",
+    { src: image70 },
+    { src: image71 },
+    { src: image72 },
+    { src: image73 },
+    { src: image74 },
+    { src: image75 },
+    { src: image76 },
+    { src: image77 },
+    { src: image78 },
+    { src: image79},
+    { src: image80},
+    { src: image81},
+    { src: image82},
+    { src: image83},
+    { src: image84},
+    { src: image85},
+    { src: image86},
+    { src: image87},
   ];
 
   const { language } = useSelector((state) => state.language);
   const museumd = jsondata[language]?.museums || [];
 
-  const [shuffledImages, setShuffledImages] = useState(imageSources);
+  // const [shuffledImages, setShuffledImages] = useState(imageSources);
 
-  const shuffleImages = () => {
-    const shuffled = [...shuffledImages];
-    const randomIndex = Math.floor(Math.random() * shuffled.length);
-    const firstImage = shuffled.shift();
-    shuffled.splice(randomIndex, 0, firstImage);
-    setShuffledImages(shuffled);
-  };
+  // const shuffleImages = () => {
+  //   const shuffled = [...shuffledImages];
+  //   const randomIndex = Math.floor(Math.random() * shuffled.length);
+  //   const firstImage = shuffled.shift();
+  //   shuffled.splice(randomIndex, 0, firstImage);
+  //   setShuffledImages(shuffled);
+  // };
 
-  useEffect(() => {
-    const interval = setInterval(shuffleImages, 1500);
-    return () => clearInterval(interval);
-  }, [shuffledImages]);
+  // useEffect(() => {
+  //   const interval = setInterval(shuffleImages, 1500);
+  //   return () => clearInterval(interval);
+  // }, [shuffledImages]);
 
  
   const headings = {
@@ -161,7 +201,7 @@ const Museum = () => {
             }}
           >
             <video
-              src="video.mp4"
+              src={video}
               autoPlay
               loop
               muted
@@ -201,7 +241,7 @@ const Museum = () => {
               gap: "1.5rem",
             }}
           >
-            {shuffledImages.map((src, index) => (
+            {imageSources.map((item, index) => (
               <div
                 key={index}
                 style={{
@@ -214,7 +254,7 @@ const Museum = () => {
                 }}
               >
                 <img
-                  src={src}
+                  src={item.src}
                   alt={`Gallery ${index + 1}`}
                   style={{
                     width: "100%",

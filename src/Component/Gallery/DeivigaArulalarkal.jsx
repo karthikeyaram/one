@@ -2,6 +2,23 @@ import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import jsondata from '../../Data/Data.json';
+import image1 from '../../Assets/gallery/img1.jpg'
+import image2 from '../../Assets/gallery/img2.jpg'
+import image3 from '../../Assets/gallery/img3.jpg'
+import image4 from '../../Assets/gallery/img4.jpg'
+import image5 from '../../Assets/gallery/img5.jpg'
+import image6 from '../../Assets/gallery/img6.jpg'
+import image7 from '../../Assets/gallery/img7.jpg'
+import image8 from '../../Assets/gallery/img8.jpg'
+import image9 from '../../Assets/gallery/img9.jpg'
+import image10 from '../../Assets/gallery/img10.jpg'
+import image11 from '../../Assets/gallery/img11.jpg'
+import image12 from '../../Assets/gallery/img12.jpg'
+import image13 from '../../Assets/gallery/img13.jpg'
+import image14 from '../../Assets/gallery/img14.jpg'
+import image15 from '../../Assets/gallery/img15.jpg'
+import image16 from '../../Assets/gallery/img16.jpg'
+import image17 from '../../Assets/gallery/img17.jpg'
 
 const DeivigaArulalarkal = () => {
   const [activeHeader, setActiveHeader] = useState('DeivigaArulalarkal');
@@ -54,23 +71,24 @@ const DeivigaArulalarkal = () => {
   });
 
   const images = [
-    { src: 'img1.jpg' },
-    { src: 'img2.jpg' },
-    { src: 'img3.jpg' },
-    { src: 'img4.jpg' },
-    { src: 'img5.jpg' },
-    { src: 'img6.jpg' },
-    { src: 'img7.jpg' },
-    { src: 'img8.jpg' },
-    { src: 'img9.jpg' },
-    { src: 'img10.jpg' },
-    { src: 'img11.jpg' },
-    { src: 'img12.jpg' },
-    { src: 'img13.jpg' },
-    { src: 'img14.jpg' },
-    { src: 'img15.jpg' },
-    { src: 'img16.jpg' },
-    { src: 'img17.jpg' }
+    { src: image1 },
+    { src: image2 },
+    { src: image3 },
+    { src: image4 },
+    { src: image5 },
+    { src: image6 },
+    { src: image7 },
+    { src: image8 },
+    { src: image9 },
+    { src: image10 },
+    { src: image11 },
+    { src: image12 },
+    { src: image13 },
+    { src: image14 },
+    { src: image15 },
+    { src: image16 },
+    { src: image17 },
+  
   ];
 
   const [visibleImages, setVisibleImages] = useState([]);

@@ -2,6 +2,16 @@ import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import jsondata from '../../Data/Data.json';
+import image55 from '../../Assets/gallery/img31 (10).jpg'
+import image56 from '../../Assets/gallery/img31 (9).jpg'
+import image57 from '../../Assets/gallery/img31 (8).jpg'
+import image58 from '../../Assets/gallery/img31 (6).jpg'
+import image59 from '../../Assets/gallery/img31 (5).jpg'
+import image60 from '../../Assets/gallery/img31 (4).jpg'
+import image61 from '../../Assets/gallery/img31 (3).jpg'
+import image62 from '../../Assets/gallery/img31 (2).jpg'
+import image63 from '../../Assets/gallery/img31 (1).jpg'
+
 
 const Gallery5 = () => {
   const [activeHeader, setActiveHeader] = useState('PannIsaiPerarignarkal');
@@ -50,15 +60,16 @@ const Gallery5 = () => {
   });
 
   const images = [
-    { src: 'img31 (10).jpg', name: 'Image 1' },
-    { src: 'img31 (9).jpg', name: 'Image 2' },
-    { src: 'img31 (8).jpg', name: 'Image 3' },
-    { src: 'img31 (6).jpg', name: 'Image 4' },
-    { src: 'img31 (5).jpg', name: 'Image 5' },
-    { src: 'img31 (4).jpg', name: 'Image 6' },
-    { src: 'img31 (3).jpg', name: 'Image 7' },
-    { src: 'img31 (2).jpg', name: 'Image 8' },
-    { src: 'img31 (1).jpg', name: 'Image 9' },
+   
+    { src: image55 },
+    { src: image56 },
+    { src: image57 },
+    { src: image58 },
+    { src: image59 },
+    { src: image60 },
+    { src: image61 },
+    { src: image62 },
+    { src: image63 },
   ];
 
   const [visibleImages, setVisibleImages] = useState([]);

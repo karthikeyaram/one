@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import jsondata from '../../Data/Data.json';
 
+import image18 from '../../Assets/gallery/img18.jpg'
+import image19 from '../../Assets/gallery/img19.jpg'
+import image20 from '../../Assets/gallery/img20.jpg'
 const IsaiArulalarkal = () => {
   const [activeHeader, setActiveHeader] = useState('IsaiArulalarkal');
   const headerNames = [
@@ -50,9 +53,9 @@ const IsaiArulalarkal = () => {
   });
 
   const images = [
-    { src: 'img18.jpg' },
-    { src: 'img19.jpg' },
-    { src: 'img20.jpg' },
+    { src: image18 },
+    { src: image19 },
+    { src: image20 },
   ];
 
   const [visibleImages, setVisibleImages] = useState([]);
