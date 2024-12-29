@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import headData from "../Data/Data.json";
 import anna from '../Assets/image/tamilisaisangam1.jpg'
-import letter from '../Assets/image/rajasir_letter.jpg'
+import tamilisai from '../Assets/image/tamilisai2.jpg'
 
 const Tamilisaisangam = () => {
   const { language } = useSelector((state) => state.language);
@@ -75,7 +75,7 @@ const Tamilisaisangam = () => {
                     <div className="video-block">
                       <img
                         // src={item.head2.thumbnail}
-                        src={letter}
+                        src={tamilisai}
                         className="img-responsive animate__animated animate__zoomIn"
                         alt="Who we are"
                       />

@@ -4,7 +4,7 @@
       {
         "navtitle": "தமிழ் இசைச் சங்கம்",
         "path": "/tamil-isai-sangam",
-        "details": [
+        "details": [   
           {
             "subtitle": "தமிழ் இசைச் சங்க வரலாறு",
             "path": "/tamil-isai-history"
@@ -195,25 +195,25 @@
            
             "card": [
               {
-                "id": 1,
+                "id": 1.1,
                 "cardtitle": "சிறிய சிறுவர்",
                 "image": "/assets/image/junior.png",
                 "cardcontent": "ஏழு முதல் பத்தாம் ஆண்டு வயது."
               },
               {
-                "id": 2,
+                "id": 2.1,
                 "cardtitle": "கீழ் நிலை",
                 "image": "/assets/image/Subjunior.png",
                 "cardcontent": "பதினொன்று முதல் பதினைந்து ஆண்டு வயது பதிவு கட்டணம் ரூ.150."
               },
               {
-                "id": 3,
+                "id": 3.1,
                 "cardtitle": "உயர்ந்த நிலை",
                 "image": "/assets/image/Senior.png",
                 "cardcontent": "பதினாறு முதல் இருபத்தி ஒன்று ஆண்டு வயது."
               },
               {
-                "id": 4,
+                "id": 4.1,
                 "cardtitle": "உயர்ந்த மூத்த நிலை",
                 "image": "/assets/image/Subsenior.png",
                 "cardcontent": "இருபத்தி ஒன்று ஆண்டு வயது மற்றும் அதற்கு மேல் பதிவு கட்டணம் ரூ.250."

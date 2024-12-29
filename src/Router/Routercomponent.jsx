@@ -3,9 +3,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { useLocation } from 'react-router-dom'
 
 import IsaiArulalarkal from '../Component/Gallery/IsaiArulalarkal'
-// import IsaiKalaivanarkal from '../Component/Gallery/IsaiKalaivanarkal'
-// import IsaiPerairignarkal from '../Component/Gallery/IsaiPerairignarkal'
-// import PannIsaiPerarignarkal from '../Component/Gallery/PannIsaiPerarignarkal'
 import Media from '../Component/media/Media'
 import Navbar from "../Component/Common/Navbar";
 import Home from "../Component/Home/Home";

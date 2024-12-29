@@ -3,7 +3,8 @@ import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import histroydata from "../Data/Data.json";
-import images1 from '../Assets/img/course-img1.jpg'
+import images1 from '../Assets/image/rajasir_annamalai.jpg'
+import letter from '../Assets/image/rajasir_letter.jpg'
 
 const History = () => {
     const { language } = useSelector((state) => state.language);
@@ -34,6 +35,12 @@ const History = () => {
               {head.map((item, index) => (
                 <div className="col-md-12" key={index}>
                   <div className="row">
+                  <div className="col-md-7">
+                      <h2>{item.content.title}</h2>
+                      {item.content.paragraphs.map((paragraph, idx) => (
+                        <p key={idx}>{paragraph}</p>
+                      ))}
+                    </div>
                     <div className="col-md-5">
                       <div className="video-block">
                         <img
@@ -43,13 +50,7 @@ const History = () => {
                           className="img-responsive"
                         />
                       </div>
-                    </div>
-                    <div className="col-md-7">
-                      <h2>{item.content.title}</h2>
-                      {item.content.paragraphs.map((paragraph, idx) => (
-                        <p key={idx}>{paragraph}</p>
-                      ))}
-                    </div>
+                    </div>                    
                   </div>
                 </div>
               ))}
@@ -62,23 +63,21 @@ const History = () => {
               {headcontent.map((item, index) => (
                 <div className="col-md-12" key={index}>
                   <div className="row">
-                    {/* Content Paragraph Block */}
-                    <div className="col-md-7 left-block">
-                      {item.content.paragraphs.map((paragraph, idx) => (
-                        <p key={idx}>{paragraph}</p>
-                      ))}
-                    </div>
-  
-                    {/* Image Block with Animation */}
-                    <div className="col-md-5 about-right">
+                  <div className="col-md-5 left-block">
                       <div className="video-block">
                         <img
-                          src={item.head2.thumbnail}
+                          // src={item.head2.thumbnail}
+                          src={letter}
                           className="img-responsive animate__animated animate__zoomIn"
                           alt="Who we are"
                         />
                       </div>
                     </div>
+                    <div className="col-md-7 about-right ">
+                      {item.content.paragraphs.map((paragraph, idx) => (
+                        <p key={idx}>{paragraph}</p>
+                      ))}
+                    </div>                    
                   </div>
                 </div>
               ))}

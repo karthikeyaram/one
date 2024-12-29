@@ -814,6 +814,10 @@ textarea:focus::placeholder{
     .container1 {
         width: 1020px;
     }
+	.header-middle .contact ul li {
+		padding: 0 10px;
+        font-size: 12px;
+	}
 }
 .about ul.our-links {
 	display: block;
@@ -5930,6 +5934,8 @@ h3 {
 }
 
 /* Portrait tablet */
+
+
 @media (min-width: 768px) and (max-width: 991px) {
 	
 	.header-top ul.follow-us li {
@@ -5939,8 +5945,8 @@ h3 {
 		padding-right:28px;
 	}
 	.header-middle .contact ul li {
-		padding: 0 20px;
-		font-size: 16px;
+		padding: 0 5px;
+        font-size: 12px;
 	}
 	.header-middle a.login {
 		padding: 5px 14px;
@@ -6520,8 +6526,8 @@ h3 {
     .how-apply h2, 
     .have-question h2 {
 		padding-bottom: 30px;
-		font-size: 22px;
-		margin-left: 40px;
+        font-size: 17px;
+        margin-left: 12px;
         margin-top: 23px;
 	}
 	.our-impotance ul li .inner {
