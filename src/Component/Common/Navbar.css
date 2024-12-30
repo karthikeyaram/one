@@ -805,9 +805,9 @@ textarea:focus::placeholder{
 		margin-left: auto;
 	
 }
-@media (min-width: 1025px) {
+@media (min-width: 1200px) {
     .container1 {
-        width: 1190px;
+        width: 1250px;
     }
 }
 @media (width: 1024px) {
@@ -5546,6 +5546,10 @@ a.btn-circle:hover {
 .coming-soon .stay-tuned .clear .button:hover{
     background: #2c97ea;
 }
+.address-details p{
+	color: white;
+
+}
 
 /* ================================================== */
 /* 25. Responsive Style */
@@ -5596,9 +5600,9 @@ p {
 }
 .footer .subscribe {
 	display: block;
-    padding: 72px 69px 18px 0;
-    width: 95%;
-    border-right: 1px #537d9e solid;
+	padding: 6px 69px 18px 0;
+	width: 95%;
+	border-right: 1px #537d9e solid;
 }
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;

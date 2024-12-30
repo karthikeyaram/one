@@ -1844,11 +1844,22 @@
       {
         "titles": [
           {
-            "title": "© 2024 தமிழ் இசைச் சங்கம்",
-        
-            "title2":"GITS"
+            "title": "© 2024 தமிழ் இசைச் சங்கம்",        
+            "title2":"வலையக வடிவமைப்பு GITS"
           }
         ]
+      }
+    ],
+    "address":[
+      {
+        "title":"முகவரி",
+        "title2":"தமிழ் இசைச் சங்கம்",
+        "title3":"இராஜா அண்ணாமலை மன்றம்,",
+        "title4":"5, எஸ்பிளனேடு சாலை,",
+        "title5":"சென்னை, தமிழ் நாடு 600 108",
+        "title6":"+91 94449 25880 / 92822 35964",
+        "title7":"+91 44 2534 1958 / 2955 0107",
+        "title8":"info@tamilisaisangam.in"
       }
     ]
   },
@@ -4002,6 +4013,18 @@
          
           }
         ]
+      }
+    ],
+    "address":[
+      {
+        "title":"Our Address",
+        "title2":"Tamil Isai Sangam",
+        "title3":"Rajah Annamalai Mandram,",
+        "title4":"No. 5, Esplanade Road,",
+        "title5":"Chennai 600 108, TamilNadu",
+        "title6":"+91 94449 25880 / 92822 35964",
+        "title7":"+91 44 2534 1958 / 2955 0107",
+        "title8":"info@tamilisaisangam.in"
       }
     ]
   }

@@ -312,7 +312,7 @@ const Banner = () => {
                                       "linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8))",
                                     color: "#fff",
                                     borderRadius: "0 0 10px 10px",
-                                    padding: "20px",
+                                    // padding: "20px",
                                     display: "flex",
                                     flexDirection: "column",
                                     justifyContent: "flex-end",
