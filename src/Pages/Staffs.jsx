@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from 'react';
+import image80 from '../Assets/gallery/Staff-1.jpg'
+import image81 from '../Assets/gallery/Staff-2.jpg'
+import image82 from '../Assets/gallery/Staff-3.jpg'
 
 function Staff() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const images = [
-    'staff-1.jpg', // Replace with the correct image paths
-    'staff-2.jpg',
-    'staff-3.jpg'
+      image80 ,
+      image81 ,
+     image82
+  
   ];
 
   useEffect(() => {

@@ -2,23 +2,23 @@ import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import jsondata from '../../Data/Data.json';
-import image1 from '../../Assets/gallery/img1.jpg'
-import image2 from '../../Assets/gallery/img2.jpg'
-import image3 from '../../Assets/gallery/img3.jpg'
-import image4 from '../../Assets/gallery/img4.jpg'
-import image5 from '../../Assets/gallery/img5.jpg'
-import image6 from '../../Assets/gallery/img6.jpg'
-import image7 from '../../Assets/gallery/img7.jpg'
-import image8 from '../../Assets/gallery/img8.jpg'
-import image9 from '../../Assets/gallery/img9.jpg'
-import image10 from '../../Assets/gallery/img10.jpg'
-import image11 from '../../Assets/gallery/img11.jpg'
-import image12 from '../../Assets/gallery/img12.jpg'
-import image13 from '../../Assets/gallery/img13.jpg'
-import image14 from '../../Assets/gallery/img14.jpg'
-import image15 from '../../Assets/gallery/img15.jpg'
-import image16 from '../../Assets/gallery/img16.jpg'
-import image17 from '../../Assets/gallery/img17.jpg'
+import image1 from '../../Assets/gallery/img1.jpg';
+import image2 from '../../Assets/gallery/img2.jpg';
+import image3 from '../../Assets/gallery/img3.jpg';
+import image4 from '../../Assets/gallery/img4.jpg';
+import image5 from '../../Assets/gallery/img5.jpg';
+import image6 from '../../Assets/gallery/img6.jpg';
+import image7 from '../../Assets/gallery/img7.jpg';
+import image8 from '../../Assets/gallery/img8.jpg';
+import image9 from '../../Assets/gallery/img9.jpg';
+import image10 from '../../Assets/gallery/img10.jpg';
+import image11 from '../../Assets/gallery/img11.jpg';
+import image12 from '../../Assets/gallery/img12.jpg';
+import image13 from '../../Assets/gallery/img13.jpg';
+import image14 from '../../Assets/gallery/img14.jpg';
+import image15 from '../../Assets/gallery/img15.jpg';
+import image16 from '../../Assets/gallery/img16.jpg';
+import image17 from '../../Assets/gallery/img17.jpg';
 
 const DeivigaArulalarkal = () => {
   const [activeHeader, setActiveHeader] = useState('DeivigaArulalarkal');
@@ -63,11 +63,6 @@ const DeivigaArulalarkal = () => {
     borderRadius: '5px',
     transition: 'color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease',
     boxShadow: activeHeader === name ? '0 0 10px rgba(243, 156, 18, 0.6)' : 'none',
-    '&:hover': {
-      color: '#F39C12',
-      transform: 'scale(1.1)',
-      boxShadow: '0 0 10px rgba(243, 156, 18, 0.4)',
-    },
   });
 
   const images = [
@@ -88,7 +83,6 @@ const DeivigaArulalarkal = () => {
     { src: image15 },
     { src: image16 },
     { src: image17 },
-  
   ];
 
   const [visibleImages, setVisibleImages] = useState([]);
@@ -148,7 +142,7 @@ const DeivigaArulalarkal = () => {
 
   const imageNameStyle = {
     marginTop: '10px',
-    fontSize: '16px',
+    fontSize: '15px',
     fontWeight: '600',
     color: '#FFF',
     textShadow: '0px 1px 1px ',
@@ -185,14 +179,16 @@ const DeivigaArulalarkal = () => {
         {images.map((image, index) => (
           <div
             key={index}
-            className="gallery-item"
-            style={galleryItemStyle(visibleImages.includes(document.querySelector(`.gallery-item:nth-child(${index + 1})`)), index)}
+            className={`gallery-item ${index >= 15 ? 'last-row' : ''}`}
+            style={{
+              ...galleryItemStyle,
+              gap:"20px",
+           
+              gridColumn: index >= 15 ? 'span 2' : undefined,
+              justifySelf: index >= 15 ? 'center' : undefined,
+            }}
           >
-            <img
-              src={image.src}
-              alt={image.name}
-              style={galleryImageStyle}
-            />
+            <img src={image.src} alt={`Gallery ${index}`} style={galleryImageStyle} />
             <div style={imageNameStyle}>
               {galleryd[0]?.gallery1?.[index]?.title || 'No Title Available'}
             </div>
@@ -202,7 +198,7 @@ const DeivigaArulalarkal = () => {
 
       <style>
         {`
-          @keyframes fadeIn {
+         @keyframes fadeIn {
             0% {
               opacity: 0;
               transform: translateY(-20px);
@@ -234,9 +230,14 @@ const DeivigaArulalarkal = () => {
               transform: translateX(0);
             }
           }
-
-          /* Responsive styles */
           @media (max-width: 768px) {
+
+          
+            .gallery-item {
+              grid-column: span 1 !important;
+              justify-self: stretch !important;
+            }
+              
             .header-container {
               flex-direction: column;
               align-items: center;
@@ -244,13 +245,6 @@ const DeivigaArulalarkal = () => {
 
             .header-container a {
               margin-bottom: 10px;
-            }
-
-            /* Remove the gallery item animations on mobile */
-            .gallery-item {
-              animation: none;
-              transform: translateX(0) !important; /* Prevents movement */
-              opacity: 1 !important; /* Keep the images visible */
             }
           }
         `}

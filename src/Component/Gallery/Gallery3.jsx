@@ -246,6 +246,7 @@ const IsaiKalaivanarkal = () => {
               margin-bottom: 10px;
             }
           }
+            
         `}
       </style>
     </div>

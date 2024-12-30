@@ -229,7 +229,7 @@ const Banner = () => {
                   flex: "1 1 calc(33.333% - 20px)", // For desktop view (3 cards in a row)
                 }}
               >
-                <Link to="/certification" style={{ textDecoration: "none" }}>
+                <Link to="/pay" style={{ textDecoration: "none" }}>
                   <div className="detail">
                     <h3
                       style={{
@@ -238,6 +238,8 @@ const Banner = () => {
                         fontWeight: "600",
                         marginTop: "40px",
                         textAlign: "center",
+                        marginLeft:"40px",
+                        width:"200px"
                       }}
                     >
                       {item.title3}
@@ -289,7 +291,7 @@ const Banner = () => {
               .map((filteredCard) => (
                 <div key={filteredCard.id} className="card">
                   <img
-                    src={cardm.image} // Use the `cardm.image` here
+                    src={cardm.image} // Use the cardm.image here
                     alt="Card Image"
                     className="card-image"
                     style={{
@@ -299,6 +301,7 @@ const Banner = () => {
                       transition: "transform 0.3s ease",
                     }}
                   />
+                  
                   <div
                     className="card"
                     style={{
@@ -344,6 +347,7 @@ const Banner = () => {
                       {filteredCard.cardcontent || "Content"}
                     </h6>
                   </div>
+
                 </div>
               ))}
           </figure>
