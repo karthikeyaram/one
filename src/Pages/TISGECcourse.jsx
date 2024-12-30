@@ -54,15 +54,14 @@ const TISGECcourse = () => {
                           src={anna}
                           alt=""
                           style={{
-                            maxWidth: "100px",
-                            maxHeight: "100px",
+                            maxWidth: "200px",
+                            maxHeight: "200px",
                             objectFit: "contain",
-                            backgroundColor: "red",
                           }}
                         />
                       </div>
 
-                      <div style={{ flex: 2, textAlign: "center" }}>
+                      <div style={{ flex: 1, textAlign: "center" }}>
                         <h3 style={{ marginBottom: "10px", color: "#0282c2" }}>
                           {item.title}
                         </h3>
@@ -82,8 +81,8 @@ const TISGECcourse = () => {
                           src={natraj}
                           alt=""
                           style={{
-                            maxWidth: "100px",
-                            maxHeight: "100px",
+                            maxWidth: "200px",
+                            maxHeight: "200px",
                             objectFit: "contain",
                           }}
                         />
@@ -132,9 +131,9 @@ const TISGECcourse = () => {
           {table?.length > 0 &&
             table.map((content, index) => (
               <div key={index} className="table-container">
-                <h3>{content?.title}</h3>
+                <h3 style={{color:"rgb(20, 61, 126)"}}>{content?.title}</h3>
                 <h4>{content?.title1}</h4>
-                <p style={{ fontWeight: "bold", fontSize: "22px",textAlign:"center" }}>
+                <p style={{ fontWeight: "bold", fontSize: "18px",textAlign:"center",color:"rgb(58, 133, 173)" }}>
                   {content?.thead}
                 </p>
                 <table className="fee-table">
@@ -164,7 +163,7 @@ const TISGECcourse = () => {
         {tabled?.length > 0 &&
           tabled.map((content, index) => (
             <div key={index} className="table-container">
-              <p style={{ fontWeight: "bold", fontSize: "22px",textAlign:"center" }}>
+              <p style={{ fontWeight: "bold", fontSize: "22px",textAlign:"center",color:"rgb(58, 133, 173)" }}>
                 {content?.thead}
               </p>
               <table className="fee-table">

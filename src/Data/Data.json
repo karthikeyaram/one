@@ -2048,25 +2048,25 @@
             "subtitle": "Category",
             "card": [
               {
-                "id": 1,
+                "id": 1.1,
                 "cardtitle": "Junior",
                 "image": "/assets/image/junior.png",
                 "cardcontent": "Age 7 to 10 years."
               },
               {
-                "id": 2,
+                "id": 2.1,
                 "cardtitle": "Sub Junior",
                 "image": "/assets/image/Subjunior.png",
                 "cardcontent": "Age 11 to 15 years Registration Fee Rs.150."
               },
               {
-                "id": 3,
+                "id": 3.1,
                 "cardtitle": "Senior",
                 "image": "/assets/image/Senior.png",
                 "cardcontent": "Age 16 to 21 years."
               },
               {
-                "id": 4,
+                "id": 4.1,
                 "cardtitle": "Super Senior",
                 "image": "/assets/image/Subsenior.png",
                 "cardcontent": "Age 21 years and Above Registration Fee Rs.250."

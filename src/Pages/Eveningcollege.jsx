@@ -23,14 +23,15 @@ const Eveningcollege = () => {
           <div className="container">
             {evecolleged.map((course, index) => (
               <div key={index}>
-                <h3 style={{ textAlign: "center" }}>{course.title}</h3>
+                <h3 style={{ textAlign: "center",color:"rgb(20, 61, 126)" }}>{course.title}</h3>
                 <div className="row">
                   <div
                     className="col-sm-12"
                     style={{ color: "black", textAlign: "center" }}
                   >
-                    <h2 style={{ color: "black" }}>
-                      <span>{course.title1}</span> {course.title2}
+                    <p><span>{course.title1}</span></p>
+                    <h2 style={{ color: "rgb(20, 61, 126)" }}>
+                       {course.title2}
                     </h2>
                   </div>
                 </div>

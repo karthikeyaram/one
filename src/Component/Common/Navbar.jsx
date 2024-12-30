@@ -12,7 +12,7 @@ import { IoIosPlayCircle } from "react-icons/io";
 import {
   FaFacebook,
   FaTwitter,
-  FaGooglePlus,
+  FaPinterest ,
   FaYoutube,
   FaInstagram,
 } from "react-icons/fa";
@@ -36,6 +36,7 @@ const Navbar = () => {
         { icon: <FaFacebook />, link: "https://www.facebook.com/people/Tamil-Isai-Kalloori-Tamil-Isai-Sangam/100064832676981", target: "_blank", rel: "noopener noreferrer" },
         { icon: <FaYoutube />, link: "https://www.youtube.com/channel/UCc52PkQqepI__b2vjg-dOkQ", target: "_blank", rel: "noopener noreferrer" },
         { icon: <FaInstagram />, link: "https://www.instagram.com/tamil_isai_kalloori?igshid=rzk92bvhobqq", target: "_blank", rel: "noopener noreferrer" },
+        { icon: <FaPinterest />, link: "https://in.pinterest.com/tamilisaisangam/", target: "_blank", rel: "noopener noreferrer" },
       ]
     }
 
