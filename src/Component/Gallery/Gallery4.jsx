@@ -79,7 +79,7 @@ const Gallery4 = () => {
      image48 ,
      image49 ,
      image50 ,
-image51,
+      image51,
     image52 ,
      image53 ,
      image55 ,
