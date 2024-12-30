@@ -1941,7 +1941,7 @@ ul.our-strength li .title {
 /* ================================================== */
 .footer {
 	display: block;
-	background: #234a66;
+	background-color: "linear-gradient(to right, #3fa3e0,rgb(58, 133, 173),rgb(20, 61, 126))";
 	bottom: 0px;
 }
 .footer .row1 {

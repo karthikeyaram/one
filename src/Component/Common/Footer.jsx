@@ -7,99 +7,64 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 import "../../Assets/css/Custom.css";
-import { useSelector, useDispatch } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
 import footData from "../../Data/Data.json";
 
 const Footer = () => {
   const { language } = useSelector((state) => state.language);
-  const dispatch = useDispatch();
-  const navigate = useNavigate();
   const footer = footData[language]?.footers || [];
 
   const footerData = {
-    aboutUs: [
-      { name: "Edumart Group of Institutions", link: "#" },
-      { name: "Our Institutes and Universities", link: "#" },
-      { name: "Management Team", link: "#" },
-      { name: "Approval and Recognition", link: "#" },
-      { name: "Evaluation & Assessments", link: "#" },
-    ],
-    courses: [
-      { name: "2 Year Online MBA General", link: "#" },
-      { name: "Certificate in HRM", link: "#" },
-      { name: "Certificate in Marketing", link: "#" },
-      { name: "Certificate in Finance", link: "#" },
-      { name: "Corporate Programs", link: "#" },
-    ],
-    whyEdumart: [
-      { name: "Introduction", link: "#" },
-      { name: "Learn Everywhere", link: "#" },
-      { name: "Modern Curriculum", link: "#" },
-      { name: "Placement Assistance", link: "#" },
-      { name: "Eligibility", link: "#" },
-    ],
-    learningExperience: [
-      { name: "Course Preparations", link: "#" },
-      { name: "Guided lessons", link: "#" },
-      { name: "Interactive Practice", link: "#" },
-      { name: "Virtual Classroom", link: "#" },
-      { name: "Peer Learning", link: "#" },
-    ],
     socialLinks: [
-      { icon: <FaFacebook />, link: "https://www.facebook.com/people/Tamil-Isai-Kalloori-Tamil-Isai-Sangam/100064832676981", target: "_blank", rel: "noopener noreferrer" },
-      { icon: <FaYoutube />, link: "https://www.youtube.com/channel/UCc52PkQqepI__b2vjg-dOkQ", target: "_blank", rel: "noopener noreferrer" },
-      { icon: <FaInstagram />, link: "https://www.instagram.com/tamil_isai_kalloori?igshid=rzk92bvhobqq", target: "_blank", rel: "noopener noreferrer" },
-      { icon: <FaPinterest />, link: "https://in.pinterest.com/tamilisaisangam/", target: "_blank", rel: "noopener noreferrer" },
-    ]
+      {
+        icon: <FaFacebook />,
+        link: "https://www.facebook.com/people/Tamil-Isai-Kalloori-Tamil-Isai-Sangam/100064832676981",
+        target: "_blank",
+        rel: "noopener noreferrer",
+      },
+      {
+        icon: <FaYoutube />,
+        link: "https://www.youtube.com/channel/UCc52PkQqepI__b2vjg-dOkQ",
+        target: "_blank",
+        rel: "noopener noreferrer",
+      },
+      {
+        icon: <FaInstagram />,
+        link: "https://www.instagram.com/tamil_isai_kalloori?igshid=rzk92bvhobqq",
+        target: "_blank",
+        rel: "noopener noreferrer",
+      },
+      {
+        icon: <FaPinterest />,
+        link: "https://in.pinterest.com/tamilisaisangam/",
+        target: "_blank",
+        rel: "noopener noreferrer",
+      },
+    ],
   };
 
   return (
-    <footer className="footer">
-      {/* Footer Top */}
-      {/* <div className="container1">
-        <div className="row row1">
-          <div className="col-sm-9 clearfix">
-            {['aboutUs', 'courses', 'whyEdumart', 'learningExperience'].map((section, index) => (
-              <div className="foot-nav" key={index}>
-                <h3>{section.replace(/([A-Z])/g, ' $1').toUpperCase()}</h3>
-                <ul>
-                  {footerData[section].map((item, idx) => (
-                    <li key={idx}><a href={item.link}>{item.name}</a></li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-
-          <div className="col-sm-3">
-            <div className="footer-logo hidden-xs">
-              <a href="index.html"><img src="images/footer-logo.png" className="img-responsive" alt="Edumart Logo" /></a>
-            </div>
-            <p>© 2020 <span>Edumart</span>. All rights reserved</p>
-            <ul className="terms clearfix">
-              <li><a href="terms.html">TERMS OF USE</a></li>
-              <li><a href="privacy.html">PRIVACY POLICY</a></li>
-              <li><a href="#">SITEMAP</a></li>
-            </ul>
-          </div>
-        </div>
-      </div> */}
-
+    <footer
+      className="footer"
+      style={{
+      
+        color: "white",
+      }}
+    >
       {/* Footer Bottom */}
       <div className="bottom">
         <div className="container1">
           <div className="row">
             {/* Connect with Us Section */}
             <div className="col-sm-4">
-
               <div className="connect-us">
                 <h3>Connect with Us</h3>
                 <ul className="follow-us clearfix">
                   {footerData.socialLinks.map((social, idx) => (
                     <li key={idx}>
-                      <a href={social.link} target={social.target}
-                        rel={social.rel}>{social.icon}</a>
+                      <a href={social.link} target={social.target} rel={social.rel}>
+                        {social.icon}
+                      </a>
                     </li>
                   ))}
                 </ul>
@@ -107,86 +72,78 @@ const Footer = () => {
               {footer.map((footerItem, index) => (
                 <div key={index}>
                   {footerItem.titles.map((titleItem, titleIndex) => (
-                    <div className="foot">
-                      <h3 key={titleIndex}>{titleItem.title}</h3>
+                    <div className="foot" key={titleIndex}>
+                      <h3>{titleItem.title}</h3>
                       <h3 style={{ fontSize: "13px" }}>{titleItem.title1}</h3>
                       <h3>{titleItem.title2}</h3>
                     </div>
                   ))}
                 </div>
               ))}
-
             </div>
 
-            {/* Subscribe Section */}
-            <div className="col-sm-4">
-              <div className="subscribe">
-                <h3>Subscribe with Us</h3>
-                <div id="mc_embed_signup">
-                  <form
-                    action="http://protechtheme.us16.list-manage.com/subscribe/post?u=cd5f66d2922f9e808f57e7d42&amp;id=ec6767feee"
-                    method="post"
-                    id="mc-embedded-subscribe-form"
-                    name="mc-embedded-subscribe-form"
-                    className="validate"
-                    target="_blank"
-                    novalidate
-                  >
-                    <div id="mc_embed_signup_scroll">
-                      <input
-                        type="email"
-                        value=""
-                        name="EMAIL"
-                        className="email"
-                        id="mce-EMAIL"
-                        placeholder="enter your email address"
-                        required
-                      />
-                      <div
-                        style={{ position: "absolute", left: "-5000px" }}
-                        aria-hidden="true"
-                      >
-                        <input
-                          type="text"
-                          name="b_cd5f66d2922f9e808f57e7d42_ec6767feee"
-                          tabindex="-1"
-                          value=""
-                        />
-                      </div>
-                      <div className="clear">
-                        <input
-                          type="submit"
-                          value="Subscribe"
-                          name="subscribe"
-                          id="mc-embedded-subscribe"
-                          className="button"
-                        />
-                      </div>
-                    </div>
-                  </form>
+            {/* Address and Map Section */}
+            <div className="col-sm-8" style={{ display: "flex", gap: "30px" }}>
+              {/* Address Box */}
+              <div
+                className="address"
+                style={{
+                  marginTop:"20px",
+                  backgroundColor: " rgba(38, 188, 207, 0.1)",
+                  padding: "20px",
+                  color:"white",
+                fontSize:"900px",
+                  borderRadius: "8px",
+                  boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+                  flex: 1,
+                }}
+              >
+                <h3>Our Address</h3>
+                <div className="address-details" style={{color:"white" }}>
+                  <p style={{color:"white"}}>
+                    <strong>தமிழ் இசைச் சங்கம்</strong>
+                    <br />
+                    இராஜா அண்ணாமலை மன்றம்,
+                    <br />
+                    5, எஸ்பிளனேடு சாலை,
+                    <br />
+                    சென்னை, தமிழ் நாடு 600 108
+                    <br />
+                    +91 94449 25880 / 92822 35964
+                    <br />
+                    +91 44 2534 1958 / 2955 0107
+                    <br />
+                    <a href="mailto:info@tamilisaisangam.in" style={{color:"white"}}>
+                      info@tamilisaisangam.in
+                    </a>
+                  </p>
+                </div>
+              </div>
+
+              {/* Map Section */}
+              <div
+                className="map"
+                style={{
+                  flex: 1,
+                  height: "230px",
+                  overflow: "hidden",
+                  borderRadius: "8px",
+                }}
+              >
+                <h3>Find Us Here</h3>
+                <div className="map-container" style={{ height: "140%" }}>
+                  <iframe
+                    title="Google Map Location"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3886.1979599529645!2d80.27544!3d13.086637000000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526f53a6aaac27%3A0x3340167f0f9bd3c7!2sRaja%20Annamalai%20Mandram!5e0!3m2!1sen!2sus!4v1735040443215!5m2!1sen!2sus"
+                    width="130%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen=""
+                    loading="lazy"
+                  ></iframe>
                 </div>
               </div>
             </div>
-
-            {/* Instagram Section */}
-            {/* <div className="col-sm-4">
-              <div className="instagram">
-                <h3>@INSTAGRAM</h3>
-                <ul className="clearfix">
-                  {footerData.instagramImages.map((img, idx) => (
-                    <li key={idx}>
-                      <a href="#">
-                        <img
-                          src={img}
-                          className="img-responsive"
-                          alt="Instagram"
-                        />
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div> */}
           </div>
         </div>
       </div>
