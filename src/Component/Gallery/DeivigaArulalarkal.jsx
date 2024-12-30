@@ -125,6 +125,21 @@ const DeivigaArulalarkal = () => {
     transition: 'transform 0.3s ease',
   };
 
+  const imageNameStyle = {
+    marginTop: '10px',
+    fontSize: '13px',
+    fontWeight: '600',
+    color: '#FFF',
+    textShadow: '0px 1px 1px ',
+    color: 'rgba(243, 156, 18, 0.6)',
+    padding: '8px 12px',
+    borderRadius: '5px',
+    maxWidth: '100%',
+    textAlign: 'center',
+    transition: 'background 0.3s ease, transform 0.3s ease',
+  };
+
+
   const renderImages = (images) =>
     images.map((src, index) => (
       <div
@@ -136,7 +151,7 @@ const DeivigaArulalarkal = () => {
         )}
       >
         <img src={src} alt={`Gallery ${index + 1}`} style={galleryImageStyle} />
-        <div>
+        <div style={imageNameStyle}>
           {galleryd[0]?.gallery1?.[index]?.title || 'No Title Available'}
         </div>
       </div>
@@ -174,20 +189,91 @@ const DeivigaArulalarkal = () => {
 
       <div style={galleryContainerStyle}>{renderImages(images.slice(0, 15))}</div>
 
-      <div
-        style={{
-          display: 'grid',
-          gridTemplateColumns: '1fr 1fr',
-          gap: '40px',
-          width:"750px",
-          alignItems:'center',
-          textAlign:"center",
-          padding: '15px',
-          marginLeft:"230px"
-        }}
-      >
-        {renderImages(images.slice(15))}
-      </div>
+      {/* Last div with two images */}
+  {/* Last div with two images */}
+   <div
+  style={{
+    display: 'flex',
+    gap: '80px',
+    justifyContent: 'center',
+    padding: '20px',
+  }}
+  className="lastone"
+>
+  <div className="gallery-item" style={{ ...galleryItemStyle(true, 16), padding: '30px' }}>
+    <img src={image16} alt="Nammalvaar" style={galleryImageStyle} />
+    <div style={imageNameStyle}>
+      {language === 'tamil' ? 'நம்மாழ்வார்' : 'Nammalvaar'}
+    </div>
+  </div>
+  <div className="gallery-item" style={{ ...galleryItemStyle(true, 17), padding: '30px' }}>
+    <img src={image17} alt="Arunagirinathar" style={galleryImageStyle} />
+    <div style={imageNameStyle}>
+      {language === 'tamil' ? 'அருணகிரிநாதர்' : 'Arunagirinathar'}
+    </div>
+  </div>
+</div>
+
+
+
+      <style>
+        {`
+          @keyframes fadeIn {
+            0% {
+              opacity: 0;
+              transform: translateY(-20px);
+            }
+            100% {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+
+          @keyframes slideInFromLeft {
+            0% {
+              opacity: 0;
+              transform: translateX(-100px);
+            }
+            100% {
+              opacity: 1;
+              transform: translateX(0);
+            }
+          }
+
+          @keyframes slideInFromRight {
+            0% {
+              opacity: 0;
+              transform: translateX(100px);
+            }
+            100% {
+              opacity: 1;
+              transform: translateX(0);
+            }
+          }
+
+          /* Remove shaking effect on small screens */
+          @media (max-width: 768px) {
+            .gallery-item {
+              transform: none !important;  /* Disable transform effect */
+              transition: none !important; /* Disable transition effect */
+              opacity: 1 !important;      /* Ensure images are visible */
+            }
+
+            .header-container {
+              flex-direction: column;
+              align-items: center;
+            }
+
+            .header-container a {
+              margin-bottom: 10px;
+            }
+
+            .lastone {
+              flex-direction: column;
+            }
+          }
+        `}
+      </style>
     </div>
   );
 };

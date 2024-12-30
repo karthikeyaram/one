@@ -79,19 +79,21 @@ const Footer = () => {
                   {footerItem.titles.map((titleItem, titleIndex) => (
                     <div className="foot" key={titleIndex}>
                       <h3>{titleItem.title}</h3>
-                      {titleItem.title2 && (
-                        <h3 style={{ fontSize: "13px" }}>
+                      
+                      {titleItem.title1 && (
+                        <h3 style={{ fontSize: "14px" }}><span>{titleItem.title1}</span>
                           <a
                             href="https://www.guruits.com/"
                             target="_blank"
                             rel="noopener noreferrer"
                             style={{
+                            
                               textDecoration: "none",
                               cursor: "pointer",
-                              color: "white",
+                              color: "red",
                             }}
                           >
-                            {titleItem.title2}
+                            GITS
                           </a>
                         </h3>
                       )}

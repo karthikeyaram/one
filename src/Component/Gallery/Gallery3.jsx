@@ -2,23 +2,52 @@ import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import jsondata from '../../Data/Data.json';
-import image21 from '../../Assets/gallery/img32.jpg'
-import image22 from '../../Assets/gallery/img27 (1).jpg'
-import image23 from '../../Assets/gallery/img27 (2).jpg'
-import image24 from '../../Assets/gallery/img27 (3).jpg'
-import image25 from '../../Assets/gallery/img27 (4).jpg'
-import image26 from '../../Assets/gallery/img27 (5).jpg'
-import image27 from '../../Assets/gallery/img27 (6).jpg'
-import image28 from '../../Assets/gallery/img27 (7).jpg'
-import image29 from '../../Assets/gallery/img27 (8).jpg'
-import image30 from '../../Assets/gallery/img27 (9).jpg'
-import image31 from '../../Assets/gallery/img27 (10).jpg'
-import image32 from '../../Assets/gallery/img27 (11).jpg'
-import image33 from '../../Assets/gallery/img27 (12).jpg'
-import image34 from '../../Assets/gallery/img27 (13).jpg'
-import image35 from '../../Assets/gallery/img27 (14).jpg'
-import image36 from '../../Assets/gallery/img27 (15).jpg'
-import image37 from '../../Assets/gallery/img27 (17).jpg'
+import image21 from '../../Assets/gallery/img32.jpg';
+import image22 from '../../Assets/gallery/img27 (1).jpg';
+import image23 from '../../Assets/gallery/img27 (2).jpg';
+import image24 from '../../Assets/gallery/img27 (3).jpg';
+import image25 from '../../Assets/gallery/img27 (4).jpg';
+import image26 from '../../Assets/gallery/img27 (5).jpg';
+import image27 from '../../Assets/gallery/img27 (6).jpg';
+import image28 from '../../Assets/gallery/img27 (7).jpg';
+import image29 from '../../Assets/gallery/img27 (8).jpg';
+import image30 from '../../Assets/gallery/img27 (9).jpg';
+import image31 from '../../Assets/gallery/img27 (10).jpg';
+import image32 from '../../Assets/gallery/img27 (11).jpg';
+import image33 from '../../Assets/gallery/img27 (12).jpg';
+import image34 from '../../Assets/gallery/img27 (13).jpg';
+import image35 from '../../Assets/gallery/img27 (14).jpg';
+import image36 from '../../Assets/gallery/img27 (15).jpg';
+import image37 from '../../Assets/gallery/img27 (16).jpg';
+import image38 from '../../Assets/gallery/img27 (17).jpg';
+import image39 from '../../Assets/gallery/img27 (18).jpg';
+import image40 from '../../Assets/gallery/img27 (19).jpg';
+import image41 from '../../Assets/gallery/img27 (20).jpg';
+import image42 from '../../Assets/gallery/img27 (21).jpg';
+import image43 from '../../Assets/gallery/img27 (22).jpg';
+import image44 from '../../Assets/gallery/img27 (23).jpg';
+import image45 from '../../Assets/gallery/img27 (24).jpg';
+import image46 from '../../Assets/gallery/img27 (25).jpg';
+import image47 from '../../Assets/gallery/img27 (26).jpg';
+import image48 from '../../Assets/gallery/img27 (27).jpg';
+import image50 from '../../Assets/gallery/img27 (28).jpg';
+import image51 from '../../Assets/gallery/img27 (29).jpg';
+import image52 from '../../Assets/gallery/img27 (30).jpg';
+import image53 from '../../Assets/gallery/img27 (31).jpg';
+import image54 from '../../Assets/gallery/img27 (32).jpg';
+import image55 from '../../Assets/gallery/img27 (33).jpg';
+import image56 from '../../Assets/gallery/img27 (34).jpg';
+import image57 from '../../Assets/gallery/img27 (35).jpg';
+import image58 from '../../Assets/gallery/img27 (36).jpg';
+import image59 from '../../Assets/gallery/img27 (37).jpg';
+import image60 from '../../Assets/gallery/img27 (38).jpg';
+import image61 from '../../Assets/gallery/img27 (39).jpg';
+import image62 from '../../Assets/gallery/img27 (40).jpg';
+
+import image64 from '../../Assets/gallery/img27 (42).jpg';
+import image65 from '../../Assets/gallery/img27 (43).jpg';
+import image66 from '../../Assets/gallery/img27 (44).jpg';
+import image67 from '../../Assets/gallery/img27 (45).jpg';
 
 const IsaiKalaivanarkal = () => {
   const [activeHeader, setActiveHeader] = useState('IsaiKalaivanarkal');
@@ -40,24 +69,12 @@ const IsaiKalaivanarkal = () => {
   };
 
   const images = [
-    { src: image21 },
-    { src: image22 },
-    { src: image23 },
-    { src: image24 },
-    { src: image25 },
-    { src: image26 },
-    { src: image27 },
-    { src: image28 },
-    { src: image29 },
-    { src: image30 },
-    { src: image31 },
-    { src: image32 },
-    { src: image33 },
-    { src: image34 },
-    { src: image35 },
-    { src: image36 },
-    { src: image37 },
-
+    image21, image22, image23, image24, image25, image26, image27, image28, image29,
+    image30, image31, image32, image33, image34, image35, image36, image37, image38, 
+    image39, image40, image41, image42, image43, image44, image45, image46, image47,
+    image48, image50, image51, image52, image53, image54, image55, image56, image57,
+    image58, image59, image60, image61, image62,  image64, image65, image66, 
+    image67
   ];
 
   const { language } = useSelector((state) => state.language);
@@ -98,9 +115,7 @@ const IsaiKalaivanarkal = () => {
           }
         });
       },
-      {
-        threshold: 0.2,
-      }
+      { threshold: 0.2 }
     );
 
     const imageElements = document.querySelectorAll('.gallery-item');
@@ -125,14 +140,8 @@ const IsaiKalaivanarkal = () => {
     cursor: 'pointer',
     textAlign: 'center',
     opacity: isVisible ? 1 : 0,
-    transform: isVisible
-      ? index % 2 === 0
-        ? 'translateX(0)'
-        : 'translateX(0)'
-      : index % 2 === 0
-      ? 'translateX(-100px)'
-      : 'translateX(100px)',
-    transition: `opacity 1s ease, transform 1s ease, transition-delay ${index * 0.3}s`, // Sequential delay for each image
+    transform: isVisible ? 'translateX(0)' : (index % 2 === 0 ? 'translateX(-100px)' : 'translateX(100px)'),
+    transition: `opacity 1s ease, transform 1s ease, transition-delay ${index * 0.3}s`,
   });
 
   const galleryImageStyle = {
@@ -156,6 +165,23 @@ const IsaiKalaivanarkal = () => {
     transition: 'background 0.3s ease, transform 0.3s ease',
   };
 
+  const renderImages = (images) =>
+    images.map((src, index) => (
+      <div
+        key={index}
+        className="gallery-item"
+        style={galleryItemStyle(
+          visibleImages.includes(document.querySelector(`.gallery-item:nth-child(${index + 1})`)),
+          index
+        )}
+      >
+        <img src={src} alt={`Gallery ${index + 1}`} style={galleryImageStyle} />
+        <div style={imageNameStyle}>
+          {galleryd[0]?.gallery3?.[index]?.title || 'No Title Available'}
+        </div>
+      </div>
+    ));
+
   return (
     <div>
       <div style={headerStyle} className="header-container">
@@ -177,22 +203,7 @@ const IsaiKalaivanarkal = () => {
         </h6>
       </div>
 
-      <div style={galleryContainerStyle}>
-        {images.map((image, index) => (
-          <div
-            key={index}
-            className="gallery-item"
-            style={galleryItemStyle(visibleImages.includes(document.querySelector(`.gallery-item:nth-child(${index + 1})`)), index)}
-          >
-            <img src={image.src} alt={image.name} style={galleryImageStyle} />
-
-            {/* Display the first title from galleryd under the image */}
-            <div style={imageNameStyle}>
-              {galleryd[0]?.gallery3?.[index]?.title || 'No Title Available'}
-            </div>
-          </div>
-        ))}
-      </div>
+      <div style={galleryContainerStyle}>{renderImages(images)}</div>
 
       <style>
         {`
@@ -206,7 +217,7 @@ const IsaiKalaivanarkal = () => {
               transform: translateY(0);
             }
           }
-
+              
           @keyframes slideInFromLeft {
             0% {
               opacity: 0;
@@ -229,23 +240,16 @@ const IsaiKalaivanarkal = () => {
             }
           }
 
-          /* Remove shaking effect on small screens */
+          /* Ensure static layout for small screens */
           @media (max-width: 768px) {
-            .gallery-item {
-              transform: none !important;  /* Disable transform effect */
-              transition: none !important; /* Disable transition effect */
-              opacity: 1 !important;      /* Ensure images are visible */
-            }
-
             .header-container {
               flex-direction: column;
-              align-items: center;
             }
 
             .header-container a {
               margin-bottom: 10px;
             }
-          }
+        }
         `}
       </style>
     </div>

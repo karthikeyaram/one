@@ -386,8 +386,8 @@ textarea:focus::placeholder{
 	background: #ff9600;
 }
 .header-middle {
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 .header-middle .contact {
 	display: block;

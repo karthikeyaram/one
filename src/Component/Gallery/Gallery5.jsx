@@ -129,7 +129,7 @@ const Gallery5 = () => {
 
   const imageNameStyle = {
     marginTop: '10px',
-    fontSize: '16px',
+    fontSize: '13px',
     fontWeight: '600',
     color: '#FFF',
     textShadow: '0px 1px 1px ',

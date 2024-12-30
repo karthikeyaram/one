@@ -109,7 +109,7 @@ const Navbar = () => {
                     tamilisaikalloori@yahoo.in
                   </a>
                 </li>
-                <li>
+                <li className="d-flexs">
                   <span ><FaPhoneSquareAlt style={{color:"rgb(58, 133, 173)",width:"25px",height:"25px"}}/></span>+91 44 2534 1958 / 2955 0107 <br />
                   +91 94449 25880 / 92822 35964
                 </li>
