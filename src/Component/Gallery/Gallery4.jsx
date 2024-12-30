@@ -84,11 +84,7 @@ const Gallery4 = () => {
     borderRadius: '5px',
     transition: 'color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease',
     boxShadow: activeHeader === name ? '0 0 10px rgba(243, 156, 18, 0.6)' : 'none',
-    '&:hover': {
-      color: '#F39C12',
-      transform: 'scale(1.1)',
-      boxShadow: '0 0 10px rgba(243, 156, 18, 0.4)',
-    },
+  
   });
 
   const [visibleImages, setVisibleImages] = useState([]);
@@ -129,10 +125,15 @@ const Gallery4 = () => {
     cursor: 'pointer',
     textAlign: 'center',
     opacity: isVisible ? 1 : 0,
-    transform: isVisible
-      ? 'translateX(0)'  // remove random transform effects for static view
-      : 'translateX(0)',
-    transition: `opacity 1s ease, transform 1s ease, transition-delay ${index * 0.3}s`,
+
+   transform: isVisible
+      ? index % 2 === 0
+        ? 'translateX(0)'
+        : 'translateX(0)'
+      : index % 2 === 0
+      ? 'translateX(-100px)'
+      : 'translateX(100px)',
+    transition: `opacity 1s ease, transform 1s ease, transition-delay ${index * 0.3}s`, // Sequential delay for each image
   });
 
   const galleryImageStyle = {
@@ -202,6 +203,29 @@ const Gallery4 = () => {
             100% {
               opacity: 1;
               transform: translateY(0);
+            }
+          }
+
+          
+          @keyframes slideInFromLeft {
+            0% {
+              opacity: 0;
+              transform: translateX(-100px);
+            }
+            100% {
+              opacity: 1;
+              transform: translateX(0);
+            }
+          }
+
+          @keyframes slideInFromRight {
+            0% {
+              opacity: 0;
+              transform: translateX(100px);
+            }
+            100% {
+              opacity: 1;
+              transform: translateX(0);
             }
           }
 

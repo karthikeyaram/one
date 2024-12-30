@@ -3,9 +3,10 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import jsondata from '../../Data/Data.json';
 
-import image18 from '../../Assets/gallery/img18.jpg'
-import image19 from '../../Assets/gallery/img19.jpg'
-import image20 from '../../Assets/gallery/img20.jpg'
+import image18 from '../../Assets/gallery/img18.jpg';
+import image19 from '../../Assets/gallery/img19.jpg';
+import image20 from '../../Assets/gallery/img20.jpg';
+
 const IsaiArulalarkal = () => {
   const [activeHeader, setActiveHeader] = useState('IsaiArulalarkal');
   const headerNames = [
@@ -19,13 +20,12 @@ const IsaiArulalarkal = () => {
   const { language } = useSelector((state) => state.language);
   const galleryd = jsondata[language]?.blog2 || [];
 
-  // Translation object
   const translations = {
-    'DeivigaArulalarkal': 'தெய்வீக அருளாளர்கள்', 
-    'IsaiArulalarkal': 'இசை அருளாளர்கள்',
-    'IsaiKalaivanarkal': 'இசை கலைவாணர்கள்',
-    'IsaiPerairignarkal': 'முஇசைப் பேரறிஞர்கள்',
-    'PannIsaiPerarignarkal': 'பண் இசைப் பேரறிஞர்கள்',
+    DeivigaArulalarkal: 'தெய்வீக அருளாளர்கள்',
+    IsaiArulalarkal: 'இசை அருளாளர்கள்',
+    IsaiKalaivanarkal: 'இசை கலைவாணர்கள்',
+    IsaiPerairignarkal: 'முஇசைப் பேரறிஞர்கள்',
+    PannIsaiPerarignarkal: 'பண் இசைப் பேரறிஞர்கள்',
   };
 
   const headerStyle = {
@@ -58,49 +58,24 @@ const IsaiArulalarkal = () => {
     { src: image20 },
   ];
 
-  const [visibleImages, setVisibleImages] = useState([]);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setVisibleImages((prev) => [...prev, entry.target]);
-          }
-        });
-      },
-      {
-        threshold: 0.2,
-      }
-    );
-
-    const imageElements = document.querySelectorAll('.gallery-item');
-    imageElements.forEach((image) => observer.observe(image));
-
-    return () => observer.disconnect();
-  }, []);
-
   const galleryContainerStyle = {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))',
-    gap: '20px',
-    padding: '20px',
+    display: 'flex',
+    justifyContent: 'center',
+    gap: '10px',
+    flexWrap: 'wrap',
+ 
   };
 
-  const galleryItemStyle = (isVisible, index) => ({
+  const galleryItemStyle = {
     position: 'relative',
     overflow: 'hidden',
     borderRadius: '10px',
-    boxShadow: isVisible ? '0 4px 12px rgba(0, 0, 0, 0.2)' : 'none',
-    transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)',
     cursor: 'pointer',
     textAlign: 'center',
-    opacity: isVisible ? 1 : 0,
-    transform: isVisible
-      ? 'translateX(0)'
-      : 'translateX(100px)',
-    transition: `opacity 1s ease, transform 1s ease, transition-delay ${index * 0.3}s`,
-  });
+    flex: '1 1 calc(33.33% - 30px)',
+    margin: '10px',
+  };
 
   const galleryImageStyle = {
     width: '100%',
@@ -111,7 +86,7 @@ const IsaiArulalarkal = () => {
 
   const imageNameStyle = {
     marginTop: '10px',
-    fontSize: '16px',
+    fontSize: '13px',
     fontWeight: '600',
     color: '#FFF',
     textShadow: '0px 1px 1px ',
@@ -144,18 +119,10 @@ const IsaiArulalarkal = () => {
         </h6>
       </div>
 
-      <div style={galleryContainerStyle}>
+      <div style={galleryContainerStyle} className="gallery-container">
         {images.map((image, index) => (
-          <div
-            key={index}
-            className="gallery-item"
-            style={galleryItemStyle(visibleImages.includes(document.querySelector(`.gallery-item:nth-child(${index + 1})`)), index)}
-          >
-            <img
-              src={image.src}
-              alt={image.name}
-              style={galleryImageStyle}
-            />
+          <div key={index} className="gallery-item" style={galleryItemStyle}>
+            <img src={image.src} alt={`Gallery ${index + 1}`} style={galleryImageStyle} />
             <div style={imageNameStyle}>
               {galleryd[0]?.gallery2?.[index]?.title || 'No Title Available'}
             </div>
@@ -165,41 +132,10 @@ const IsaiArulalarkal = () => {
 
       <style>
         {`
-          @keyframes fadeIn {
-            0% {
-              opacity: 0;
-              transform: translateY(-20px);
-            }
-            100% {
-              opacity: 1;
-              transform: translateY(0);
-            }
-          }
-
-          @keyframes slideInFromLeft {
-            0% {
-              opacity: 0;
-              transform: translateX(-100px);
-            }
-            100% {
-              opacity: 1;
-              transform: translateX(0);
-            }
-          }
-
-          @keyframes slideInFromRight {
-            0% {
-              opacity: 0;
-              transform: translateX(100px);
-            }
-            100% {
-              opacity: 1;
-              transform: translateX(0);
-            }
-          }
-
-          /* Remove animations and transitions on smaller screens */
           @media (max-width: 768px) {
+
+          
+
             .header-container {
               flex-direction: column;
               align-items: center;
@@ -208,11 +144,15 @@ const IsaiArulalarkal = () => {
             .header-container a {
               margin-bottom: 10px;
             }
+            .gallery-container {
+              flex-direction: column;
+              gap: 20px;
+            }
 
             .gallery-item {
-              opacity: 1 !important; /* Disable fade in effect */
-              transform: translateX(0) !important; /* Prevent sliding effect */
-              transition: none !important; /* Disable transition */
+              flex: 1 1 100%;
+              margin: 0 auto;
+              width: 90%;
             }
           }
         `}

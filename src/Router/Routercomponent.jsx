@@ -46,6 +46,7 @@ import Gallery5 from '../Component/Gallery/Gallery5'
 import CompetitionForm from '../Component/Home/Competitionform'
 import Undergraduate from '../Component/Undergraduate'
 import Staff from '../Pages/Staffs'
+import Payement from '../Component/Payement'
 
 
 const Routercomponent = () => {
@@ -69,6 +70,7 @@ const MainRoutes = () => {
 
       <Routes>
         <Route path="/tamilisaisangam" element={<Home />} />
+        <Route path="/pay" element={<Payement/>} />
         <Route path="/DeivigaArulalarkal" element={<DeivigaArulalarkal />} />
         <Route path='/IsaiArulalarkal' element={<IsaiArulalarkal />} />
         <Route path='/library' element={<Library />} />

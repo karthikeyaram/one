@@ -18,10 +18,8 @@ const Banner = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  // const cards = [
-  //   { id: 1, img: image1 }, { id: 2, img: image2 }, { id: 3, img: image3 }, { id: 4, img: image4 }, { id: 5, img: image5 },
-  //   { id: 6, img: image6 }, { id: 7, img: image7 }
-  // ]
+ 
+
   const home = [
     {
       margazhispecial: [
@@ -240,7 +238,7 @@ const Banner = () => {
                   flex: "1 1 calc(33.333% - 20px)", // For desktop view (3 cards in a row)
                 }}
               >
-                <Link to="/certification" style={{ textDecoration: "none" }}>
+                <Link to="/pay" style={{ textDecoration: "none" }}>
                   <div className="detail">
                     <h3
                       style={{
@@ -249,6 +247,8 @@ const Banner = () => {
                         fontWeight: "600",
                         marginTop: "40px",
                         textAlign: "center",
+                        marginLeft:"40px",
+                        width:"200px"
                       }}
                     >
                       {item.title3}
@@ -279,90 +279,91 @@ const Banner = () => {
                 <span>{special.title}</span> {special.subtitle}
               </h2>
               <ul className="row cs-style-3">
-                {home[0].margazhispecial.map((section, sectionIndex) =>
-                  (section.cardsd || section.cardsd1).map((cardm) => (
-                    <li
-                      key={cardm.id}
-                      className="col-sm-4"
+  {home[0].margazhispecial.map((section, sectionIndex) =>
+    (section.cardsd || section.cardsd1).map((cardm) => (
+      <li
+        key={cardm.id}
+        className="col-sm-4"
+        style={{
+          listStyle: "none",
+          padding: "15px",
+          transition: "transform 0.3s ease",
+        }}
+      >
+        <div className="inner" style={{ position: "relative" }}>
+          <figure
+            className="card-figure"
+            style={{ position: "relative" }}
+          >
+            {special.card
+              ?.filter((card) => card.id === cardm.id) // Check for matching IDs
+              .map((filteredCard) => (
+                <div key={filteredCard.id} className="card">
+                  <img
+                    src={cardm.image} // Use the cardm.image here
+                    alt="Card Image"
+                    className="card-image"
+                    style={{
+                      width: "100%",
+                      height: "auto",
+                      borderRadius: "10px",
+                      transition: "transform 0.3s ease",
+                    }}
+                  />
+                  
+                  <div
+                    className="card"
+                    style={{
+                      position: "absolute",
+                      bottom: "0",
+                      left: "0",
+                      right: "0",
+                      background:
+                        "linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8))",
+                      color: "#fff",
+                      borderRadius: "0 0 10px 10px",
+                      padding: "20px",
+                      display: "flex",
+                      flexDirection: "column",
+                      justifyContent: "flex-end",
+                      width: "100%",
+                      height: "100px",
+                      boxSizing: "border-box",
+                    }}
+                  >
+                    <h5
+                      className="card-title"
                       style={{
                         listStyle: "none",
                         padding: "15px",
                         transition: "transform 0.3s ease",
                       }}
                     >
-                      <div className="inner" style={{ position: "relative" }}>
-                        <figure
-                          className="card-figure"
-                          style={{ position: "relative" }}
-                        >
-                          {special.card
-                            ?.filter((card) => card.id === cardm.id) // Check for matching IDs
-                            .map((filteredCard) => (
-                              <div key={filteredCard.id} className="card">
-                                <img
-                                  src={cardm.image} // Use the `cardm.image` here
-                                  alt="Card Image"
-                                  className="card-image"
-                                  style={{
-                                    width: "100%",
-                                    height: "auto",
-                                    borderRadius: "10px",
-                                    transition: "transform 0.3s ease",
-                                  }}
-                                />
-                                <div
-                                  className="card"
-                                  style={{
-                                    position: "absolute",
-                                    bottom: "0",
-                                    left: "0",
-                                    right: "0",
-                                    background:
-                                      "linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8))",
-                                    color: "#fff",
-                                    borderRadius: "0 0 10px 10px",
-                                    padding: "20px",
-                                    display: "flex",
-                                    flexDirection: "column",
-                                    justifyContent: "flex-end",
-                                    width: "100%",
-                                    height: "100px",
-                                    boxSizing: "border-box",
-                                  }}
-                                >
-                                  <h5
-                                    className="card-title"
-                                    style={{
-                                      fontSize: "1.6rem",
-                                      fontWeight: "700",
-                                      marginBottom: "8px",
-                                      textShadow:
-                                        "2px 2px 5px rgba(0, 0, 0, 0.7)",
-                                    }}
-                                  >
-                                    {filteredCard.cardtitle || "Title"}
-                                  </h5>
-                                  <h6
-                                    className="card-content"
-                                    style={{
-                                      fontSize: "1.1rem",
-                                      lineHeight: "1.6",
-                                      color: "#f1f1f1",
-                                      marginTop: "5px",
-                                      letterSpacing: "0.5px",
-                                    }}
-                                  >
-                                    {filteredCard.cardcontent || "Content"}
-                                  </h6>
-                                </div>
-                              </div>
-                            ))}
-                        </figure>
-                      </div>
-                    </li>
-                  ))
-                )}
-              </ul>
+                      {filteredCard.cardtitle || "Title"}
+                    </h5>
+                    <h6
+                      className="card-content"
+                      style={{
+                        fontSize: "1.1rem",
+                        lineHeight: "1.6",
+                        color: "#f1f1f1",
+                        marginTop: "5px",
+                        letterSpacing: "0.5px",
+                      }}
+                    >
+                      {filteredCard.cardcontent || "Content"}
+                    </h6>
+                  </div>
+
+                </div>
+              ))}
+          </figure>
+        </div>
+      </li>
+    ))
+  )}
+</ul>
+
             </div>
           ))}
         </div>
