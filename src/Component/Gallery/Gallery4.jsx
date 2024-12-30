@@ -15,10 +15,44 @@ import image47 from '../../Assets/gallery/img29 (43).jpg'
 import image48 from '../../Assets/gallery/img29 (42).jpg'
 import image49 from '../../Assets/gallery/img29 (41).jpg'
 import image50 from '../../Assets/gallery/img29 (39).jpg'
-import image51 from '../../Assets/gallery/img29 (38).jpg'
+import image51 from '../../Assets/gallery/img29 (40).jpg'
 import image52 from '../../Assets/gallery/img29 (37).jpg'
 import image53 from '../../Assets/gallery/img29 (36).jpg'
-import image54 from '../../Assets/gallery/img29 (35).jpg'
+import image55 from '../../Assets/gallery/img29 (35).jpg'
+import image56 from '../../Assets/gallery/img29 (34).jpg'
+import image57 from '../../Assets/gallery/img29 (33).jpg'
+import image58 from '../../Assets/gallery/img29 (32).jpg'
+import image59 from '../../Assets/gallery/img29 (31).jpg'
+import image60 from '../../Assets/gallery/img29 (30).jpg'
+import image61 from '../../Assets/gallery/img29 (29).jpg'
+import image62 from '../../Assets/gallery/img29 (28).jpg'
+import image63 from '../../Assets/gallery/img29 (27).jpg'
+import image64 from '../../Assets/gallery/img29 (26).jpg'
+import image65 from '../../Assets/gallery/img29 (25).jpg'
+import image66 from '../../Assets/gallery/img29 (24).jpg'
+import image67 from '../../Assets/gallery/img29 (23).jpg'
+import image68 from '../../Assets/gallery/img29 (22).jpg'
+import image69 from '../../Assets/gallery/img29 (21).jpg'
+import image70 from '../../Assets/gallery/img29 (20).jpg'
+import image71 from '../../Assets/gallery/img29 (19).jpg'
+import image72 from '../../Assets/gallery/img29 (18).jpg'
+import image73 from '../../Assets/gallery/img29 (17).jpg'
+import image74 from '../../Assets/gallery/img29 (16).jpg'
+import image75 from '../../Assets/gallery/img29 (15).jpg'
+import image76 from '../../Assets/gallery/img29 (14).jpg'
+import image77 from '../../Assets/gallery/img29 (13).jpg'
+import image78 from '../../Assets/gallery/img29 (12).jpg'
+import image79 from '../../Assets/gallery/img29 (11).jpg'
+import image80 from '../../Assets/gallery/img29 (10).jpg'
+import image81 from '../../Assets/gallery/img29 (9).jpg'
+import image82 from '../../Assets/gallery/img29 (8).jpg'
+import image83 from '../../Assets/gallery/img29 (7).jpg'
+import image84 from '../../Assets/gallery/img29 (6).jpg'
+import image85 from '../../Assets/gallery/img29 (5).jpg'
+import image86 from '../../Assets/gallery/img29 (4).jpg'
+import image87 from '../../Assets/gallery/img29 (3).jpg'
+import image88 from '../../Assets/gallery/img29 (2).jpg'
+import image89 from '../../Assets/gallery/img29 (1).jpg'
 
 const Gallery4 = () => {
   const [activeHeader, setActiveHeader] = useState('IsaiPerairignarkal');
@@ -32,23 +66,59 @@ const Gallery4 = () => {
   ];
 
   const images = [
-    { src: image38 },
-    { src: image39 },
-    { src: image40 },
-    { src: image41 },
-    { src: image42 },
-    { src: image43 },
-    { src: image44 },
-    { src: image45 },
-    { src: image46 },
-    { src: image47 },
-    { src: image48 },
-    { src: image49 },
-    { src: image50 },
-    { src: image51 },
-    { src: image52 },
-    { src: image53 },
-    { src: image54 },
+     image38 ,
+     image39 ,
+      image40 ,
+     image41 ,
+     image42 ,
+     image43 ,
+    image44 ,
+     image45 ,
+     image46 ,
+     image47 ,
+     image48 ,
+     image49 ,
+     image50 ,
+image51,
+    image52 ,
+     image53 ,
+     image55 ,
+     image56 ,
+     image57 ,
+     image58 ,
+     image59 ,
+     image60 ,
+     image61 ,
+     image62 ,
+     image63 ,
+     image64 ,
+     image65 ,
+     image66 ,
+     image67 ,
+     image68 ,
+     image69 ,
+     image70 ,
+     image71 ,
+     image72 ,
+     image73 ,
+     image74 ,
+     image75 ,
+      image76 ,
+ image77 ,
+ image78,
+image79 ,
+ image80 ,
+ image81 ,
+ image82,
+ image83 ,
+ image84 ,
+ image85 ,
+ image86 ,
+ image87 ,
+ image88 ,
+ image89 ,
+
+
   ];
 
   const { language } = useSelector((state) => state.language);
@@ -157,6 +227,23 @@ const Gallery4 = () => {
     transition: 'background 0.3s ease, transform 0.3s ease',
   };
 
+  const renderImages = (images) =>
+    images.map((src, index) => (
+      <div
+        key={index}
+        className="gallery-item"
+        style={galleryItemStyle(
+          visibleImages.includes(document.querySelector(`.gallery-item:nth-child(${index + 1})`)),
+          index
+        )}
+      >
+        <img src={src} alt={`Gallery ${index + 1}`} style={galleryImageStyle} />
+        <div style={imageNameStyle}>
+          {galleryd[0]?.gallery4?.[index]?.title || 'No Title Available'}
+        </div>
+      </div>
+    ));
+
   return (
     <div>
       <div className="header-container" style={headerStyle}>
@@ -178,20 +265,10 @@ const Gallery4 = () => {
         </h6>
       </div>
 
-      <div style={galleryContainerStyle}>
-        {images.map((image, index) => (
-          <div
-            key={index}
-            className="gallery-item"
-            style={galleryItemStyle(visibleImages.includes(document.querySelector(`.gallery-item:nth-child(${index + 1})`)), index)}
-          >
-            <img src={image.src} alt={image.name} style={galleryImageStyle} />
-            <div style={imageNameStyle}>
-              {galleryd[0]?.gallery4?.[index]?.title || 'No Title Available'}
-            </div>
-          </div>
-        ))}
-      </div>
+      <div style={galleryContainerStyle}>{renderImages(images)}</div>
+
+
+
 
       <style>
         {`
@@ -243,6 +320,9 @@ const Gallery4 = () => {
               transform: none !important;  /* Disable shake on small screens */
               opacity: 1 !important;        /* Ensure image is visible */
               transition: none !important;  /* Disable transition effects */
+            }
+               .lastone {
+              flex-direction: column;
             }
           }
         `}

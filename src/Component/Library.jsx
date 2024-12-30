@@ -21,6 +21,9 @@ const Library = () => {
   const headingText =
     language === 'tamil' ? 'தமிழ் இசை நூல் நிலையம்' : 'Tamil Isai Library';
 
+    const headingTexts =
+    language === 'tamil' ? 'புத்தகக் கூடத்தில் பின்வரும் தலைப்புகளுக்குட்பட்ட 3000க்கும் மேற்பட்ட புத்தகக் கூடங்கள் உள்ளன' : 'The Library has a collection of over 3000 books under the following heads';
+
   return (
     <div className="library-container">
       <style>
@@ -154,6 +157,7 @@ const Library = () => {
       </style>
 
       <div className="col-sm-12" style={{ backgroundColor: 'white' }}>
+
         <div
           style={{
             textAlign: 'center',
@@ -167,6 +171,22 @@ const Library = () => {
           }}
         >
           {headingText}
+        </div>
+
+        <div
+          style={{
+            textAlign: 'center',
+
+            padding: '5px',
+            fontSize: '13px',
+            color: "black",
+            fontWeight: 'bold',
+            borderRadius: '10px',
+            marginBottom: '30px',
+            // background: "linear-gradient(to right, #3fa3e0,rgb(58, 133, 173),rgb(20, 61, 126))",
+          }}
+        >
+          {headingTexts}
         </div>
 
         <div className="panel-group" id="accordion" role="tablist" aria-multiselectable="true">

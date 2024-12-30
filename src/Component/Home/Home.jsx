@@ -18,8 +18,6 @@ const Banner = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
- 
-
   const home = [
     {
       margazhispecial: [
@@ -136,14 +134,11 @@ const Banner = () => {
                 opacity: index === currentSlide ? 1 : 0,
                 transition: "opacity 1.5s ease-in-out",
               }}
-            >
-              {/* Optional content like titles, descriptions, buttons */}
+            >            
             </div>
           ))}
         </div>
       </div>
-
-      {/* Improved Cards Section */}
       {head.map((item, index) => (
         <div className="about" key={index}>
           <div className="container1">
@@ -155,10 +150,9 @@ const Banner = () => {
                 gap: "20px",
                 padding: "0",
                 listStyleType: "none",
-                flexWrap: "wrap", // Allow wrapping on smaller screens
+                flexWrap: "wrap", 
               }}
             >
-              {/* Card 1 */}
               <li
                 className="col-sm-4 apply-online clearfix equal-hight"
                 style={{
@@ -169,7 +163,7 @@ const Banner = () => {
                   borderRadius: "12px",
                   boxShadow: "0px 10px 30px rgba(0, 0, 0, 0.1)",
                   transition: "transform 0.3s ease, box-shadow 0.3s ease",
-                  flex: "1 1 calc(33.333% - 20px)", // For desktop view (3 cards in a row)
+                  flex: "1 1 calc(33.333% - 20px)",
                 }}
               >
                 <Link to="/competition-form" style={{ textDecoration: "none" }}>
@@ -191,7 +185,7 @@ const Banner = () => {
                 </Link>
               </li>
 
-              {/* Card 2 */}
+              
               <li
                 className="col-sm-4 prospects clearfix equal-hight"
                 style={{
@@ -201,7 +195,7 @@ const Banner = () => {
                   borderRadius: "12px",
                   boxShadow: "0px 10px 30px rgba(0, 0, 0, 0.1)",
                   transition: "transform 0.3s ease, box-shadow 0.3s ease",
-                  flex: "1 1 calc(33.333% - 20px)", // For desktop view (3 cards in a row)
+                  flex: "1 1 calc(33.333% - 20px)", 
                 }}
               >
                 <Link to="/prospects" style={{ textDecoration: "none" }}>
@@ -223,8 +217,6 @@ const Banner = () => {
                   </div>
                 </Link>
               </li>
-
-              {/* Card 3 */}
               <li
                 className="col-sm-4 certification clearfix equal-hight"
                 style={{
@@ -235,7 +227,7 @@ const Banner = () => {
                   borderRadius: "12px",
                   boxShadow: "0px 10px 30px rgba(0, 0, 0, 0.1)",
                   transition: "transform 0.3s ease, box-shadow 0.3s ease",
-                  flex: "1 1 calc(33.333% - 20px)", // For desktop view (3 cards in a row)
+                  flex: "1 1 calc(33.333% - 20px)", 
                 }}
               >
                 <Link to="/pay" style={{ textDecoration: "none" }}>
@@ -247,8 +239,8 @@ const Banner = () => {
                         fontWeight: "600",
                         marginTop: "40px",
                         textAlign: "center",
-                        marginLeft:"40px",
-                        width:"200px"
+                        marginLeft: "40px",
+                        width: "200px",
                       }}
                     >
                       {item.title3}
@@ -260,124 +252,110 @@ const Banner = () => {
           </div>
         </div>
       ))}
-
-      {/* Margazhi Special */}
       <div className="news-events padding-lg">
         <div className="container1">
           {margazhiSpecial.map((special, index) => (
             <div key={index}>
               <h2
                 style={{
-                  fontSize: "2.5rem", // Increased font size for the title
+                  fontSize: "2.5rem", 
                   color: "#00A6D6",
-                  fontWeight: "700", // Bold title for emphasis
+                  fontWeight: "700", 
                   marginBottom: "20px",
                   textAlign: "center",
-                  letterSpacing: "1px", // Added letter spacing for better readability
+                  letterSpacing: "1px",
                 }}
               >
                 <span>{special.title}</span> {special.subtitle}
               </h2>
               <ul className="row cs-style-3">
-  {home[0].margazhispecial.map((section, sectionIndex) =>
-    (section.cardsd || section.cardsd1).map((cardm) => (
-      <li
-        key={cardm.id}
-        className="col-sm-4"
-        style={{
-          listStyle: "none",
-          padding: "15px",
-          transition: "transform 0.3s ease",
-        }}
-      >
-        <div className="inner" style={{ position: "relative" }}>
-          <figure
-            className="card-figure"
-            style={{ position: "relative" }}
-          >
-            {special.card
-              ?.filter((card) => card.id === cardm.id) // Check for matching IDs
-              .map((filteredCard) => (
-                <div key={filteredCard.id} className="card">
-                  <img
-                    src={cardm.image} // Use the cardm.image here
-                    alt="Card Image"
-                    className="card-image"
-                    style={{
-                      width: "100%",
-                      height: "auto",
-                      borderRadius: "10px",
-                      transition: "transform 0.3s ease",
-                    }}
-                  />
-                  
-                  <div
-                    className="card"
-                    style={{
-                      position: "absolute",
-                      bottom: "0",
-                      left: "0",
-                      right: "0",
-                      background:
-                        "linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8))",
-                      color: "#fff",
-                      borderRadius: "0 0 10px 10px",
-                      padding: "20px",
-                      display: "flex",
-                      flexDirection: "column",
-                      justifyContent: "flex-end",
-                      width: "100%",
-                      height: "100px",
-                      boxSizing: "border-box",
-                    }}
-                  >
-                    <h5
-                      className="card-title"
+                {home[0].margazhispecial.map((section, sectionIndex) =>
+                  (section.cardsd || section.cardsd1).map((cardm) => (
+                    <li
+                      key={cardm.id}
+                      className="col-sm-4"
                       style={{
                         listStyle: "none",
                         padding: "15px",
                         transition: "transform 0.3s ease",
                       }}
                     >
-                      {filteredCard.cardtitle || "Title"}
-                    </h5>
-                    <h6
-                      className="card-content"
-                      style={{
-                        fontSize: "1.1rem",
-                        lineHeight: "1.6",
-                        color: "#f1f1f1",
-                        marginTop: "5px",
-                        letterSpacing: "0.5px",
-                      }}
-                    >
-                      {filteredCard.cardcontent || "Content"}
-                    </h6>
-                  </div>
+                      <div className="inner" style={{ position: "relative" }}>
+                        <figure
+                          className="card-figure"
+                          style={{ position: "relative" }}
+                        >
+                          {special.card
+                            ?.filter((card) => card.id === cardm.id) 
+                            .map((filteredCard) => (
+                              <div key={filteredCard.id} className="card">
+                                <img
+                                  src={cardm.image} 
+                                  alt="Card Image"
+                                  className="card-image"
+                                  style={{
+                                    width: "100%",
+                                    height: "auto",
+                                    borderRadius: "10px",
+                                    transition: "transform 0.3s ease",
+                                  }}
+                                />
 
-                </div>
-              ))}
-          </figure>
-        </div>
-      </li>
-    ))
-  )}
-</ul>
-
+                                <div
+                                  className="card"
+                                  style={{
+                                    position: "absolute",
+                                    bottom: "0",
+                                    left: "0",
+                                    right: "0",
+                                    background:
+                                      "linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8))",
+                                    color: "#fff",
+                                    borderRadius: "0 0 10px 10px",
+                                    // padding: "20px",
+                                    display: "flex",
+                                    flexDirection: "column",
+                                    justifyContent: "flex-end",
+                                    width: "100%",
+                                    height: "100px",
+                                    boxSizing: "border-box",
+                                  }}
+                                >
+                                  <h5
+                                    className="card-title"
+                                    style={{
+                                      listStyle: "none",
+                                      padding: "15px",
+                                      transition: "transform 0.3s ease",
+                                    }}
+                                  >
+                                    {filteredCard.cardtitle || "Title"}
+                                  </h5>
+                                  <h6
+                                    className="card-content"
+                                    style={{
+                                      fontSize: "1.1rem",
+                                      lineHeight: "1.6",
+                                      color: "#f1f1f1",
+                                      marginTop: "5px",
+                                      letterSpacing: "0.5px",
+                                    }}
+                                  >
+                                    {filteredCard.cardcontent || "Content"}
+                                  </h6>
+                                </div>
+                              </div>
+                            ))}
+                        </figure>
+                      </div>
+                    </li>
+                  ))
+                )}
+              </ul>
             </div>
           ))}
         </div>
       </div>
-
-      {/* Add Media Query for mobile responsiveness */}
-      <style jsx>{`
-        @media (max-width: 768px) {
-          .slidei {
-            background-size: contain; /* Ensures the entire image fits within the container */
-            background-position: center center; /* Centers the image in the container */
-          }
-        }
-      `}</style>
     </>
   );
 };

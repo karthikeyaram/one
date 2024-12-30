@@ -139,6 +139,7 @@ const DeivigaArulalarkal = () => {
     transition: 'background 0.3s ease, transform 0.3s ease',
   };
 
+
   const renderImages = (images) =>
     images.map((src, index) => (
       <div
@@ -188,37 +189,32 @@ const DeivigaArulalarkal = () => {
 
       <div style={galleryContainerStyle}>{renderImages(images.slice(0, 15))}</div>
 
-      <div
-        style={{
-          display: 'flex',
-          gap: '80px',
-          justifyContent: 'center',
-          padding: '20px',
-        }}
-        className="lastone"
-      >
-        {images.slice(15).map((src, index) => {
-          // Handle titles for the last two images
-          const tamilTitles = ['நம்மாழ்வார்', 'அருணகிரிநாதர்'];
-          const title = tamilTitles[index] || 'No Title Available'; // Default to 'No Title Available' if not one of the last two images
+      {/* Last div with two images */}
+  {/* Last div with two images */}
+   <div
+  style={{
+    display: 'flex',
+    gap: '80px',
+    justifyContent: 'center',
+    padding: '20px',
+  }}
+  className="lastone"
+>
+  <div className="gallery-item" style={{ ...galleryItemStyle(true, 16), padding: '30px' }}>
+    <img src={image16} alt="Nammalvaar" style={galleryImageStyle} />
+    <div style={imageNameStyle}>
+      {language === 'tamil' ? 'நம்மாழ்வார்' : 'Nammalvaar'}
+    </div>
+  </div>
+  <div className="gallery-item" style={{ ...galleryItemStyle(true, 17), padding: '30px' }}>
+    <img src={image17} alt="Arunagirinathar" style={galleryImageStyle} />
+    <div style={imageNameStyle}>
+      {language === 'tamil' ? 'அருணகிரிநாதர்' : 'Arunagirinathar'}
+    </div>
+  </div>
+</div>
 
-          return (
-            <div
-              key={index}
-              className="gallery-item"
-              style={galleryItemStyle(
-                visibleImages.includes(
-                  document.querySelector(`.gallery-item:nth-child(${index + 16})`)
-                ),
-                index
-              )}
-            >
-              <img src={src} alt={`Gallery ${index + 16}`} style={galleryImageStyle} />
-              <div style={imageNameStyle}>{title}</div>
-            </div>
-          );
-        })}
-      </div>
+
 
       <style>
         {`
