@@ -1,10 +1,12 @@
 import React from "react";
-import { FaBell, FaEnvelope, FaUserCircle, FaCog, FaQuestionCircle, FaLock, FaSignOutAlt } from "react-icons/fa";
-import { RiLockPasswordLine } from "react-icons/ri";
+import { FaBell, FaEnvelope, FaUserCircle, FaCog, FaQuestionCircle, FaSignOutAlt, FaBars } from "react-icons/fa";
 
-const Topbar = () => {
+const Topbar = ({ toggleSidebar }) => {
   return (
     <div className="topbar">
+      {/* <div className="logo">
+        <img src="your-logo-path.png" alt="Logo" />
+      </div> */}
       <div className="notifications">
         <FaBell className="icon" />
       </div>
@@ -15,27 +17,14 @@ const Topbar = () => {
         <FaUserCircle className="profile-icon" />
         <span className="admin-name">Admin Name</span>
         <ul className="dropdown-menu">
-          <li>
-            <a href="/profile">
-              <FaUserCircle /> Profile
-            </a>
-          </li>
-          <li>
-            <a href="/settings">
-              <FaCog /> Settings
-            </a>
-          </li>
-          <li>
-            <a href="/help">
-              <FaQuestionCircle /> Help
-            </a>
-          </li>
-          <li>
-            <a href="/logout">
-              <FaSignOutAlt /> Logout
-            </a>
-          </li>
+          <li><a href="/profile"><FaUserCircle /> Profile</a></li>
+          <li><a href="/settings"><FaCog /> Settings</a></li>
+          <li><a href="/help"><FaQuestionCircle /> Help</a></li>
+          <li><a href="/logout"><FaSignOutAlt /> Logout</a></li>
         </ul>
+      </div>
+      <div className="menu-toggle" onClick={toggleSidebar}>
+        <FaBars className="icon toggle" />
       </div>
     </div>
   );

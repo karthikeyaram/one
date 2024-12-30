@@ -3,17 +3,23 @@ import Topbar from "./Topbar";
 import Sidebar from "./Sidebar";
 import { useState } from "react";
 import { useEffect } from "react";
-import {Routes,Route,useNavigate} from "react-router-dom";       
-import './Admin.css';
+import { useNavigate, Routes, Route } from "react-router-dom";
+import "./Admin.css";
 import Staffdetails from "./Staffdetails";
+import Dashboard from "./Dashboard";
+import Userdetails from "./Userdetails";
+import Galleryupload from "./Galleryupload";
+import Imagevideoupload from "./Imagevideoupload";
+import Addcourse from "./Addcourse";
+import Addstaff from "./Addstaff";
+import Paymentdetails from "./Paymentdetails";
+import Transactiondetails from "./Transactiondetails";
 
 const Adminlayout = () => {
-
-
   const [menuItems] = useState([
     {
       title: "Dashboard",
-      path: "admin",
+      path: "dashboard",
     },
     {
       title: "User Details",
@@ -23,12 +29,9 @@ const Adminlayout = () => {
       title: "All Details",
       submenu: [
         { title: "Payment Details", path: "paymentdetails" },
-        {
-          title: "Transaction Details", path: "tansaction",
-        }, { title: "Audio File", path: "audiofile", },
-        {
-          title: "Register Course", path: "registercourse",
-        },
+        { title: "Transaction Details", path: "tansactiondetails" },
+        { title: "Audio File", path: "audiofile" },
+        { title: "Register Course", path: "registercourse" },
       ],
     },
 
@@ -58,9 +61,8 @@ const Adminlayout = () => {
     {
       title: "Contact us enquiy Details",
       path: "exquiery",
-    }
+    },
   ]);
-
 
   const navigate = useNavigate();
 
@@ -72,19 +74,29 @@ const Adminlayout = () => {
   }, [navigate]);
 
   return (
-    <>
-        <Topbar />
-        <div className="main d-flex">
-          <div className="sidebarwrapper">
-            <Sidebar />
-          </div>
-          <div className="content">
-            <Routes>
-              <Route path="/" exact={true} element={<Staffdetails/>}/>
-            </Routes>
-          </div>
+    <div className="admin-layout">
+      <Topbar />
+      <div className="dashboard-container">
+        <Sidebar menuItems={menuItems || []} />
+        <div className="main-content">
+          <Routes>
+            <Route path="dashboard" element={<Dashboard />} />
+            <Route path="userdetails" element={<Userdetails />} />
+            <Route path="staffdetails" element={<Staffdetails />} />
+            <Route path="galleryupload" element={<Galleryupload />} />
+            <Route path="imageupload" element={<Imagevideoupload />} />
+            <Route path="addcourse" element={<Addcourse/>} />
+            <Route path="staffdetails" element={<Staffdetails/>} />
+            <Route path="staffdetails/addstaff" element={<Addstaff/>} />
+            <Route path="editstaff:id" element={<Addstaff/>} />
+            <Route path="paymentdetails" element={<Paymentdetails/>} />
+            <Route path="tansactiondetails" element={<Transactiondetails/>} />
+
+
+          </Routes>
         </div>
-    </>
+      </div>
+    </div>
   );
 };
 

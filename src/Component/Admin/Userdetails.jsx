@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
 
 const Userdetails = () => {
+  
+
   return (
     <div>
-      <h1>UserDetails</h1>
+      <h1>User Details</h1>
+      
     </div>
-  )
-}
+  );
+};
 
-export default Userdetails
+export default Userdetails;

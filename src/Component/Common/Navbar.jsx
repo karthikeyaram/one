@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { MdEmail } from "react-icons/md";
 import { toggleLanguage } from "../../Redux/Slice/LanguageSlice";
@@ -12,7 +12,7 @@ import logo from "../../Assets/img/logo_new.jpg";
 import { IoIosPlayCircle } from "react-icons/io";
 import {
   FaFacebook,
-  FaTwitter,
+  // FaTwitter,
   FaPhoneSquareAlt,
   FaPinterest ,
   FaYoutube,
@@ -95,7 +95,6 @@ const Navbar = () => {
               <img src={logo} className="img-responsive" alt="Edumart Logo" />
             </a>
           </span>
-          <div className="col-xs-6 col-sm-3"></div>
           <div className="col-xs-6 col-sm-9">
             <div className="contact clearfix">
               <ul className="hidden-xs">
