@@ -125,6 +125,20 @@ const DeivigaArulalarkal = () => {
     transition: 'transform 0.3s ease',
   };
 
+  const imageNameStyle = {
+    marginTop: '10px',
+    fontSize: '13px',
+    fontWeight: '600',
+    color: '#FFF',
+    textShadow: '0px 1px 1px ',
+    color: 'rgba(243, 156, 18, 0.6)',
+    padding: '8px 12px',
+    borderRadius: '5px',
+    maxWidth: '100%',
+    textAlign: 'center',
+    transition: 'background 0.3s ease, transform 0.3s ease',
+  };
+
   const renderImages = (images) =>
     images.map((src, index) => (
       <div
@@ -136,7 +150,7 @@ const DeivigaArulalarkal = () => {
         )}
       >
         <img src={src} alt={`Gallery ${index + 1}`} style={galleryImageStyle} />
-        <div>
+        <div style={imageNameStyle}>
           {galleryd[0]?.gallery1?.[index]?.title || 'No Title Available'}
         </div>
       </div>
@@ -176,18 +190,94 @@ const DeivigaArulalarkal = () => {
 
       <div
         style={{
-          display: 'grid',
-          gridTemplateColumns: '1fr 1fr',
-          gap: '40px',
-          width:"750px",
-          alignItems:'center',
-          textAlign:"center",
-          padding: '15px',
-          marginLeft:"230px"
+          display: 'flex',
+          gap: '80px',
+          justifyContent: 'center',
+          padding: '20px',
         }}
+        className="lastone"
       >
-        {renderImages(images.slice(15))}
+        {images.slice(15).map((src, index) => {
+          // Handle titles for the last two images
+          const tamilTitles = ['நம்மாழ்வார்', 'அருணகிரிநாதர்'];
+          const title = tamilTitles[index] || 'No Title Available'; // Default to 'No Title Available' if not one of the last two images
+
+          return (
+            <div
+              key={index}
+              className="gallery-item"
+              style={galleryItemStyle(
+                visibleImages.includes(
+                  document.querySelector(`.gallery-item:nth-child(${index + 16})`)
+                ),
+                index
+              )}
+            >
+              <img src={src} alt={`Gallery ${index + 16}`} style={galleryImageStyle} />
+              <div style={imageNameStyle}>{title}</div>
+            </div>
+          );
+        })}
       </div>
+
+      <style>
+        {`
+          @keyframes fadeIn {
+            0% {
+              opacity: 0;
+              transform: translateY(-20px);
+            }
+            100% {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+
+          @keyframes slideInFromLeft {
+            0% {
+              opacity: 0;
+              transform: translateX(-100px);
+            }
+            100% {
+              opacity: 1;
+              transform: translateX(0);
+            }
+          }
+
+          @keyframes slideInFromRight {
+            0% {
+              opacity: 0;
+              transform: translateX(100px);
+            }
+            100% {
+              opacity: 1;
+              transform: translateX(0);
+            }
+          }
+
+          /* Remove shaking effect on small screens */
+          @media (max-width: 768px) {
+            .gallery-item {
+              transform: none !important;  /* Disable transform effect */
+              transition: none !important; /* Disable transition effect */
+              opacity: 1 !important;      /* Ensure images are visible */
+            }
+
+            .header-container {
+              flex-direction: column;
+              align-items: center;
+            }
+
+            .header-container a {
+              margin-bottom: 10px;
+            }
+
+            .lastone {
+              flex-direction: column;
+            }
+          }
+        `}
+      </style>
     </div>
   );
 };
