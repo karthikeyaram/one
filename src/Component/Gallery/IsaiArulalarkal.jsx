@@ -24,7 +24,7 @@ const IsaiArulalarkal = () => {
     DeivigaArulalarkal: 'தெய்வீக அருளாளர்கள்',
     IsaiArulalarkal: 'இசை அருளாளர்கள்',
     IsaiKalaivanarkal: 'இசை கலைவாணர்கள்',
-    IsaiPerairignarkal: 'முஇசைப் பேரறிஞர்கள்',
+    IsaiPerairignarkal: 'இசைப் பேரறிஞர்கள்',
     PannIsaiPerarignarkal: 'பண் இசைப் பேரறிஞர்கள்',
   };
 
@@ -43,13 +43,13 @@ const IsaiArulalarkal = () => {
   const headerItemStyle = (name) => ({
     fontSize: '12px',
     fontWeight: '600',
-    color: activeHeader === name ? '#F39C12' : '#333333',
+    color: activeHeader === name ? '#0682c4' : '#333333',
     textTransform: 'capitalize',
     cursor: 'pointer',
     padding: '12px 24px',
     borderRadius: '5px',
     transition: 'color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease',
-    boxShadow: activeHeader === name ? '0 0 10px rgba(243, 156, 18, 0.6)' : 'none',
+    boxShadow: activeHeader === name ? '0 0 10px rgba(5 115 169 / 60%)' : 'none',
   });
 
   const images = [
@@ -90,7 +90,7 @@ const IsaiArulalarkal = () => {
     fontWeight: '600',
     color: '#FFF',
     textShadow: '0px 1px 1px ',
-    color: 'rgba(243, 156, 18, 0.6)',
+    color: 'rgba(5, 127, 184, 0.6)',
     padding: '8px 12px',
     borderRadius: '5px',
     maxWidth: '100%',
@@ -114,7 +114,7 @@ const IsaiArulalarkal = () => {
       </div>
 
       <div style={{ textAlign: 'center' }}>
-        <h6 style={{ fontSize: '26px', fontWeight: '500', color: '#F39C12', marginBottom: '40px' }}>
+        <h6 style={{ fontSize: '26px', fontWeight: '500', color: '#0682c4', marginBottom: '40px' }}>
           {language === 'tamil' && translations[activeHeader] ? translations[activeHeader] : activeHeader}
         </h6>
       </div>
