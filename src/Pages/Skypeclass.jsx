@@ -28,12 +28,12 @@ const Skypeclass = () => {
                       />
                     </div>
                   </div>
-                  <h3>{item.title}</h3>
-                  <h6>{item.title1}</h6>
+                  <h3 style={{ color: "rgb(20, 61, 126)" }}>{item.title}</h3>
+                  <h6 style={{ color: "rgb(20, 61, 126)" }}>{item.title1}</h6>
                   <div className="col-md-7">
                     {item.card?.map((cardItem, cardIndex) => (
                       <div key={cardIndex}>
-                        <h5>{cardItem.title}</h5>
+                        <h5 style={{ color: "rgb(20, 61, 126)" }}>{cardItem.title}</h5>
                         {cardItem.para?.map((paragraph, idx) => (
                           <p key={idx}>{paragraph}</p>
                         ))}

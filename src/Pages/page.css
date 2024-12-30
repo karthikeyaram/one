@@ -15,7 +15,7 @@
 .card-container .image-wrapper img {
   transition: transform 0.3s ease-in-out; /* Smooth zoom transition */
   width: 250px;
-  height: 245px;
+  height: 228px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding shadow */
 }
@@ -29,7 +29,7 @@
 }
 
 .card {
-  height: 350px; /* Set a fixed height (you can adjust this value) */
+  height: 311px; /* Set a fixed height (you can adjust this value) */
   display: flex;
   flex-direction: column; /* Ensures that content stacks vertically */
 }

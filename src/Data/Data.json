@@ -681,23 +681,23 @@
       ],
       "skypeclass":[
         {
-          "title":"Online Classes",
-          "title1":"Classes that will be conducted",
+          "title":"நிகழ்நிலை  (online) வகுப்புகள்",
+          "title1":"பயிற்று விக்கப்பெறும் வகுப்புகள்",
           "img":"/assets/image/annamalai_chettiya2.jpg",
           "head1":{
           "thumbnail": "/assets/image/tamilisaisangam1.jpg"
           },
           "card":[
-            {"title":"'Certificate in Music Arts (Vocal Music, Veena, Violin)",
-            "para":["1.Classes will be conducted for one week (40 classes).","2.People from India and abroad can join these classes.","3.The duration of the classes is one hour.",
-          "4.For foreign students, classes will be held once a week. Students can increase the number of classes."] }
+            {"title":"'இசைக்கலை சான்றிதழ் (குரல் இசை, வீணை, வாயலின்)",
+            "para":["1.வகுப்புகள் ஒரு வருடம் (40 வகுப்புகள்) நடத்தப்படும்.","2.இந்தியா மற்றும் வெளிநாடுகளில் உள்ளவர்கள் இந்த வகுப்புகளில் சேரலாம்.","3.வகுப்புகள் நடைபெறும் கால அளவு ஒரு மணி நேரம் ஆகும்.",
+          "4.அயல்நாட்டு மாணவர்களுக்கு, வாரத்தில் ஒருமுறை வகுப்புகள் நடைபெறும். மாணவர்கள் வகுப்புகளின் எண்ணிக்கையை அதிகரிக்கலாம்."] }
           ],
           "card2":""
         }
     ],
-    "skype2":["5.Foreign students must pay a fee of 250 rupees for 10 classes. Payment for the 10 classes must be made in advance.",
-          "6.Indian students must pay a fee of 5000 rupees for 10 classes. Payment for the 10 classes must be made in advance. Students can take 2 or 3 classes in a week.","7.After completing the music course, a certificate will be provided by the Tamil Isai Sangam."
-        ,"Eligibility: Must have an interest in learning music.","Desirable: Should have knowledge of basic music lessons."
+    "skype2":["5.அயல்நாட்டு மாணவர்கள் 10 வகுப்புகளுக்கு 250 ரூபாய் கட்டணம் செலுத்த வேண்டும். 10 வகுப்புகளுக்கான கட்டணம் முன்பாக செலுத்தப்பட வேண்டும்.",
+          "6.இந்திய மாணவர்கள் 10 வகுப்புகளுக்கு 5000 ரூபாய் கட்டணம் செலுத்த வேண்டும். 10 வகுப்புகளுக்கான கட்டணம் முன்பாக செலுத்தப்பட வேண்டும். மாணவர்கள் ஒரு வாரத்தில் 2 அல்லது 3 வகுப்புகள் எடுக்கலாம்.","7.'இசைக்கலை சான்றிதழ்', பயிற்சி முடிந்த பிறகு, இசைச் சங்கத்தால் சான்றிதழ் வழங்கப்படும்."
+        ,"தகுதி: இசை கற்க ஆர்வம் இருப்பது அவசியம்.","விரும்பத்தக்கது: இசையில் அடிப்படை பாடங்கள் தெரிந்திருத்தல்."
          ], 
       "notes":[
         {
@@ -2236,9 +2236,8 @@
     { "no": 39, "name": "Paadai", "subname": "Paadi" },{ "no": 40, "name": "Kuzhari", "subname": "Gurjari" },
     { "no": 41, "name": "Nagadhoni", "subname": "Nagadhvani" },{ "no": 42, "name": "Udhayagiri", "subname": "Revagupti" },
     { "no": 43, "name": "Nagaragam", "subname": "Nagasvaravali" },{ "no": 44, "name": "Kedhalikurinji", "subname": "Kedharam" },
-    { "no": 45, "name": "Udhayagiri", "subname": "Revagupti" },{ "no": 46, "name": "Nagaragam", "subname": "Nagasvaravali" },
-    { "no": 47, "name": "Soorthungaragam", "subname": "Sooryakantham" },{ "no": 48, "name": "Megharagam", "subname": "Kokilapriya" },
-    { "no": 49, "name": "Seekandi", "subname": "Sikandi" }
+    { "no": 45, "name": "Udhayagiri", "subname": "Revagupti" }, { "no": 46, "name": "Soorthungaragam", "subname": "Sooryakantham" },{ "no": 47, "name": "Megharagam", "subname": "Kokilapriya" },
+    { "no": 48, "name": "Seekandi", "subname": "Sikandi" },{ "no": 49, "name": "Sayavelarkolli", "subname": "Sarasangi" }
                     
       ]
     }
@@ -2246,31 +2245,31 @@
     "table2":[
       {"s.no":"S.No","title":"Name of the Panns","title2":"Equivalent Raga",
       "data":[
-        { "no": 50, "name": "Sayavelarkolli", "subname": "Sarasangi" },{ "no": 51, "name": "Manral", "subname": "Nattaikurinji" },
-        { "no": 52, "name": "Andhi", "subname": "Vasantha" },{ "no": 53, "name": "Chandi", "subname": "Purvikalyani" },
-        { "no": 54, "name": "Surudigandharam", "subname": "Gandharvamanohari" },{ "no": 55, "name": "Pakkazhi", "subname": "Balachandrika" },
-        { "no": 56, "name": "Viyandham", "subname": "Vilasini" },{ "no": 57, "name": "Anandhai", "subname": "Bhogavasantham" },
-        { "no": 58, "name": "Marul", "subname": "Kokilanandi" },{ "no": 59, "name": "Saaral", "subname": "Ratnakanthi" },
-        { "no": 60, "name": "Kurinjiyah", "subname": "Natabhairavi" },{ "no": 61, "name": "Mandaliyazh", "subname": "Charukesi" },
-        { "no": 62, "name": "Thanukanchi", "subname": "Dhenuka" },{ "no": 63, "name": "Thathala Panchamam", "subname": "Malava Panchamam" },
-        { "no": 64, "name": "Thiradam", "subname": "Thirumoorthi" },{ "no": 65, "name": "Velarkolli", "subname": "Reethichandrika" },
-        { "no": 66, "name": "Kinnaragam", "subname": "Keeravani" },{ "no": 67, "name": "Nirupathungaram", "subname": "Shanmukhapriya" },
-        { "no": 68, "name": "Thaaraooandiram", "subname": "Mechakalyani" },{ "no": 69, "name": "Devathali", "subname": "Subhapantuvarali" },
-        { "no": 70, "name": "Sendhu", "subname": "Chakrava" },{ "no": 71, "name": "Achari", "subname": "Vakulabharanam" },
-        { "no": 72, "name": "Thaanu", "subname": "Thaamarasi" },{ "no": 73, "name": "Vipanchi", "subname": "Malayamarutham" },
-        { "no": 74, "name": "Cheevani", "subname": "Cheevani – Sreemani" },{ "no": 75, "name": "Kanchi", "subname": "Meghanchi – Kanchanavati" },
-        { "no": 76, "name": "Sadhakkiyam", "subname": "Sreemanjani" },{ "no": 77, "name": "Varunam", "subname": "Thakkanadi – Vasantha" },
-        { "no": 78, "name": "Yamai", "subname": "Agnikopam" },{ "no": 79, "name": "Mallari", "subname": "Ghambheeranattai" },
-        { "no": 80, "name": "Pungaali", "subname": "Kalaavati" },{ "no": 81, "name": "Serundhi", "subname": "Bhudharanjani" },
-        { "no": 82, "name": "Azhungu", "subname": "Manohari" },{ "no": 83, "name": "Sayai", "subname": "Jayantasena" },
-        { "no": 84, "name": "Sogavaraati", "subname": "Amrutha Dhanyasi" },{ "no": 85, "name": "Dheepavaraati", "subname": "Kannada Maruva" },
-        { "no": 86, "name": "Periyavaraati", "subname": "Kannada Salavi" },{ "no": 87, "name": "Ariyavelarkolli", "subname": "Chalanavarali" },
-        { "no": 88, "name": "Chittiravelarkolli", "subname": "Abhogi" },{ "no": 89, "name": "Naanupanchamam", "subname": "Hamsavinodhini" },
-        { "no": 90, "name": "Desakri", "subname": "Ranjani" },{ "no": 91, "name": "Malarvakri", "subname": "Hindolam" },
-        { "no": 92, "name": "Ariyaguchari", "subname": "Amrutavarsini" },{ "no": 93, "name": "Savagakurinji", "subname": "Mukthithayini" },
-        { "no": 94, "name": "Mudhirnadhakurinji", "subname": "Suddha Dhanyasi" },{ "no": 95, "name": "Payyulkanji", "subname": "Yogini" },
-        { "no": 96, "name": "Kondargiri", "subname": "Kannada Gavlai" },{ "no": 97, "name": "Anuthrapanchamam", "subname": "Kamala" },
-        { "no": 98, "name": "Andhaalipaadai", "subname": "Bahudhari" }       
+        { "no": 50, "name": "Manral", "subname": "Nattaikurinji" },
+        { "no": 51, "name": "Andhi", "subname": "Vasantha" },{ "no": 52, "name": "Chandi", "subname": "Purvikalyani" },
+        { "no": 53, "name": "Surudigandharam", "subname": "Gandharvamanohari" },{ "no": 54, "name": "Pakkazhi", "subname": "Balachandrika" },
+        { "no": 55, "name": "Viyandham", "subname": "Vilasini" },{ "no": 56, "name": "Anandhai", "subname": "Bhogavasantham" },
+        { "no": 57, "name": "Marul", "subname": "Kokilanandi" },{ "no": 58, "name": "Saaral", "subname": "Ratnakanthi" },
+        { "no": 59, "name": "Kurinjiyah", "subname": "Natabhairavi" },{ "no": 60, "name": "Mandaliyazh", "subname": "Charukesi" },
+        { "no": 61, "name": "Thanukanchi", "subname": "Dhenuka" },{ "no": 62, "name": "Thathala Panchamam", "subname": "Malava Panchamam" },
+        { "no": 63, "name": "Thiradam", "subname": "Thirumoorthi" },{ "no": 64, "name": "Velarkolli", "subname": "Reethichandrika" },
+        { "no": 65, "name": "Kinnaragam", "subname": "Keeravani" },{ "no": 66, "name": "Nirupathungaram", "subname": "Shanmukhapriya" },
+        { "no": 67, "name": "Thaaraooandiram", "subname": "Mechakalyani" },{ "no": 68, "name": "Devathali", "subname": "Subhapantuvarali" },
+        { "no": 69, "name": "Sendhu", "subname": "Chakrava" },{ "no": 70, "name": "Achari", "subname": "Vakulabharanam" },
+        { "no": 71, "name": "Thaanu", "subname": "Thaamarasi" },{ "no": 72, "name": "Vipanchi", "subname": "Malayamarutham" },
+        { "no": 73, "name": "Cheevani", "subname": "Cheevani – Sreemani" },{ "no": 74, "name": "Kanchi", "subname": "Meghanchi – Kanchanavati" },
+        { "no": 75, "name": "Sadhakkiyam", "subname": "Sreemanjani" },{ "no": 76, "name": "Varunam", "subname": "Thakkanadi – Vasantha" },
+        { "no": 77, "name": "Yamai", "subname": "Agnikopam" },{ "no": 78, "name": "Mallari", "subname": "Ghambheeranattai" },
+        { "no": 79, "name": "Pungaali", "subname": "Kalaavati" },{ "no": 80, "name": "Serundhi", "subname": "Bhudharanjani" },
+        { "no": 81, "name": "Azhungu", "subname": "Manohari" },{ "no": 82, "name": "Sayai", "subname": "Jayantasena" },
+        { "no": 83, "name": "Sogavaraati", "subname": "Amrutha Dhanyasi" },{ "no": 84, "name": "Dheepavaraati", "subname": "Kannada Maruva" },
+        { "no": 85, "name": "Periyavaraati", "subname": "Kannada Salavi" },{ "no": 86, "name": "Ariyavelarkolli", "subname": "Chalanavarali" },
+        { "no": 87, "name": "Chittiravelarkolli", "subname": "Abhogi" },{ "no": 88, "name": "Naanupanchamam", "subname": "Hamsavinodhini" },
+        { "no": 89, "name": "Desakri", "subname": "Ranjani" },{ "no": 90, "name": "Malarvakri", "subname": "Hindolam" },
+        { "no": 91, "name": "Ariyaguchari", "subname": "Amrutavarsini" },{ "no": 92, "name": "Savagakurinji", "subname": "Mukthithayini" },
+        { "no": 93, "name": "Mudhirnadhakurinji", "subname": "Suddha Dhanyasi" },{ "no": 94, "name": "Payyulkanji", "subname": "Yogini" },
+        { "no": 95, "name": "Kondargiri", "subname": "Kannada Gavlai" },{ "no": 96, "name": "Anuthrapanchamam", "subname": "Kamala" },
+        { "no": 97, "name": "Andhaalipaadai", "subname": "Bahudhari" }       
         
       ]
     }

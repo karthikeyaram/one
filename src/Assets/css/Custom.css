@@ -1598,7 +1598,7 @@ h6 small {
 
 .h1,
 h1 {
-    font-size: 36px
+    font-size: 28px
 }
 
 
@@ -1657,7 +1657,8 @@ mark {
 }
 
 .text-center {
-    text-align: center
+    text-align: center;
+    color: rgb(20, 61, 126);
 }
 
 .text-justify {
