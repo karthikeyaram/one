@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import coursedata from "../Data/Data.json";
 import { FaPlayCircle } from "react-icons/fa";
+import courseimg from '../Assets/image/course.jpg'
 
 const Daycollege = () => {
   const { language } = useSelector((state) => state.language);
@@ -19,14 +20,15 @@ const Daycollege = () => {
       <div className="container">
         {principal.map((course, index) => (
           <div key={index}>
-            <h3 style={{ textAlign: "center" }}>{course.title}</h3>
+            <h3 style={{ textAlign: "center",color:"rgb(20, 61, 126)" }}>{course.title}</h3>
             <div className="row">
               <div
                 className="col-sm-12"
                 style={{ color: "black", textAlign: "center" }}
               >
-                <h2 style={{ color: "black" }}>
-                  <span>{course.title1}</span> {course.title2}
+                <p> <span>{course.title1}</span> </p>
+                <h2 style={{ color: "rgb(20, 61, 126)" }}>
+                 {course.title2}
                 </h2>
               </div>
             </div>
@@ -36,7 +38,7 @@ const Daycollege = () => {
                 <li key={idx} className="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                   <div className="course-card">
                     <figure className="course-image">
-                      <img src={item.image} alt={item.title3} />
+                      <img src={courseimg} alt={item.title3} />
                       <div className="course-info">
                         <h3 className="course-title">
                           {" "}

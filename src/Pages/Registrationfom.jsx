@@ -1,6 +1,8 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import forms from "../Data/Data.json";
+import anna from '../Assets/head/annamalai_chettiar.jpg'
+import natraj  from '../Assets/head/nataraj.jpg'
 
 const RegistrationForm = () => {
   console.log("data", forms);
@@ -18,65 +20,69 @@ const RegistrationForm = () => {
         <div className="row padding-lg">
           <div className="col-sm-12 head-block">
             <div className="row">
-              {formheadArray.map((item, index) => {
-                return (
-                  <div
-                    key={index}
-                    className="col-sm-12 head-block"
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                    }}
-                  >
-                    <div
-                      style={{
-                        flex: 1,
-                        display: "flex",
-                        justifyContent: "flex-start",
-                      }}
-                    >
-                      <img
-                        src={item.img2}
-                        alt=""
+              <div className="col-sm-12">
+                <div className="row">
+                  {formheadArray.map((item, index) => {
+                    return (
+                      <div
+                        key={index}
+                        className="col-sm-12 head-block"
                         style={{
-                          maxWidth: "100px",
-                          maxHeight: "100px",
-                          objectFit: "contain",
-                          backgroundColor: "red",
+                          display: "flex",
+                          justifyContent: "space-between",
+                          alignItems: "center",
                         }}
-                      />
-                    </div>
+                      >
+                        <div
+                          style={{
+                            flex: .5,
+                            display: "flex",
+                            justifyContent: "flex-start",
+                          }}
+                        >
+                          <img
+                            src={anna}
+                            alt=""
+                            style={{
+                              maxWidth: "100px",
+                              maxHeight: "100px",
+                              objectFit: "contain",
+                              backgroundColor: "red",
+                            }}
+                          />
+                        </div>
 
-                    <div style={{ flex: 2, textAlign: "center" }}>
-                      <h3 style={{ marginBottom: "10px", color: "#0282c2" }}>
-                        {item.title}
-                      </h3>
-                      <h6 style={{ marginTop: "10px" }}>{item.subtitle}</h6>
-                      <p>{item.no}</p>
-                      <h6>{item.subtitle2}</h6>
-                    </div>
+                        <div style={{ flex: 2, textAlign: "center" }}>
+                          <h3 style={{ marginBottom: "10px", color: "#0282c2" }}>
+                            {item.title}
+                          </h3>
+                          <h6 style={{ marginTop: "10px" }}>{item.subtitle}</h6>
+                          <p style={{ marginTop: "0px", textAlign: "center" }}>{item.no}</p>
+                          <h6 style={{ marginTop: "0px" }}>{item.subtitle2}</h6>
+                        </div>
 
-                    <div
-                      style={{
-                        flex: 1,
-                        display: "flex",
-                        justifyContent: "flex-end",
-                      }}
-                    >
-                      <img
-                        src={item.img2}
-                        alt=""
-                        style={{
-                          maxWidth: "100px",
-                          maxHeight: "100px",
-                          objectFit: "contain",
-                        }}
-                      />
-                    </div>
-                  </div>
-                );
-              })}
+                        <div
+                          style={{
+                            flex: .5,
+                            display: "flex",
+                            justifyContent: "flex-end",
+                          }}
+                        >
+                          <img
+                            src={natraj}
+                            alt=""
+                            style={{
+                              maxWidth: "100px",
+                              maxHeight: "100px",
+                              objectFit: "contain",
+                            }}
+                          />
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
             </div>
           </div>
           <div className="col-sm-12 head-block">

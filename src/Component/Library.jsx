@@ -25,15 +25,13 @@ const Library = () => {
     <div className="library-container">
       <style>
         {`
-          
-
           .library-container {
             width: 100%;
             padding: 20px;
-            min-height: 100vh; /* Ensures the content takes up at least the full height of the page */
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: space-between; /* Ensures the footer is pushed to the bottom */
+            justify-content: space-between;
           }
 
           .panel-group .panel {
@@ -58,7 +56,7 @@ const Library = () => {
           }
 
           .panel-body {
-               margin-top: 15px;
+            margin-top: 15px;
             padding: 15px;
             font-size: 14px;
             line-height: 1.5;
@@ -99,7 +97,7 @@ const Library = () => {
             margin-left: 0;
           }
 
-            .header-gradient {
+          .header-gradient {
             color: white;
             text-align: center;
             padding: 20px;
@@ -107,22 +105,61 @@ const Library = () => {
             font-weight: bold;
             border-radius: 10px;
             margin-bottom: 30px;
-        
           }
 
+          .nope {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+          }
 
-        
+          .pan {
+            padding: 0 15px;
+            flex: 0 0 33.333%;
+            max-width: 33.333%;
+            margin-bottom: 15px;
+          }
+
+          .panel {
+            position: relative;
+          }
+
+          .panel:hover .panel-collapse {
+            display: block;
+          }
+
+          .panel-collapse {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+          }
+
+          @media (max-width: 768px) {
+            .nope {
+              flex-direction: column;
+              margin: 0;
+            }
+
+            .pan {
+              flex: 0 0 100%;
+              max-width: 100%;
+              margin-bottom: 10px;
+            }
+          }
         `}
       </style>
 
       <div className="col-sm-12" style={{ backgroundColor: 'white' }}>
-      
         <div
           style={{
             textAlign: 'center',
             padding: '20px',
             fontSize: '20px',
-            color:"white",
+            color: "white",
             fontWeight: 'bold',
             borderRadius: '10px',
             marginBottom: '30px',
@@ -134,13 +171,13 @@ const Library = () => {
 
         <div className="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
           {[...Array(rows)].map((_, rowIndex) => (
-            <div className="row" key={rowIndex}>
+            <div className="row nope" key={rowIndex}>
               {Array.from({ length: 3 }).map((_, colIndex) => {
                 const categoryIndex = rowIndex * 3 + colIndex;
                 if (categoryIndex < categories.length) {
                   const category = categories[categoryIndex];
                   return (
-                    <div className="col-md-4" key={colIndex}>
+                    <div className="col-md-4 pan" key={colIndex}>
                       <div
                         className="panel panel-default"
                         onMouseEnter={() => handleMouseEnter(categoryIndex)}
@@ -161,16 +198,18 @@ const Library = () => {
                             </a>
                           </h4>
                         </div>
-                        <div
-                          id={`collapse${categoryIndex}`}
-                          className={`panel-collapse collapse ${openIndex === categoryIndex ? 'show' : ''}`}
-                          role="tabpanel"
-                          aria-labelledby={`heading${categoryIndex}`}
-                        >
-                          <div className="panel-body">
-                            <p>{category?.description || 'No Description Available'}</p>
+                        {openIndex === categoryIndex && (
+                          <div
+                            id={`collapse${categoryIndex}`}
+                            className={`panel-collapse show`}
+                            role="tabpanel"
+                            aria-labelledby={`heading${categoryIndex}`}
+                          >
+                            <div className="panel-body">
+                              <p>{category?.description || 'No Description Available'}</p>
+                            </div>
                           </div>
-                        </div>
+                        )}
                       </div>
                     </div>
                   );

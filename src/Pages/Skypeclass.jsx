@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import onlined from "../Data/Data.json";
+import skypes from '../Assets/image/tamilisaisangam1.jpg'
 
 const Skypeclass = () => {
   const { language } = useSelector((state) => state.language);
@@ -21,7 +22,7 @@ const Skypeclass = () => {
                   <div className="col-md-5">
                     <div className="video-block">
                       <img
-                        src={item.head1?.thumbnail}
+                        src={skypes}
                         alt="Video Thumbnail"
                         className="img-responsive"
                       />

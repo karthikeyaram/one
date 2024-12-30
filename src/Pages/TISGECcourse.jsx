@@ -3,16 +3,16 @@ import { useSelector } from "react-redux";
 import jsondata from "../Data/Data.json";
 import { useState } from "react";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
+import anna from '../Assets/head/annamalai_chettiar.jpg'
+import natraj  from '../Assets/head/nataraj.jpg'
+import reg from '../Assets/icon/get-start-ico.png' 
+import doc from '../Assets/icon/doc-ico.png'
+import star from '../Assets/icon/get-start-ico.png'
 
 const TISGECcourse = () => {
-  const tabss = [
-    {
-      id: "semester",
-      label: "SEMESTER",
-      subLabel: "I TO IV",
-      iconClass: "icon-semester-icon",
-    },
-  ];
+  const stepicon =[
+    {number:1,icon:reg},{number:2,icon:doc},{number:2,icon:star}
+  ]
 
   const { language } = useSelector((state) => state.language);
   const tabs = jsondata[language]?.terms || [];
@@ -45,24 +45,23 @@ const TISGECcourse = () => {
                     >
                       <div
                         style={{
-                          flex: 1,
+                          flex: .5,
                           display: "flex",
                           justifyContent: "flex-start",
                         }}
                       >
                         <img
-                          src={item.img2}
+                          src={anna}
                           alt=""
                           style={{
-                            maxWidth: "100px",
-                            maxHeight: "100px",
+                            maxWidth: "200px",
+                            maxHeight: "200px",
                             objectFit: "contain",
-                            backgroundColor: "red",
                           }}
                         />
                       </div>
 
-                      <div style={{ flex: 2, textAlign: "center" }}>
+                      <div style={{ flex: 1, textAlign: "center" }}>
                         <h3 style={{ marginBottom: "10px", color: "#0282c2" }}>
                           {item.title}
                         </h3>
@@ -73,17 +72,17 @@ const TISGECcourse = () => {
 
                       <div
                         style={{
-                          flex: 1,
+                          flex: .5,
                           display: "flex",
                           justifyContent: "flex-end",
                         }}
                       >
                         <img
-                          src={item.img2}
+                          src={natraj}
                           alt=""
                           style={{
-                            maxWidth: "100px",
-                            maxHeight: "100px",
+                            maxWidth: "200px",
+                            maxHeight: "200px",
                             objectFit: "contain",
                           }}
                         />
@@ -132,9 +131,9 @@ const TISGECcourse = () => {
           {table?.length > 0 &&
             table.map((content, index) => (
               <div key={index} className="table-container">
-                <h3>{content?.title}</h3>
+                <h3 style={{color:"rgb(20, 61, 126)"}}>{content?.title}</h3>
                 <h4>{content?.title1}</h4>
-                <p style={{ fontWeight: "bold", fontSize: "22px",textAlign:"center" }}>
+                <p style={{ fontWeight: "bold", fontSize: "18px",textAlign:"center",color:"rgb(58, 133, 173)" }}>
                   {content?.thead}
                 </p>
                 <table className="fee-table">
@@ -164,7 +163,7 @@ const TISGECcourse = () => {
         {tabled?.length > 0 &&
           tabled.map((content, index) => (
             <div key={index} className="table-container">
-              <p style={{ fontWeight: "bold", fontSize: "22px",textAlign:"center" }}>
+              <p style={{ fontWeight: "bold", fontSize: "22px",textAlign:"center",color:"rgb(58, 133, 173)" }}>
                 {content?.thead}
               </p>
               <table className="fee-table">
@@ -209,7 +208,8 @@ const TISGECcourse = () => {
                 >
                   <div className="icon-block">
                     <span className="num">{step.number}</span>
-                    <img src={step.icon} alt={step.title} />
+
+                    <img src={stepicon[index]?.icon} alt={step.title} />
                   </div>
                   <h3>{step.title}</h3>
                   <p>{step.description}</p>

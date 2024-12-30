@@ -4,15 +4,13 @@ import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import homeData from "../../Data/Data.json";
 import { Link } from "react-router-dom";
-import image3 from '../../Assets/img/33.jpg'
-import image2 from '../../Assets/img/44.jpg'
-import image1 from '../../Assets/img/55.jpg'
-import image4 from '../../Assets/img/junior.png'
-import image6 from '../../Assets/img/Senior.png'
-import image5 from '../../Assets/img/Subjunior.png'
-import image7 from '../../Assets/img/Subsenior.png'
-
-
+import image3 from "../../Assets/img/33.jpg";
+import image2 from "../../Assets/img/44.jpg";
+import image1 from "../../Assets/img/55.jpg";
+import image4 from "../../Assets/img/junior.png";
+import image6 from "../../Assets/img/Senior.png";
+import image5 from "../../Assets/img/Subjunior.png";
+import image7 from "../../Assets/img/Subsenior.png";
 
 const Banner = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -20,40 +18,50 @@ const Banner = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  // const cards = [
-  //   { id: 1, img: image1 }, { id: 2, img: image2 }, { id: 3, img: image3 }, { id: 4, img: image4 }, { id: 5, img: image5 },
-  //   { id: 6, img: image6 }, { id: 7, img: image7 }
-  // ]
-  const home= [
+ 
+
+  const home = [
     {
       margazhispecial: [
         {
           cardsd: [
             {
               id: 1,
-              image: image1},
+              image: image1,
+            },
             {
               id: 2,
-              image: image2 },
+              image: image2,
+            },
             {
               id: 3,
-              image: image3}
-          ]
+              image: image3,
+            },
+          ],
         },
-        { cardsd1: [
+        {
+          cardsd1: [
             {
-              id: 1.1, image: image4},
+              id: 1.1,
+              image: image4,
+            },
             {
-              id: 2.1, image: image5},
+              id: 2.1,
+              image: image5,
+            },
             {
-              id: 3.1, image: image6},
+              id: 3.1,
+              image: image6,
+            },
             {
-              id: 4.1,  image: image7 }
-          ]
-        }
-      ]
-    }
-  ]
+              id: 4.1,
+              image: image7,
+            },
+          ],
+        },
+      ],
+    },
+  ];
 
   const slides = [
     {
@@ -130,7 +138,6 @@ const Banner = () => {
               }}
             >
               {/* Optional content like titles, descriptions, buttons */}
-
             </div>
           ))}
         </div>
@@ -157,7 +164,8 @@ const Banner = () => {
                 style={{
                   textAlign: "center",
                   padding: "30px",
-                  background: "linear-gradient(135deg, #00A6D6,rgb(53, 81, 110))",
+                  background:
+                    "linear-gradient(135deg, #00A6D6,rgb(53, 81, 110))",
                   borderRadius: "12px",
                   boxShadow: "0px 10px 30px rgba(0, 0, 0, 0.1)",
                   transition: "transform 0.3s ease, box-shadow 0.3s ease",
@@ -222,7 +230,8 @@ const Banner = () => {
                 style={{
                   textAlign: "center",
                   padding: "30px",
-                  background: "linear-gradient(135deg, #00A6D6,rgb(53, 81, 110))",
+                  background:
+                    "linear-gradient(135deg, #00A6D6,rgb(53, 81, 110))",
                   borderRadius: "12px",
                   boxShadow: "0px 10px 30px rgba(0, 0, 0, 0.1)",
                   transition: "transform 0.3s ease, box-shadow 0.3s ease",
@@ -325,11 +334,9 @@ const Banner = () => {
                     <h5
                       className="card-title"
                       style={{
-                        fontSize: "1.6rem",
-                        fontWeight: "700",
-                        marginBottom: "8px",
-                        textShadow:
-                          "2px 2px 5px rgba(0, 0, 0, 0.7)",
+                        listStyle: "none",
+                        padding: "15px",
+                        transition: "transform 0.3s ease",
                       }}
                     >
                       {filteredCard.cardtitle || "Title"}
@@ -364,14 +371,13 @@ const Banner = () => {
 
       {/* Add Media Query for mobile responsiveness */}
       <style jsx>{`
-    @media (max-width: 768px) {
-      .slidei {
-     
-        background-size: contain; /* Ensures the entire image fits within the container */
-        background-position: center center; /* Centers the image in the container */
-      }
-    }
-  `}</style>
+        @media (max-width: 768px) {
+          .slidei {
+            background-size: contain; /* Ensures the entire image fits within the container */
+            background-position: center center; /* Centers the image in the container */
+          }
+        }
+      `}</style>
     </>
   );
 };

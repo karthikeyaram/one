@@ -2,7 +2,7 @@ import React from "react";
 import {
   FaFacebook,
   FaTwitter,
-  FaGooglePlus,
+  FaPinterest,
   FaYoutube,
   FaInstagram,
 } from "react-icons/fa";
@@ -47,9 +47,10 @@ const Footer = () => {
       { name: "Peer Learning", link: "#" },
     ],
     socialLinks: [
-      { icon: <FaFacebook />, link: "https://www.facebook.com/people/Tamil-Isai-Kalloori-Tamil-Isai-Sangam/100064832676981/" },
-      { icon: <FaYoutube />, link: "https://www.youtube.com/channel/UCc52PkQqepI__b2vjg-dOkQ" },
-      { icon: <FaInstagram />, link: "https://www.instagram.com/tamil_isai_kalloori?igshid=rzk92bvhobqq" },
+      { icon: <FaFacebook />, link: "https://www.facebook.com/people/Tamil-Isai-Kalloori-Tamil-Isai-Sangam/100064832676981", target: "_blank", rel: "noopener noreferrer" },
+      { icon: <FaYoutube />, link: "https://www.youtube.com/channel/UCc52PkQqepI__b2vjg-dOkQ", target: "_blank", rel: "noopener noreferrer" },
+      { icon: <FaInstagram />, link: "https://www.instagram.com/tamil_isai_kalloori?igshid=rzk92bvhobqq", target: "_blank", rel: "noopener noreferrer" },
+      { icon: <FaPinterest />, link: "https://in.pinterest.com/tamilisaisangam/", target: "_blank", rel: "noopener noreferrer" },
     ]
   };
 
@@ -91,23 +92,30 @@ const Footer = () => {
           <div className="row">
             {/* Connect with Us Section */}
             <div className="col-sm-4">
-              {footer.map((footerItem, index) => (
-                <div key={index}>
-                  {footerItem.titles.map((titleItem, titleIndex) => (
-                    <h3 key={titleIndex}>{titleItem.title}</h3>
-                  ))}
-                </div>
-              ))}
+
               <div className="connect-us">
                 <h3>Connect with Us</h3>
                 <ul className="follow-us clearfix">
                   {footerData.socialLinks.map((social, idx) => (
                     <li key={idx}>
-                      <a href={social.link}>{social.icon}</a>
+                      <a href={social.link} target={social.target}
+                        rel={social.rel}>{social.icon}</a>
                     </li>
                   ))}
                 </ul>
               </div>
+              {footer.map((footerItem, index) => (
+                <div key={index}>
+                  {footerItem.titles.map((titleItem, titleIndex) => (
+                    <div className="foot">
+                      <h3 key={titleIndex}>{titleItem.title}</h3>
+                      <h3 style={{ fontSize: "13px" }}>{titleItem.title1}</h3>
+                      <h3>{titleItem.title2}</h3>
+                    </div>
+                  ))}
+                </div>
+              ))}
+
             </div>
 
             {/* Subscribe Section */}
