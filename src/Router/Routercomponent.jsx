@@ -75,23 +75,16 @@ const MainRoutes = () => {
         <Route path='/IsaiArulalarkal' element={<IsaiArulalarkal />} />
         <Route path='/library' element={<Library />} />
         <Route path="/tamil-isai-sangam" element={<Tamilisaisangam />} />
-        <Route path="/tamilisasangam/register" element={<Register />} />
+        <Route path="/tamilisaisangam/register" element={<Register />} />
         <Route path='/contact' element={<Contact />} />
         <Route path="/tamilisaisangam/login" element={<Login />} />
         <Route path="/tamil-isai-history" element={<History />} />
         <Route path='/media' element={<Media />} />
-        <Route path='/museum' element={<Museum />} />
-        {/* <Route path='/IsaiKalaivanarkal' element={<IsaiKalaivanarkal />} />
-        <Route path='/IsaiPerairignarkal' element={<IsaiPerairignarkal />} />
-        <Route path='/PannIsaiPerarignarkal' element={<PannIsaiPerarignarkal />} /> */}
-
-        
-           <Route path='/IsaiKalaivanarkal' element={<Gallery3/>} />
+        <Route path='/museum' element={<Museum />} />        
+        <Route path='/IsaiKalaivanarkal' element={<Gallery3/>} />
         <Route path='/IsaiPerairignarkal' element={<Gallery4/>} />
         <Route path='/PannIsaiPerarignarkal' element={<Gallery5/>} /> 
-
-<Route path='/competition-form' element={<CompetitionForm/>}/>
-        
+        <Route path='/competition-form' element={<CompetitionForm/>}/>
         <Route path='/trustees' element={<Boardtrustees />} />
         <Route path='/presidents-and-secretaries' element={<Boardpresident />} />
         <Route path='/tamil-pann-research' element={<Pannresearch />} />
@@ -111,7 +104,9 @@ const MainRoutes = () => {
         <Route path='/open-education' element={<Openeducation />} />
         <Route path='/skype-class' element={<Skypeclass />} />
         <Route path='/audio' element={<Audio />} />
-<Route path='/undergraduate' element={<Undergraduate/>}/>
+        <Route path='/undergraduate' element={<Undergraduate/>}/>
+
+
         {/* Admin routes */}
         <Route path='/admin' element={<Adminlayout />} />
         <Route path='/staff' element={<Staff/>} />
@@ -120,10 +115,8 @@ const MainRoutes = () => {
 
         
       </Routes>
-
       {/* Only show Footer for non-admin paths */}
       {!isAdminPath && <Footer />}
-
       {/* Sidebar and Topbar for admin routes */}
       {isAdminPath && (
         <>

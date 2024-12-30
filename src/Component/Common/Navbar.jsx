@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
+import { MdEmail } from "react-icons/md";
 import { toggleLanguage } from "../../Redux/Slice/LanguageSlice";
 import { useNavigate } from "react-router-dom";
 import menuData from "../../Data/Data.json";
@@ -12,6 +13,7 @@ import { IoIosPlayCircle } from "react-icons/io";
 import {
   FaFacebook,
   FaTwitter,
+  FaPhoneSquareAlt,
   FaPinterest ,
   FaYoutube,
   FaInstagram,
@@ -62,7 +64,7 @@ const Navbar = () => {
           <div className="right-block clearfix">
             <ul className="top-nav hidden-xs">
               <li>
-                <a href="/tamilisasangam/register">Register</a>
+                <a href="/tamilisaisangam/register">Register</a>
               </li>
               <li>
                 <a href="#">Apply Online</a>
@@ -98,7 +100,7 @@ const Navbar = () => {
             <div className="contact clearfix">
               <ul className="hidden-xs">
                 <li>
-                  <span>Email</span>{" "}
+                  <span><MdEmail style={{color:"rgb(58, 133, 173)",width:"25px",height:"25px"}}/></span>{" "}
                   <a href="mailto:info@edumart.org">
                     {" "}
                     tamilisaisangam@yahoo.in
@@ -109,7 +111,7 @@ const Navbar = () => {
                   </a>
                 </li>
                 <li>
-                  <span>Call</span>+91 44 2534 1958 / 2955 0107 <br />
+                  <span ><FaPhoneSquareAlt style={{color:"rgb(58, 133, 173)",width:"25px",height:"25px"}}/></span>+91 44 2534 1958 / 2955 0107 <br />
                   +91 94449 25880 / 92822 35964
                 </li>
               </ul>
