@@ -1,7 +1,7 @@
 import React from "react";
 import { FaBell, FaEnvelope, FaUserCircle, FaCog, FaQuestionCircle, FaSignOutAlt, FaBars } from "react-icons/fa";
 
-const Topbar = ({ toggleSidebar }) => {
+const Topbar = () => {
   return (
     <div className="topbar">
       {/* <div className="logo">
@@ -22,9 +22,6 @@ const Topbar = ({ toggleSidebar }) => {
           <li><a href="/help"><FaQuestionCircle /> Help</a></li>
           <li><a href="/logout"><FaSignOutAlt /> Logout</a></li>
         </ul>
-      </div>
-      <div className="menu-toggle" onClick={toggleSidebar}>
-        <FaBars className="icon toggle" />
       </div>
     </div>
   );

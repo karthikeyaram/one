@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
+
 import { PiCaretUpDownFill } from "react-icons/pi";
 import {
   IoArrowDownCircleOutline,
@@ -8,9 +9,10 @@ import { BsThreeDotsVertical } from "react-icons/bs";
 
 const Transactiondetails = () => {
   const [selectAll, setSelectAll] = useState(false);
-  const [expandedRows, setExpandedRows] = useState([]);
-  const [dropdownVisible, setDropdownVisible] = useState(null); // Changed to track only the visible dropdown
   const [selectedRows, setSelectedRows] = useState([]);
+  const [actionMenuVisible, setActionMenuVisible] = useState(null);
+  const dropdownRef = useRef(null);
+
 
   const transactions = [
     {
@@ -18,7 +20,7 @@ const Transactiondetails = () => {
       invoice: "#INV123",
       date: "June 1, 2024, 08:22 AM",
       recipient: "Julia Esteh",
-      photo: "https://via.placeholder.com/40", // Placeholder photo
+      photo: "https://via.placeholder.com/40",
       amount: "$128.89",
       type: "Income",
       location: "Bangladesh, India",
@@ -37,15 +39,6 @@ const Transactiondetails = () => {
     },
   ];
 
-  const handleSelectAll = () => {
-    setSelectAll(!selectAll);
-    if (!selectAll) {
-      setSelectedRows(transactions.map((transaction) => transaction.id));
-    } else {
-      setSelectedRows([]);
-    }
-  };
-
   const handleSelectRow = (id) => {
     if (selectedRows.includes(id)) {
       setSelectedRows(selectedRows.filter((rowId) => rowId !== id));
@@ -54,29 +47,34 @@ const Transactiondetails = () => {
     }
   };
 
-  const toggleRowExpansion = (id) => {
-    setExpandedRows((prevExpanded) =>
-      prevExpanded.includes(id)
-        ? prevExpanded.filter((rowId) => rowId !== id)
-        : [...prevExpanded, id]
-    );
+  const toggleActionMenu = (id) => {
+    setActionMenuVisible(actionMenuVisible === id ? null : id);
+  };
+  const handleSelectAll = () => {
+    setSelectAll(!selectAll);
+  };
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setActionMenuVisible(null);
+    }
   };
 
-  const toggleDropdown = (id) => {
-    setDropdownVisible((prev) => (prev === id ? null : id)); // Toggle visibility of dropdown based on transaction id
-  };
-
-  const handleEdit = (id) => {
-    alert(`Editing record with ID: ${id}`);
-  };
-
-  const handleDelete = (id) => {
-    alert(`Deleting record with ID: ${id}`);
-  };
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <div className="transaction-details-container">
       <h1>Transaction Details</h1>
+      <input
+        className=""
+        type="checkbox"
+        style={{ color: "blue", width: "30px", height: "30px" }}
+        onChange={handleSelectAll}
+      />
       <table className="transaction-table">
         <thead>
           <tr>
@@ -84,7 +82,6 @@ const Transactiondetails = () => {
               <input
                 type="checkbox"
                 style={{ color: "blue", width: "30px", height: "30px" }}
-                checked={selectAll}
                 onChange={handleSelectAll}
               />
             </th>
@@ -103,7 +100,6 @@ const Transactiondetails = () => {
             <th>
               Amount <PiCaretUpDownFill />
             </th>
-            {/* <th>Type <PiCaretUpDownFill /></th> */}
             <th>
               Location <PiCaretUpDownFill />
             </th>
@@ -138,13 +134,6 @@ const Transactiondetails = () => {
                   </div>
                 </td>
                 <td>{transaction.amount}</td>
-                {/* <td>
-                  {transaction.type === 'Income' ? (
-                    <IoArrowDownCircleOutline className="icon-green" />
-                  ) : (
-                    <IoArrowUpCircleOutline className="icon-red" />
-                  )}
-                </td> */}
                 <td>{transaction.location}</td>
                 <td
                   className={`status ${
@@ -158,17 +147,21 @@ const Transactiondetails = () => {
                   {transaction.status}
                 </td>
                 <td>
-                  <div className="action-menu">
+                  <div className="action-menu-container" ref={dropdownRef}>
                     <BsThreeDotsVertical
                       className="action-icon"
-                      onClick={() => toggleDropdown(transaction.id)}
+                      onClick={() => toggleActionMenu(transaction.id)}
                     />
-                    {dropdownVisible === transaction.id && (
-                      <div className="dropdown-menu">
-                        <button onClick={() => handleEdit(transaction.id)}>
+                    {actionMenuVisible === transaction.id && (
+                      <div className="action-menu-dropdown">
+                        <button
+                          onClick={() => console.log("Edit", transaction.id)}
+                        >
                           Edit
                         </button>
-                        <button onClick={() => handleDelete(transaction.id)}>
+                        <button
+                          onClick={() => console.log("Delete", transaction.id)}
+                        >
                           Delete
                         </button>
                       </div>
@@ -176,11 +169,6 @@ const Transactiondetails = () => {
                   </div>
                 </td>
               </tr>
-              {expandedRows.includes(transaction.id) && (
-                <tr className="details-row">
-                  <td colSpan="10">More details about {transaction.id}</td>
-                </tr>
-              )}
             </React.Fragment>
           ))}
         </tbody>
